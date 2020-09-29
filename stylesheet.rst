@@ -138,7 +138,7 @@ list.    It could be a lot prettier with CSS improvements.
    :columns: 3
 
    * Item #1:  |bar-icon|
-   * Item #2:  |runblue|
+   * Item #2:  |4arrows-icon|
    * Item #3:  :warn:`:warn:`
    * Item #4:  |if-true|
    * Item #5
@@ -254,8 +254,8 @@ Which looks like this in the .rst file:
 
       Simple code blocks only have the default options.
 
-As soon as you return to the previous indentation level, the code block will end.  If you want
-more options, you can use the ``code-block`` directive:
+As soon as you return to the previous indentation level, the code block (or preformatted section)
+will end.  If you want more options, you can use the ``code-block`` directive:
 
 .. code-block:: rst
    :caption: How to create a code block with options
@@ -269,6 +269,41 @@ more options, you can use the ``code-block`` directive:
 
       This is the content of the code block.
       Sometimes it might even be actual code.
+
+When code blocks are used for syntax highlighting, simply put the Pygment code for the programming
+language to the right of the directive.  Note that Pygment will first check that the syntax is
+valid before adding highlighting!  Bad syntax means the code block appears without highlighting.
+The console output will then show something like ``WARNING: Could not lex literal_block as "json".``
+Here's an example for JSON:
+
+.. code-block:: json
+   :class: tiny-code-block
+   :emphasize-lines: 4
+
+   { "maps": {
+        "map-name":  { } },
+     "objects": {
+        "<test-case-object-name>":  { } },
+     "script": {
+        "case":  [ ],
+        "sections":  { } }
+   }
+
+.. code-block:: rst
+   :class: short-code-block
+
+   .. code-block:: json
+      :class: tiny-code-block
+      :emphasize-lines: 4
+
+      { "maps": {
+           "map-name":  { } },
+        "objects": {
+           "<test-case-object-name>":  { } },
+        "script": {
+           "case":  [ ],
+           "sections":  { } }
+      }
 
 The clipboard copy icon is set by default on all code blocks.  To remove it in cases where it
 doesn't make sense, add the following class:
@@ -376,7 +411,7 @@ Link and anchor names must use Python variable syntax.  For automatic link gener
 punctuation characters will be converted to hyphens in the resulting link index.
 
 You can create a link to an existing anchor, for instance:
-:ref:`Getting Started <getting_started_top>`.
+:ref:`Test Case Scheduling <test_case_scheduling_top>`.
 Remember to remove the initial underscore from the anchor when you create a link reference.
 Also note that if the target of a link doesn't exist, Sphinx will not add that link, but it
 will still put the (unlinked) link text there.
@@ -780,6 +815,12 @@ The *right-short-admonition* class does the same but aligns the shortened box to
 
    “Followed by a test pull-quote„
 
+.. code-block::
+
+   .. pull-quote::
+
+      “Followed by a test pull-quote„
+
 A **topic** creates a simple box with a title above it.  In some themes, like the sphinx_rtd
 theme, it just creates this HTML structure, which is mapped to the CSS class *topic*:
 ``<div class="topic"><p class="topic-title first">Title</p><p>Box content</p></div>``
@@ -811,7 +852,8 @@ This is like a topic or rubric, but centered.
 
 .. rubric:: Sidebar Title
 
-A **sidebar** creates a box that floats to the left.  Other elements will tend to wrap around it:
+A **sidebar** creates a box that floats to the left.  Other elements will tend to wrap around it
+(not recommended for tablets or smartphones).
 
 .. sidebar:: Sidebar Title
    :subtitle: *Optional Sidebar Subtitle*

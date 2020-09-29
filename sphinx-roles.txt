@@ -136,6 +136,9 @@
 .. role:: bolditalic
    :class: bolditalic
 
+.. role:: ep-head
+   :class: ep-head
+
 .. role:: tablecell-name
    :class: tablecell-name
 

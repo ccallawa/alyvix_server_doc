@@ -1,0 +1,648 @@
+/* Allow some numbered lists to appear as steps in a procedure */
+.rst-content ol.bignums {
+    counter-reset: li-counter;
+}
+.rst-content ol.bignums>li { /* Represents a single list element */
+    list-style-type: none;
+    margin: 24px 0;
+    padding: 8px 18px 8px 40px;
+    position: relative;
+    background-color: #f2ebe3; /* Beige */
+    border-radius: 12px;
+}
+.rst-content ol.bignums>li>p.first { /* Formats the text of a single list element */
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 0;
+    line-height: 24px;
+}
+.rst-content ol.bignums>li::before { /* Creates the format for the bullet point */
+    background-color: #333;
+    border-radius: 50%;
+    color: white;
+    content: counter(li-counter,  decimal);
+    counter-increment: li-counter;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 26px;
+    margin: 0 16px 0 0;
+    position: absolute;
+    text-align: center;
+    left: 8px;
+    top: 6px;
+    width: 24px;
+    height: 24px;
+}
+.rst-content .short-bignums { /* Add this :class: to make sure it doesn't overwrite a .sidebar */
+    width: 55%;
+}
+.rst-content ol.backdarkbeige>li {
+    background-color: rgb(223,224,182);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 7px;
+    padding-bottom: 4px;
+}
+.rst-content ol.backmedbeige>li {
+    background-color: rgb(229,228,197);
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+.rst-content ol.backlightbeige {
+    margin-bottom: 4px;
+}
+.rst-content ol.backlightbeige>li {
+    background-color: rgb(235,232,213);
+    margin: 10px;
+}
+.rst-content ol.beige>li {
+    background-color: rgb(242,235,227);
+}
+.rst-content ol.nobignum>li::before {
+    content: none;
+}
+.rst-content ol.nobignum>li {
+    padding-top: 10px;
+}
+
+
+/* Allow some numbered lists to appear as very emphasized steps in a procedure */
+.rst-content ol.bignums-xxl {
+    counter-reset: li-counter;
+}
+.rst-content ol.bignums-xxl>li { /* Represents a single list element */
+    list-style-type: none;
+    margin: 42px 0;  /* A bit more space above and below each list element */
+    padding: 12px 12px 12px 70px;  /* A bit more space between number and its text */
+    position: relative;
+    background-color: transparent;
+    border-radius: 0;
+    border-top: 6px solid #ddd;
+}
+.rst-content ol.bignums-xxl>li>p { /* Represents a single list element */
+    font-weight: bold;
+}
+.rst-content ol.bignums-xxl>li>p.first { /* Formats the text of a single list element */
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0;
+    line-height: 36px;
+}
+.rst-content ol.bignums-xxl>li::before { /* Creates the format for the bullet point */
+    background-color: #fff;
+    color: #333;
+    border: 5px solid #ddd;
+    border-radius: 35%;
+    content: counter(li-counter,  decimal);
+    counter-increment: li-counter;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 36px;
+    margin: 6px 24px 0 0;
+    padding-top: 4px;
+    position: absolute;
+    text-align: center;
+    left: 2.4px;
+    top: 7.2px;
+    width: 52px;
+    height: 52px;
+}
+
+
+/* Allow some numbered lists to appear as very emphasized steps in a procedure */
+.rst-content ol.bignums-xl {
+    counter-reset: li-counter;
+}
+.rst-content ol.bignums-xl>li { /* Represents a single list element */
+    list-style-type: none;
+    margin: 2px 0;  /* A bit more space above and below each list element */
+    padding: 10px 10px 10px 58px;  /* A bit more space between number and its text */
+    position: relative;
+    background-color: transparent;  /* Background of the entire bullet + text */
+}
+.rst-content ol.bignums-xl>li>p { /* Represents a single list element */
+}
+.rst-content ol.bignums-xl>li>p.first { /* Formats the text of a single list element */
+    font-size: 24px;
+    margin-top: 0;
+    line-height: 36px;
+}
+.rst-content ol.bignums-xl>li::before { /* Creates the format for the bullet point */
+    border: 5px solid #ccc;  /* Properties of the circle around the bullet number */
+    background-color: #fff;
+    color: #111;
+    border-radius: 30%; /* How tight the circle is: 65%=circle, %45% = box with big rounded corners */
+    content: counter(li-counter,  decimal);
+    counter-increment: li-counter;
+    font-size: 20px;
+    line-height: 23px;  /* Height of the bullet number line (functions as padding-top) */
+    margin: 1px 24px 0 0;  /* Margin around the bullet number/circle */
+    padding-top: 3px;  /* Padding between the bullet number and bullet circle */
+    position: absolute;
+    text-align: center;
+    left: 2.4px;  /* The offsets of the entire circle/number bullet */
+    top: 10px;
+    width: 35px;  /* The width of the bullet circle */
+    height: 36px;  /* The height of the bullet circle */
+}
+.rst-content ol.onelinelist>li::before {
+    top: 0px;
+}
+
+
+/* Additional styling for admonition boxes and code blocks */
+.rst-content .admonition {  /* Add some space above the box */
+    margin-top: 20px;
+}
+.rst-content .warning {
+   background-color: rgb(253,240,240);
+}
+.rst-content .warning .admonition-title {
+   background-color: rgb(230,104,106);
+}
+.rst-content .short-admonition {  /* A version that isn't full width */
+    width: 80%;
+}
+.rst-content .right-short-admonition {
+    width: 50%;
+    /* float: right; */
+    margin-left:auto;
+    margin-right:0;
+}
+
+div .medium-code-block {  /* A version that isn't full width */
+    width: 85%;
+}
+div .short-code-block {  /* A version that's much less wide' */
+    width: 70%;
+}
+div .tiny-code-block {  /* A version that's much less wide' */
+    width: 50%;
+}
+
+
+/* Override the exaggerated amount of space between bullet point levels */
+p {
+    margin-bottom: 15px;
+}
+.rst-content .section ol p, .rst-content .section ul p {
+    margin-bottom: 8px;
+}
+.rst-content li blockquote {
+    margin-bottom: 8px;
+}
+
+
+/* Style the captions and borders around figures */
+.rst-content div.figure p.caption { /* Put the caption in  bold */
+    font-style:bold;
+}
+.rst-content div.figure img.outline { /* For all figures (not sidebars) in user guide text! */
+    border: thin #ddd solid;
+    padding: 5px;
+}
+
+/* Extra effects for images  */
+inline-image { /* Images inline with the text are a bit too low.  */
+    height:  10px;
+}
+.inline-image-higher { /* Images inline with the text are a bit too low.  */
+    margin-top: -3px;
+}
+.image-with-border { /* A simple grey border around an image */
+    border: thin #ddd solid;
+    margin-bottom: 12px;
+}
+.image-boxshadow { /* A gradient box shadow around an image */
+    margin-left: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
+    display: table;
+}
+.image-boxshadow-80 { /* A gradient box shadow around an image */
+    margin-left: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: white;
+    display: table;
+    width: 90%;
+}
+
+
+/* Make guilabel (eventually) fit with the site style */
+.rst-content .guilabel {
+    border: 1px solid #7fbbe3;
+    background: #e7f2fa;
+    font-size: 90%;
+    font-weight: 800;
+    border-radius: 4px;
+    padding: 1.7px 3.5px;
+    margin: auto 1px;
+}
+/* Make keyboard shortcuts more pronounced */
+code.kbd, .rst-content tt.kbd, kbd {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3), 0 0 0 2px #fff inset;
+    color: black;
+    /* display: inline-block; */
+    line-height: 1.2;
+    margin: 0 0.1em -0.5em;
+    padding: 0 0.3em;
+    text-shadow: 0 1px 0 #fff;
+}
+.glossdef {
+    font-style: italic;
+    font-weight: bold;
+}
+.redbold {  /* An inline warning rather than a box */
+    color: red;
+    font-weight: bold;
+    font-variant: small-caps;
+    text-decoration: underline;
+}
+.lightgrey {  /* An inline light gray, e.g. for hints */
+    color: lightgray;
+}
+.medgrey {  /* An inline light gray, e.g. for hints */
+    color: #BBB;
+}
+.smallcaps {  /* For inline small caps */
+    font-variant: small-caps;
+}
+.greyblock {  /* Grey background, white font, square block */
+    background-color: #5E5E5E;
+    color: #fff;
+    padding: 3px 6px;
+    font-size: 90%;
+    white-space: nowrap;
+}
+.bluebutton {  /* Blue background, white font/border, square block */
+    border: 1px solid #fff;
+    background-color: #0078E7;
+    font-weight: bold;
+    color: #fff;
+    font-size: 80%;
+    padding: 3px 8px;
+    white-space: nowrap;
+}
+.whitebutton {  /* White background, blue font/border, square block */
+    border: 1px solid #0078E7;
+    background-color: #fff;
+    color: #0078E7;
+    font-size: 80%;
+    padding: 3px 8px;
+    white-space: nowrap;
+}
+.redbutton {  /* White background, red font/border, square block */
+    border: 1px solid red;
+    background-color: #fff;
+    color: red;
+    font-size: 80%;
+    padding: 3px 8px;
+    white-space: nowrap;
+}
+.greybutton {  /* White background/border, grey font, square block */
+    border: 1px solid #ddf;
+    background-color: #fff;
+    color: lightgray;
+    font-weight: bold;
+    font-size: 80%;
+    padding: 3px 8px;
+    white-space: nowrap;
+}
+.nobutton {  /* White background/border, black font, square block */
+    border: 0.1px solid #ddf;
+    background-color: #fff;
+    color: #000;
+    font-size: 80%;
+    padding: 3px 8px;
+    white-space: nowrap;
+}
+.button-boxshadow { /* A gradient box shadow around a button */
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.2);
+}
+.greenblock { /* Light green background for RUN script node */
+    border: none;
+    background-color: #C7F0DB;
+    font-size: 95%;
+    padding: 3px 8px;
+    white-space: nowrap;
+}
+.orangeblock { /* Light orange background for FOR script node */
+    border: none;
+    background-color: #FFB329;
+    font-size: 95%;
+    padding: 3px 8px;
+    white-space: nowrap;
+}
+.bolditalic {
+    font-weight: bold;
+    font-style: italic;
+}
+/* Create an Endpoint format */
+.ep-head {
+    font-weight: bold;
+    font-style: italic;
+    line-height:  36px;
+    font-size:  17px;
+    color:  rgb(41,128,185);
+}
+
+
+/* Override the default style for figure captions */
+div.figure, p.caption, span.caption-text {
+    font-style: normal;
+    font-weight: bold;
+    padding-top:  10px;
+    /* padding-left:  10px; */
+}
+
+
+/* Make the section, subsection and topic headers stand out a bit more */
+h1, h2 {
+    margin-top: 42px;
+    margin-left: -8px;
+}
+h3, h4 {
+    margin-top: 34px;
+    margin-left: -5px;
+}
+.rst-content .topic-title {
+    padding-top: 30px;
+    margin-left: -3px;
+    font-size: 22px;
+}
+.rst-content p.rubric {
+    font-size: 18px;
+}
+
+/* Add more space at the bottom before the footer */
+.rst-footer-buttons {
+    padding-top:  35px;
+}
+
+
+/* Change table style */
+table.docutils tbody tr:first-child td {
+    background-color: #2980B9 !important;
+}
+table.docutils tbody tr:first-child td p {
+    color: white;
+}
+
+table.no-header-row tbody tr td {
+    background-color: white !important;
+    padding: 0px 10px 0px 10px !important;
+}
+table.no-header-row tbody tr:first-child td {
+    background-color: white !important;
+}
+table.no-header-row tbody tr td p {
+    color: #444 !important;
+}
+
+/* In case we eventually need a column-based style */
+table.table-empty-no-borders {
+    border: none !important;
+    padding: 20px !important;
+}
+table.table-empty-no-borders tbody tr {
+    padding: 40px !important;
+    margin: 40px !important;
+}
+table.table-empty-no-borders tbody tr td {
+    background-color: white !important;
+    border: none !important;
+    padding: 40px !important;
+    text-align: center !important;
+}
+table.table-empty-no-borders tbody tr:first-child td {
+    text-align: center !important;
+    background-color: white !important;
+}
+table.table-empty-no-borders tbody tr:first-child td p {
+    color: black !important;
+}
+.tablecell-name {
+    style: bold;
+    color: #222;
+    font-size: 16pt;
+}
+.tablecell-type {
+    color: #666;
+    font-size: 12pt;
+}
+table.tablecell-endpoint tbody tr td {
+    background-color: #dff !important;
+    padding: 14px 20px 14px 20px !important;
+}
+table.endpoint-table tbody tr td p {
+    line-height:  24px !important;
+    font-size:  16px !important;
+    padding-right: 5px !important;
+}
+
+
+
+/* Horizontal lists */
+table.hlist>tbody>tr>td {
+    padding: 10px 25px 10px 0;
+}
+
+
+/* Pull quotes */
+blockquote.pull-quote, blockquote.pull-quote div p {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    font-variant: small-caps;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* Differentiate :file: from :literal: */
+code.file span.pre {
+    color: #008000;
+    font-family: Consolas,Courier;
+    font-size: 125%;
+}
+
+
+/* Scroll bar improvements for Chrome, Safari and Edge */
+div.highlight pre {
+    overflow-x: scroll;
+    scrollbar-color: #2980B9 #ececec;
+    scrollbar-width:  thin;
+}
+div.highlight pre::-webkit-scrollbar {
+    height: 7px;
+}
+div.highlight pre::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 7px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #2980B9;
+}
+div.highlight pre::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 7px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    background-color: #eee;
+}
+.force-overflow {
+    min-width: 450px;
+}
+
+
+/* Field lists should have an underlined border, not toplined */
+.rst-content dl.field-list dt {
+    border: none;
+    color: #1970A9;
+    font-style:  bolditalic;
+}
+
+/* Vertical space for a single line break was too big (24px) */
+.rst-content .line-block {
+    margin-bottom: 6px;
+}
+
+
+/* Override the defaults for Font Awesome icons */
+.fa::before {
+    font-size: 40px;
+    padding-right: 10px;
+}
+a:visited .fa::before {
+    color: #9B59B6;
+}
+.fa-med::before {
+    font-size: 22px;
+    padding-right: 6px;
+}
+.fa-small::before {
+    font-size: 16px;
+    padding-right: 4px;
+}
+.fa-smaller::before {
+    font-size: 13px;
+    padding: 0 0 0 2px;
+}
+.fa-tiny::before {
+    font-size: 12px;
+    padding-right: 0px;
+    vertical-align:top;
+    /* transition: font-size 0.2s, padding-left 0.2s; */
+}
+
+/*
+.fa-tiny:hover::before {
+    font-size: 20px;
+    padding-left: 0px;
+}
+*/
+.fa-blue::before {   /* The same blue as the RTD theme */
+    color: #2980B9;
+}
+.fa-black::before {
+    color: black;    /* Override the blue color when necessary */
+}
+.fa-white::before {
+    color: white;    /* Override the blue color when necessary */
+}
+p.fa {
+    line-height: 24px; /* Should inherit from 'p' */
+}
+
+.small-img-li {
+    vertical-align: -0.2em;
+    margin-top: 16px;
+    padding-top: 0px;
+    height: 18px;
+    width: 18px;
+}
+
+
+/* Things to do only only on large screens (desktop and tablets, not phones) */
+@media screen and (min-width: 769px) {  /* Responsive converts menu at 768px */
+  /* Remove the horizontal scrollbars for larger screens in very wide tables */
+  .wy-table-responsive table td {
+    /* !important prevents the common CSS stylesheets from
+       overriding this as on RTD they are loaded after this stylesheet */
+    white-space: normal !important;
+  }
+  .wy-table-responsive {
+    overflow: visible !important;
+  }
+  /* Narrow the default size of the left-side navigation bar, both were 300px */
+  nav.wy-nav-side, div.wy-side-nav-search, div.wy-menu-vertical {
+      width: 260px;
+  }
+  section.wy-nav-content-wrap {
+      margin-left: 260px;
+  }
+  /* Hides the vertical scroll bar under the main doc menu, was 320px */
+  div.wy-side-scroll {
+      width: 280px;
+  }
+}
+
+
+/* Vertically center the Previous/Next buttons at the bottom of each page */
+.btn {
+    margin: auto;
+    height: 70px;
+    align-items: center;
+    display: flex;
+}
+.btn span {
+    margin: auto;
+    padding-left: 10px;
+}
+
+
+/* In case the main icon logo has transparency issues */
+div.wy-side-nav-search a.icon {
+    background: #2980B9;
+}
+div.wy-side-nav-search a.icon img.logo {
+    background: #2980B9;
+}
+
+
+/* Columns (x2) */
+div.leftside-col {
+    width: 47%;
+    padding: 0px 3px 0px 0px;
+    float: left;
+    display: flex;
+}
+
+div.rightside-col {
+    margin-left: 53%;
+}
+
+
+/* Accordion buttons for troubleshooting section */
+button.accordion {
+    background-color: rgb(41,128,185);
+    color: #fff;
+    cursor: pointer;
+    padding: 7px 14px;
+    width: 94%;
+    border: none;
+    align: center;
+    text-align: left;
+    outline: none;
+    margin-top: 10px;
+}
+div.accordion {
+    padding: 15px 15px 2px 15px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    width: 94%;
+    border-style: solid;
+    border-color: rgb(41,128,185);
+    border-width: 1px;
+    margin-bottom: 4px;
+}
