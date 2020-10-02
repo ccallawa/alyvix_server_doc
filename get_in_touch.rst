@@ -1,6 +1,6 @@
 :author: Charles Callaway
-:date: 04-12-2019
-:modified: 30-03-2020
+:date: 22-09-2019
+:modified: 22-09-2020
 :tags: contact
 :lang: en-US
 :translation: false
@@ -15,9 +15,8 @@
 Get in Touch
 ############
 
-You can take a look at our
-:ref:`development roadmap and release notes <release_notes_top>`
-to see what we've accomplished recently, or reach us directly with either of the following:
+You can take a look at our :ref:`development roadmap and release notes <release_notes_top>`
+to see what we've been up to recently, or reach us directly with either of the following:
 
 
 .. _getting_in_touch_support_email:

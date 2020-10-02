@@ -1,6 +1,6 @@
 :author: Charles Callaway
 :date: 22-09-2020
-:modified: 29-09-2020
+:modified: 01-10-2020
 :tags: index
 :lang: en-US
 :translation: false
@@ -16,12 +16,11 @@
 Transaction Reporting
 =====================
 
-.. todo::
-
-   Introductory paragraph (explanation, relation to other elements)
-
-The Report Listing endpoint displays a list of all recent runs of a given test case alias in
-reverse chronological order.  It contains the following information for each run:
+Once your test cases are running, they will begin to generate logs and data, which are the
+results that you will want to view or send to a monitoring system.  The human readable reports
+are available from the Report Listing endpoint, which displays a list of all recent runs of a
+given test case alias in reverse chronological order.  It contains the following information for
+each run:
 
 * **Timestamp:**  The moment when that test case was launched, internally expressed as a Unix Epoch
 * **Runcode:**  A unique code that identifies a particular run of a particular alisas on a particular host
@@ -64,15 +63,16 @@ into the endpoint URL:
    | Example:  | :bolditalic:`http://localhost/v0/testcases/shipping_w1/reports/?runcode=pb01Al01vino1601287294` |
    +-----------+-------------------------------------------------------------------------------------------------+
 
+The resulting detailed report:
 
+* Shows the full global settings in effect when the test was run
+* For each test case object in the Alyvix test case that was run, displays the parameters and
+  timing results, including a screenshot taken at the moment that a match occurred.
 
-.. todo::
+The screenshots especially serve as a quick visual verification of whether or not the application
+or website was in fact working properly when the test case was run.
 
-   Need some description of a report, but without too much detail.  Say it's easy to see the screenshots.
-
-
-
-.. code-block::
+.. .. code-block::
 
    visittrentino report
    Date: 2020/09/18 11:49:17.790 UTC+0200, runcode: pb01Al01vino1600422555, hostname: pbzalyvixts01, username: WP\AlyvixUser01

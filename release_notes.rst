@@ -16,14 +16,11 @@
 Release Notes
 #############
 
-.. todo::
+Alyvix Server is a software tool for managing instances of the Alyvix visual monitoring system,
+with a particular focus on scalability.
 
-   Expand the following:
-
-Alyvix Server is a software tool for managing instances of the Alyvix visual monitoring system.
-
-We work with **Agile methods**.  If you'd like to see what we're up to right now, you can
-read about the **Alyvix stories** currently under development:
+We work with **Agile methods**.  If you'd like to see what we're up to right now, you can read
+about the **Alyvix stories** currently under development:
 
 |pivotal| |halftab| :iconlink:`ext|https://www.pivotaltracker.com/n/projects/1533621|https://www.pivotaltracker.com/n/projects/1533621`
 
@@ -31,7 +28,7 @@ The release notes list all new features, improvements, bug fixes and security pa
 in each release in reverse chronological order.  The version number sequence assigned to each
 Alyvix release follows the :iconlink:`ext|Semantic Versioning|https://semver.org/` initiative.
 
-Alyvix Server initial release:
+Alyvix Server releases:
 
 * :ref:`Version 1.0.x <release_notes_v1_0_0>` -- Current
 

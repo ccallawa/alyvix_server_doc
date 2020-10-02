@@ -1,6 +1,6 @@
 :author: Charles Callaway
 :date: 22-09-2020
-:modified: 22-09-2020
+:modified: 02-10-2020
 :tags: release notes
 :lang: en-US
 :translation: false
@@ -16,39 +16,27 @@
 Version 1.0.0 - Current
 =======================
 
-Alyvix Server is a software tool for managing instances of the Alyvix visual monitoring system.
+Alyvix Server is a software tool for scaling up the management of instances of the Alyvix
+visual monitoring system.
 
+The initial release of Alyvix Server v1.0 brings all of the basic functionality necessary
+to schedule and run test cases, and retrieve data and reports from those runs.
 
 .. _release_notes_v1_0_0:
 
-.. topic:: Version 1.0.0
+.. topic:: Alyvix Server Version 1.0.0
 
-   **Release date:**  September 30th, 2020
+   **Release date:**  October 5th, 2020
 
 **New Features**
 
-* :ref:`Feature #1 <release_notes_v1_0_0>`:  Description
-* :ref:`Feature #2 <release_notes_v1_0_0>`:  Description
 
+* **Session Management:**  Alyvix Server helps you organize the global parameters like credentials,
+  test case paths, and screen resolutions that you need to centrally manage your visual monitoring
+  setup.  It keeps all of your Windows Server sessions alive and active, ensuring that your test
+  cases can continue to run indefinitely.
 
-New Features
-
-* Session Management
-
-  * User sessions
-
-    * domain\username
-    * (clear) password
-    * resolution\@scaling factor
-
-  * Test cases
-
-    * centralized path
-    * (clear) private key
-    * alias map (name/arguments/alias)
-    * screenshot settings
-
-* Test Case Scheduling
+* **Test Case Scheduling:**  Test cases are run continuously and in parallel
 
   * Basic scheduler
 
@@ -57,38 +45,20 @@ New Features
     * session run, break and stop controls
     * session manual scheduling control and API
 
-* Measurement Web APIs
+* **Measurement Web APIs:**  Provides recorded measurements and screenshots on demand
 
   * Test case alias list
   * Test case alias transaction measurements
   * Test case alias transaction screenshots
 
-* Transaction Reporting
+* **Transaction Reporting:**  Retains certified results and logs for each test case run
 
   * Retention period for successful runs and for failed ones
   * Test case alias report list
   * Test case alias specific report
 
+* **RESTful Endpoints:** Alyvix supplies endpoint URLs for interfaces and data retrieval:
 
-Frontend Control Panels
-
-* <alyvix_server>/server
-* <alyvix_server>/testcases
-* <alyvix_server>/flows
-
-  * <alyvix_server>/flow?username=<domain\username>
-
-
-Measurement Web APIs (v0)
-
-* <alyvix_server>/v0/testcases
-
-  * <alyvix_server>/v0/testcases/<testcasealias>
-
-    * <alyvix_server>/v0/testcases/<testcasealias>?screenshots=[true, false]
-
-  * <alyvix_server>/v0/testcases/<testcasealias>/reports
-
-    * <alyvix_server>/v0/testcases/<testcasealias>/reports?runcode=<runcode>
-
-* <alyvix_server>/v0/flows/run?username=<domain\username>
+  * **Frontend Control Panels** allow you to configure parameters and initiate actions
+  * **Measurement Web APIs (v0)** return either machine-readable (JSON) or human-readable
+    data and reports on demand

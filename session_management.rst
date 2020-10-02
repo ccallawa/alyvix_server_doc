@@ -1,6 +1,6 @@
 :author: Charles Callaway
 :date: 22-09-2020
-:modified: 29-09-2020
+:modified: 01-10-2020
 :tags: index
 :lang: en-US
 :translation: false
@@ -16,9 +16,11 @@
 Session Management
 ==================
 
-.. todo::
-
-   Introductory paragraph (explanation, relation to other elements)
+A session is the connection between Alyvix Server and the virtual machines, cloud instances, or
+physical servers you want to run Alyvix test cases on.  Alyvix Server can manage multiple sessions
+for you, even on completely different machines, allowing you to define what you want to achieve
+and letting Alyvix Server take care of the details.  That's what we mean by scaling up -- adding
+more machines doesn't mean you have to spend more of your time.
 
 
 
@@ -28,9 +30,12 @@ Session Management
 Session Management Settings
 ***************************
 
+Assuming you've already created test cases with Alyvix Editor, when you first use Alyvix Server
+you'll need to configure some basic settings.
+
 The session management settings are global parameters governing all Alyvix test case sessions run
-on a specific Alyvix Server (that is, a single IP address).  They can be viewed and edited by going
-to the following endpoint in your browser:
+on a specific Alyvix Server (that is, a single IP address).  You can view or edit them by going
+to the following endpoint in a browser on your private network:
 
 .. table::
    :class: tablecell-endpoint
@@ -84,9 +89,10 @@ while "Add" will insert a new one.
 Managing Session Test Cases
 ***************************
 
-.. todo::
-
-   Introductory paragraph (explanation, relation to other elements)
+Test cases in the :ref:`specified test case directory <session_management_settings>` can be added
+to any session on the Alyvix Server containing them.  However, just because a test case is stored
+in that directory doesn't mean that it will be scheduled.  It must first be added to the test case
+table by configuring it via the following endpoint:
 
 .. table::
    :class: tablecell-endpoint
@@ -99,11 +105,6 @@ Managing Session Test Cases
    | Example:  | :bolditalic:`http://localhost/testcases`    |
    +-----------+---------------------------------------------+
 
-Test cases in the :ref:`specified test case directory <session_management_settings>` can be added
-to any session on the Alyvix Server containing them.  However, just because a test case is stored
-in that directory doesn't mean that it will be scheduled.  It must first be added to the test case
-table by configuring it at the endpoint above.
-
 Each test case can also appear multiple times in the test case table, including with different
 arguments to pass to Alyvix Robot.  The first three settings create the schedulable test case
 configuration:
@@ -111,9 +112,8 @@ configuration:
 * **Name:**  A test case which can be found in the test case directory.
 * **Arguments:**  Arguments that can be passed to a *map* in Alyvix Robot, separated by commas.
 * **Alias:**  The name of the schedulable test case configuration.  While this can be any string
-  you choose (unique with respect to other test case aliases), a combination of  the test case
-  name and an argument, or just the test case name alone, can aid understanding of dashboards
-  and reports.
+  you choose (unique with respect to other test case aliases), combining the test case name and
+  an argument, or just the test case name alone, can aid understanding of dashboards and reports.
 
 The *screenshot settings* allow you to configure
 

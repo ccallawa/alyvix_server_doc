@@ -1,6 +1,6 @@
 :author: Charles Callaway
 :date: 22-09-2020
-:modified: 29-09-2020
+:modified: 02-10-2020
 :tags: index
 :lang: en-US
 :translation: false
@@ -16,11 +16,8 @@
 Measurement Web APIs
 ====================
 
-.. todo::
-
-   Introductory paragraph (explanation, relation to other elements)
-
-There are two principal ways to access measurement data:
+The measurements API provides read-only access to both configurations and recorded data, such as
+the results of test case runs.  There are two principal ways to retrieve measurement data:
 
 * Directly as data in JSON format (see below) from the measurement database with a RESTful Web
   API request
@@ -29,8 +26,9 @@ There are two principal ways to access measurement data:
 
 .. warning::
 
-   All API level 0 endpoints (Alyvix Server v1.0) are insecure.  They should only be called when
-   both caller and server are contained entirely within a private network.
+   All API level 0 endpoints (marked "/v0/" in Alyvix Server v1.0) are insecure.  They should
+   only be used when both caller and server are contained entirely within the same private
+   network.
 
 
 
@@ -51,19 +49,23 @@ whether as measurement data encoded in JSON objects, or as viewable reports in H
    +---------+--------------------------------------------------------------------------------------------------+
    | JSON    | :ep-head:`<alyvix_server>/v0/testcases`                                                          |
    |         |                                                                                                  |
-   |         | |tab| Returns the JSON structure corresponding to the                                            |
-   |         | :ref:`settings for included testcases <session_management_test_cases>`:  *name*, *arguments*,    |
-   |         | *alias*, *screenshot recording* and *screenshot compression*                                     |
+   |         | |tab| Returns a JSON list containing the                                                         |
+   |         | :ref:`settings for registered testcases <session_management_test_cases>`: **name**,              |
+   |         | **arguments**, **alias**, **screenshot recording** and **screenshot compression**, where each    |
+   |         | registered test case is :ref:`a separate entry <measurement_web_apis_testcase_example>` in the   |
+   |         | list                                                                                             |
    +---------+--------------------------------------------------------------------------------------------------+
    | JSON    | :ep-head:`<alyvix_server>/v0/testcases/<testcasealias>`                                          |
    |         |                                                                                                  |
-   |         | |tab| Returns the two most recent *measures* substructures (detailed below), along with the      |
+   |         | |tab| Returns the two most recent *measures* substructures                                       |
+   |         | (:ref:`full example below <measurement_web_apis_measures_example>`), along  with the             |
    |         | *repolling_period*, which is automatically calculated as :math:`SchedulingPeriod / 2`            |
    +---------+--------------------------------------------------------------------------------------------------+
    | JSON    | :ep-head:`<alyvix_server>/v0/testcases/<testcasealias>?screenshots=[true, false]`                |
    |         |                                                                                                  |
-   |         | |tab| This returns the same structure as the *testcasealias* endpoint, but if the parameter is   |
-   |         | set to *true*, then Base64 screenshots will be included in the JSON  (default = *false*)         |
+   |         | |tab| This returns the same structure as the *<testcasealias>* endpoint, but if the parameter is |
+   |         | set to *true*, then Base64 screenshots (including annotations) will be included in the JSON      |
+   |         | (default = *false*)                                                                              |
    +---------+--------------------------------------------------------------------------------------------------+
    | HTML    | :ep-head:`<alyvix_server>/v0/testcases/<testcasealias>/reports`                                  |
    |         |                                                                                                  |
@@ -73,24 +75,21 @@ whether as measurement data encoded in JSON objects, or as viewable reports in H
    | HTML    | :ep-head:`<alyvix_server>/v0/testcases/<testcasealias>/reports?runcode=<runcode>`                |
    |         |                                                                                                  |
    |         | |tab| Displays the human-readable details of a single, complete test case run by Alyvix Robot,   |
-   |         | corresponding to the JSON structure produced by the **testcasealias** endpoint call above        |
+   |         | corresponding to the JSON structure produced by the *<testcasealias>* endpoint call above        |
    +---------+--------------------------------------------------------------------------------------------------+
    | JSON    | :ep-head:`<alyvix_server>/v0/flows/run?username=<domain\\username>`                              |
    |         |                                                                                                  |
-   |         | |tab| Given a domain and username, returns a simple JSON declaration of the variable *success*   |
-   |         | indicating by *true* or *false* whether the last run exited successfully or not                  |
-   +---------+--------------------------------------------------------------------------------------------------+
-   | JSON    | :ep-head:`<alyvix_server>/v0/flows/run?alias=<runcode>`                                          |
-   |         |                                                                                                  |
-   |         | .. todo::                                                                                        |
-   |         |                                                                                                  |
-   |         |    Fill in this content (../flows/run/?alias=...)                                                |
+   |         | |tab| If a session has been stopped                                                              |
+   |         | :ref:`by the manual action in the scheduler <test_case_flow_management_actions>`, then you can   |
+   |         | run a specific, defined workflow a single time by calling this endpoint URL                      |
    +---------+--------------------------------------------------------------------------------------------------+
 
+
+.. _measurement_web_apis_testcase_example:
 
 .. topic::  Testcases
 
-   An example of the *testcases* JSON structure:
+   An example *testcases* JSON structure:
 
 .. code-block:: json
    :linenos:
@@ -107,6 +106,8 @@ whether as measurement data encoded in JSON objects, or as viewable reports in H
       ]
    }
 
+
+.. _measurement_web_apis_measures_example:
 
 .. topic:: **Measures** JSON structure
 
