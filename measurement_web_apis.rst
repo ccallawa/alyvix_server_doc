@@ -1,6 +1,6 @@
 :author: Charles Callaway
 :date: 22-09-2020
-:modified: 02-10-2020
+:modified: 05-10-2020
 :tags: index
 :lang: en-US
 :translation: false
@@ -59,7 +59,8 @@ whether as measurement data encoded in JSON objects, or as viewable reports in H
    |         |                                                                                                  |
    |         | |tab| Returns the two most recent *measures* substructures                                       |
    |         | (:ref:`full example below <measurement_web_apis_measures_example>`), along  with the             |
-   |         | *repolling_period*, which is automatically calculated as :math:`SchedulingPeriod / 2`            |
+   |         | *repolling_period*, which is automatically calculated as :math:`SchedulingPeriod / 2` whenever   |
+   |         | you change the scheduling period.
    +---------+--------------------------------------------------------------------------------------------------+
    | JSON    | :ep-head:`<alyvix_server>/v0/testcases/<testcasealias>?screenshots=[true, false]`                |
    |         |                                                                                                  |

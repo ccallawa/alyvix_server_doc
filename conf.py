@@ -87,7 +87,7 @@ exclude_patterns = ['_build', '_ext', 'pictures']
 # pygments_style = 'sphinx'
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
-todo_include_todos = True
+todo_include_todos = False
 
 # If true, the `numfig` option will produce numbered labels
 # Also:  `numfig_format`, `numfig_secnum_depth`

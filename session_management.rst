@@ -1,6 +1,6 @@
 :author: Charles Callaway
 :date: 22-09-2020
-:modified: 01-10-2020
+:modified: 05-10-2020
 :tags: index
 :lang: en-US
 :translation: false
@@ -50,9 +50,10 @@ to the following endpoint in a browser on your private network:
 
 These global test case settings are:
 
-* **Test Case Path:** A Windows-format path beginning from a root drive letter, pointing to a
-  directory that contains all of the Alyvix 3 test cases that can be run by this instance of
-  Alyvix Server.
+* **Test Case Path:** A Windows-format absolute or relative path that points to a directory
+  containing all of the Alyvix 3 test cases that can be run by this instance of Alyvix Server,
+  e.g., :file:`C:\Alyvix\Testcases\`.  If you add or update test cases, or change this path,
+  Alyvix Server will automatically and immediately pick up those changes.
 * **Private Key:**  A cleartext private key that Alyvix Robot can use to decrypt any encrypted
   keys you have stored in an Alyvix test case when you created it.
 * **Scheduling Period [s]:**  The length of time in seconds until Alyvix Server will restart the
