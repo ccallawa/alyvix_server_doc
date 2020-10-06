@@ -68,7 +68,7 @@ These global test case settings are:
 .. _session_management_session_description:
 
 To update the values for these settings, go to the endpoint above, enter the new value in the
-appropriate field, and press the "Set" button.
+appropriate field, and press the :guilabel:`Set` button.
 
 The endpoint above also contains the settings for individual sessions:
 
@@ -80,8 +80,8 @@ The endpoint above also contains the settings for individual sessions:
   case objects that include the resolution and factor set here.
 
 To update the values for these settings, go to the endpoint above, enter the new value in the
-appropriate field, and press the "Update" button.  "Remove" will remove an existing session,
-while "Add" will insert a new one.
+appropriate field, and press the :guilabel:`Update` button.  :guilabel:`Remove` will remove an
+existing session, while :guilabel:`Add` will insert a new one.
 
 
 
@@ -131,8 +131,8 @@ The *screenshot settings* allow you to configure
     * **Compressed:**  Compress all screenshots for this schedulable test case configuration.
 
 
-To remove a test case from the table, go to the endpoint above and press the "Remove" button.
-"Add" will insert a new row at the bottom of the table (you should insert the values before
-pressing the "Add" button).
+To remove a test case from the table, go to the endpoint above and press the :guilabel:`Remove`
+button.  :guilabel:`Add` will insert a new row at the bottom of the table (you should insert
+the values before pressing the :guilabel:`Add` button).
 
 |

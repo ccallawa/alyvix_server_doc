@@ -31,7 +31,7 @@
 Alyvix Server
 #############
 
-Welcome to the official guide for **Alyvix Server 1.0.0**.
+Welcome to the official guide for **Alyvix Server 1.1.0**.
 
 `Alyvix <https://alyvix.com/>`_ lets you build end-user bots that visually interact with any
 Windows application like ERPs, or any web app in your favorite browser.

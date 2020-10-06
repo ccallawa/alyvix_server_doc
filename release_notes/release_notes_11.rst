@@ -1,6 +1,6 @@
 :author: Charles Callaway
 :date: 22-09-2020
-:modified: 02-10-2020
+:modified: 06-10-2020
 :tags: release notes
 :lang: en-US
 :translation: false
@@ -10,21 +10,21 @@
 
 
 
-.. _release_notes_v1_0:
+.. _release_notes_v1_1:
 
 =======================
-Version 1.0.0 - Current
+Version 1.1.0 - Current
 =======================
 
 Alyvix Server is a software tool for scaling up the management of instances of the Alyvix
 visual monitoring system.
 
-The initial release of Alyvix Server v1.0 brings all of the basic functionality necessary
+The initial release of Alyvix Server v1.1 brings all of the basic functionality necessary
 to schedule and run test cases, and retrieve data and reports from those runs.
 
-.. _release_notes_v1_0_0:
+.. _release_notes_v1_1_0:
 
-.. topic:: Alyvix Server Version 1.0.0
+.. topic:: Alyvix Server Version 1.1.0
 
    **Release date:**  October 5th, 2020
 
