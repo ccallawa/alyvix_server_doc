@@ -1,6 +1,6 @@
 :author: Charles Callaway
 :date: 22-09-2020
-:modified: 05-10-2020
+:modified: 02-11-2020
 :tags: index
 :lang: en-US
 :translation: false
@@ -16,11 +16,10 @@
 Session Management
 ==================
 
-A session is the connection between Alyvix Server and the virtual machines, cloud instances, or
-physical servers you want to run Alyvix test cases on.  Alyvix Server can manage multiple sessions
-for you, even on completely different machines, allowing you to define what you want to achieve
-and letting Alyvix Server take care of the details.  That's what we mean by scaling up -- adding
-more machines doesn't mean you have to spend more of your time.
+A session is the connection between Alyvix Server and a Windows session you want to run Alyvix
+test cases on.  Alyvix Server can manage multiple sessions for you, allowing you to define what
+you want to achieve and letting Alyvix Server take care of the details.  That's what we mean by
+scaling up -- adding a lot more sessions doesn't mean you have to spend a lot more of your time.
 
 
 
@@ -72,12 +71,12 @@ appropriate field, and press the :guilabel:`Set` button.
 
 The endpoint above also contains the settings for individual sessions:
 
-* **Domain and Username:**  The Windows domain and login name needed to create a session on the
-  server with the same IP address as the endpoint.
+* **Domain and Username:**  The Windows domain and login name that are needed to log in and keep
+  alive a session on the server.
 * **Password:**  The corresponding password.
-* **Resolution\@scaling factor:**  The screen resolution and scaling (zoom) factor of the RDC
-  window that will host the session.  All test cases in the session's flow should contain test
-  case objects that include the resolution and factor set here.
+* **Resolution\@scaling factor:**  The screen resolution and scaling/zoom factor (e.g.,
+  1280*800@100Hz) of the RDC window that will host the session.  All test cases in the session's
+  flow should contain test case objects that include the resolution and factor set here.
 
 To update the values for these settings, go to the endpoint above, enter the new value in the
 appropriate field, and press the :guilabel:`Update` button.  :guilabel:`Remove` will remove an
@@ -111,8 +110,9 @@ Each test case can also appear multiple times in the test case table, including 
 arguments to pass to Alyvix Robot.  The first three settings create the schedulable test case
 configuration:
 
-* **Name:**  A test case which can be found in the test case directory.
-* **Arguments:**  Arguments that can be passed to a *map* in Alyvix Robot, separated by commas.
+* **Name:**  The file name of a test case, which is located in the test case directory.
+* **Arguments:**  Arguments that can be passed to Alyvix Robot when executing a test case, such
+  as via the CLI, with values separated by commas.
 * **Alias:**  The name of the schedulable test case configuration.  While this can be any string
   you choose (unique with respect to other test case aliases), combining the test case name and
   an argument, or just the test case name alone, can aid understanding of dashboards and reports.

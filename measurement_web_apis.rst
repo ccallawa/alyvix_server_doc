@@ -1,6 +1,6 @@
 :author: Charles Callaway
 :date: 22-09-2020
-:modified: 05-10-2020
+:modified: 02-11-2020
 :tags: index
 :lang: en-US
 :translation: false
@@ -57,10 +57,10 @@ whether as measurement data encoded in JSON objects, or as viewable reports in H
    +---------+--------------------------------------------------------------------------------------------------+
    | JSON    | :ep-head:`<alyvix_server>/v0/testcases/<testcasealias>`                                          |
    |         |                                                                                                  |
-   |         | |tab| Returns the two most recent *measures* substructures                                       |
-   |         | (:ref:`full example below <measurement_web_apis_measures_example>`), along  with the             |
-   |         | *repolling_period*, which is automatically calculated as :math:`SchedulingPeriod / 2` whenever   |
-   |         | you change the scheduling period.                                                                |
+   |         | |tab| Returns the most recent *measures* substructures                                           |
+   |         | (:ref:`full example below <measurement_web_apis_measures_example>`) from the session where the   |
+   |         | test case alias is enabled, along with the *repolling_period*, which is automatically calculated |
+   |         | whenever you change the scheduling period as :math:`SchedulingPeriod / 2`.                       |
    +---------+--------------------------------------------------------------------------------------------------+
    | JSON    | :ep-head:`<alyvix_server>/v0/testcases/<testcasealias>?screenshots=[true, false]`                |
    |         |                                                                                                  |
@@ -75,14 +75,13 @@ whether as measurement data encoded in JSON objects, or as viewable reports in H
    +---------+--------------------------------------------------------------------------------------------------+
    | HTML    | :ep-head:`<alyvix_server>/v0/testcases/<testcasealias>/reports?runcode=<runcode>`                |
    |         |                                                                                                  |
-   |         | |tab| Displays the human-readable details of a single, complete test case run by Alyvix Robot,   |
-   |         | corresponding to the JSON structure produced by the *<testcasealias>* endpoint call above        |
+   |         | |tab| Displays the human-readable details of a single (successful or failed) test case           |
    +---------+--------------------------------------------------------------------------------------------------+
    | JSON    | :ep-head:`<alyvix_server>/v0/flows/run?username=<domain\\username>`                              |
    |         |                                                                                                  |
-   |         | |tab| If a session has been stopped                                                              |
-   |         | :ref:`by the manual action in the scheduler <test_case_flow_management_actions>`, then you can   |
-   |         | run a specific, defined workflow a single time by calling this endpoint URL                      |
+   |         | |tab| If a session has been                                                                      |
+   |         | :ref:`set as manual in the scheduler <test_case_flow_management_actions>`, then you can  run a   |
+   |         | specific, defined workflow a single time by calling this endpoint URL                            |
    +---------+--------------------------------------------------------------------------------------------------+
 
 
@@ -113,9 +112,6 @@ whether as measurement data encoded in JSON objects, or as viewable reports in H
 .. topic:: **Measures** JSON structure
 
    The detailed *measures* JSON structure:
-
-Fields beginning with "transaction\_" are derived from the execution of a specific test case
-object.
 
 .. code-block:: json
    :linenos:

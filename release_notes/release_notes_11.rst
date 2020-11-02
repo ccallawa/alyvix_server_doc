@@ -26,7 +26,7 @@ to schedule and run test cases, and retrieve data and reports from those runs.
 
 .. topic:: Alyvix Server Version 1.1.0
 
-   **Release date:**  October 5th, 2020
+   **Release date:**  October 6th, 2020
 
 **New Features**
 

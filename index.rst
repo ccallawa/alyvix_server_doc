@@ -1,6 +1,6 @@
 :author: Charles Callaway
 :date: 22-09-2020
-:modified: 01-10-2020
+:modified: 02-11-2020
 :tags: index
 :lang: en-US
 :translation: false
@@ -57,10 +57,10 @@ the world.
 In addition to the terminology used with Alyvix Editor and Robot, Alyvix Server adds the
 following concepts:
 
-* **Session:**  A two-way connection between Alyvix Server and a target machine or server
-  that allows Alyvix Server to run test cases and gather metrics from that target machine
+* **Session:**  A two-way connection between Alyvix Server and a target Windows session
+  that allows Alyvix Server to run test cases and gather metrics from that target session
 * **Scheduling:**  A process that ensures that multiple Alyvix test cases are run at set intervals
-  on the proper machines/sessions
+  on the proper sessions
 * **Alias:**  A unique identifier that combines a specific test case with a specific set of
   arguments, allowing you to distinguish between multiple versions of a single test case across
   sessions

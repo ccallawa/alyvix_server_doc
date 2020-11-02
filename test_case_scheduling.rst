@@ -1,6 +1,6 @@
 :author: Charles Callaway
 :date: 22-09-2020
-:modified: 01-10-2020
+:modified: 02-11-2020
 :tags: index
 :lang: en-US
 :translation: false
@@ -24,27 +24,28 @@ There are three main concepts to understand:
 * **Session Workflows:**  A *flow* is a set of Alyvix test case aliases that are assigned to a
   session, drawn from the available test case aliases, which in turn are drawn from the test cases
   in the global configured :ref:`Test Case Path <session_management_settings>`.
-* **Scheduling Period:**  The length of time in seconds until Alyvix Server will restart the
-  *flow* assigned to a particular session.  Once all of the test cases in the *flow* have
-  completed, no further test cases will be run on that session until the current scheduling
-  period finishes.
+* **Scheduling Period:**  The length of time in seconds until Alyvix Server will try to run the
+  next test case alias of the *flow* assigned to a particular session.  Once all of the test cases
+  in the flow have completed, the scheduler will restart that flow from the beginning.
 * **Session State:**  An Alyvix Server session can be in one of these two states:
 
   * **Ready:**  The scheduler is waiting to initiate a new test case alias
   * **Busy:**  A test case alias is currently running in the configured session
 
-You can control how Server transitions between these states with the controls described below.
+.. comment
 
-.. image:: pictures/server-scheduler.png
-   :class: image-boxshadow
-   :alt: Alyvix Server Scheduler
-   :target: https://youtu.be/rC_bjgXCcZ4
+   You can control how Server transitions between these states with the controls described below.
 
-In the diagram above, the horizontal rows represent the session workflows, the scheduling period
-is the distance between any two of the "flags", and the session state is indicated by the flag
-itself, with red indicating "busy" and green indicating "ready".  A test case is run whenever
-a scheduling period begins (green flag), and at least one test case alias in the workflow has not
-yet run during that period.  :warn:`This doesn't sound right.`
+   .. image:: pictures/server-scheduler.png
+      :class: image-boxshadow
+      :alt: Alyvix Server Scheduler
+      :target: https://youtu.be/rC_bjgXCcZ4
+
+   In the diagram above, the horizontal rows represent the session workflows, the scheduling period
+   is the distance between any two of the "flags", and the session state is indicated by the flag
+   itself, with red indicating "busy" and green indicating "ready".  A test case is run whenever
+   a scheduling period begins (green flag), and at least one test case alias in the workflow has not
+   yet run during that period.  :warn:`This doesn't sound right.`
 
 
 
@@ -57,8 +58,8 @@ Test Case Flow Management
 After you have defined the session and test case configurations, you can begin to assign individual
 Alyvix test case aliases to a particular session, and then initiate the execution of test cases.
 You can directly determine which aliases will be included via the following endpoint by simply
-ticking the checkbox for each alias (within a flow, test case aliases are run in alphabetical
-order).
+ticking the checkbox for each alias (within a flow, test case aliases are run in the order they
+were entered).
 
 .. table::
    :class: tablecell-endpoint
@@ -89,7 +90,7 @@ The Flow interface is organized by session, with one session per row.  The main 
 
 * **Username:**  The name of the session, as defined on the
   :ref:`session management page <session_management_session_description>`
-* **Flow:**  The sequence of Alyvix test case aliases that the scheduler should run on a given
+* **Flow:**  The sequence of Alyvix test case aliases that the scheduler runs on a given
   session.  You can change which test case aliases are included in a given flow by clicking on the
   "Open Flow" action.
 * **Flow state:**  How that flow is currently executing (running or not running)
@@ -106,7 +107,7 @@ session state with the following actions:
   fail/exit section, then halt the scheduler until further action is taken
 * **Stop:**  Force the currently running test case of a session to immediately stop without running
   either its fail or exit sections, then halt the scheduler until further action is taken
-* **Manual:**  Stop the scheduler after the next test case has completed, then permit manual
+* **Manual:**  Stop the scheduler at the end of the current flow execution, then permit manual
   scheduling by inserting an endpoint URL specifying the flow name into the browser's address bar
   (automated scheduling can be restarted with the *Run* action):
 
