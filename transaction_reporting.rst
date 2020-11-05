@@ -1,10 +1,10 @@
 :author: Charles Callaway
 :date: 22-09-2020
-:modified: 01-10-2020
+:modified: 05-11-2020
 :tags: index
 :lang: en-US
 :translation: false
-:status: draft
+:status: final
 
 .. include:: sphinx-roles.txt
 
@@ -32,13 +32,13 @@ The following endpoint will produce the report listing in HTML format in a brows
 .. table::
    :class: tablecell-endpoint
 
-   +--------------------------------------------------------------------------------+
-   | Report Listing Endpoint                                                        |
-   +-----------+--------------------------------------------------------------------+
-   | Endpoint: | :bolditalic:`http://<IP Address>/<API>/testcases/<alias>/reports`  |
-   +-----------+--------------------------------------------------------------------+
-   | Example:  | :bolditalic:`http://localhost/v0/testcases/shipping_w1/reports`    |
-   +-----------+--------------------------------------------------------------------+
+   +-----------------------------------------------------------------------------------+
+   | Report Listing Endpoint                                                           |
+   +-----------+-----------------------------------------------------------------------+
+   | Endpoint: | :bolditalic:`https://<alyvix_server>/<API>/testcases/<alias>/reports` |
+   +-----------+-----------------------------------------------------------------------+
+   | Example:  | :bolditalic:`https://localhost/v0/testcases/shipping_w1/reports`      |
+   +-----------+-----------------------------------------------------------------------+
 
 The reports page contains a fixed number of rows, which can be advanced by using the controls
 at the bottom.  All reports are available until they have passed
@@ -55,13 +55,13 @@ into the endpoint URL:
    :class: tablecell-endpoint
    :widths: 5 95
 
-   +-------------------------------------------------------------------------------------------------------------+
-   | Report Details Endpoint                                                                                     |
-   +-----------+-------------------------------------------------------------------------------------------------+
-   | Endpoint: |:bolditalic:`http://<IP Address>/<API>/testcases/<alias>/reports/?runcode=<runcode>`             |
-   +-----------+-------------------------------------------------------------------------------------------------+
-   | Example:  | :bolditalic:`http://localhost/v0/testcases/shipping_w1/reports/?runcode=pb01Al01vino1601287294` |
-   +-----------+-------------------------------------------------------------------------------------------------+
+   +-----------------------------------------------------------------------------------------------------------------+
+   | Report Details Endpoint                                                                                         |
+   +-----------+-----------------------------------------------------------------------------------------------------+
+   | Endpoint: | :bolditalic:`https://<alyvix_server>/<API>/testcases/<alias>/reports/?runcode=<runcode>`            |
+   +-----------+-----------------------------------------------------------------------------------------------------+
+   | Example:  | :bolditalic:`https://localhost/v0/testcases/shipping_w1/reports/?runcode=pb01Al01vino1601287294`    |
+   +-----------+-----------------------------------------------------------------------------------------------------+
 
 The resulting detailed report:
 

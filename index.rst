@@ -4,7 +4,7 @@
 :tags: index
 :lang: en-US
 :translation: false
-:status: draft
+:status: final
 
 .. include:: sphinx-roles.txt
 
@@ -14,11 +14,13 @@
    :name: toc_master
    :hidden:
 
+   install.rst
    session_management.rst
    test_case_scheduling.rst
    measurement_web_apis.rst
    transaction_reporting.rst
    release_notes.rst
+   Alyvix User Manual <https://alyvix.com/learn/>
    get_in_touch.rst
 
 |
@@ -31,7 +33,7 @@
 Alyvix Server
 #############
 
-Welcome to the official guide for **Alyvix Server 1.1.0**.
+Welcome to the official guide for **Alyvix Server 1.2.0**.
 
 `Alyvix <https://alyvix.com/>`_ lets you build end-user bots that visually interact with any
 Windows application like ERPs, or any web app in your favorite browser.

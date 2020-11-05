@@ -1,10 +1,10 @@
 :author: Charles Callaway
 :date: 22-09-2020
-:modified: 02-11-2020
+:modified: 05-11-2020
 :tags: index
 :lang: en-US
 :translation: false
-:status: draft
+:status: final
 
 .. include:: sphinx-roles.txt
 
@@ -39,13 +39,13 @@ to the following endpoint in a browser on your private network:
 .. table::
    :class: tablecell-endpoint
 
-   +------------------------------------------------------+
-   | Session Management Endpoint                          |
-   +-----------+------------------------------------------+
-   | Endpoint: | :bolditalic:`http://<IP address>/server` |
-   +-----------+------------------------------------------+
-   | Example:  | :bolditalic:`http://localhost/server`    |
-   +-----------+------------------------------------------+
+   +----------------------------------------------------------+
+   | Session Management Endpoint                              |
+   +-----------+----------------------------------------------+
+   | Endpoint: | :bolditalic:`https://<alyvix_server>/server` |
+   +-----------+----------------------------------------------+
+   | Example:  | :bolditalic:`https://localhost/server`       |
+   +-----------+----------------------------------------------+
 
 These global test case settings are:
 
@@ -98,13 +98,13 @@ table by configuring it via the following endpoint:
 .. table::
    :class: tablecell-endpoint
 
-   +---------------------------------------------------------+
-   | Session Test Case Endpoint                              |
-   +-----------+---------------------------------------------+
-   | Endpoint: | :bolditalic:`http://<IP address>/testcases` |
-   +-----------+---------------------------------------------+
-   | Example:  | :bolditalic:`http://localhost/testcases`    |
-   +-----------+---------------------------------------------+
+   +-------------------------------------------------------------+
+   | Session Test Case Endpoint                                  |
+   +-----------+-------------------------------------------------+
+   | Endpoint: | :bolditalic:`https://<alyvix_server>/testcases` |
+   +-----------+-------------------------------------------------+
+   | Example:  | :bolditalic:`https://localhost/testcases`       |
+   +-----------+-------------------------------------------------+
 
 Each test case can also appear multiple times in the test case table, including with different
 arguments to pass to Alyvix Robot.  The first three settings create the schedulable test case

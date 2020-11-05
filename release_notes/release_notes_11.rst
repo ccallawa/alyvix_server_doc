@@ -4,7 +4,7 @@
 :tags: release notes
 :lang: en-US
 :translation: false
-:status: updating
+:status: final
 
 .. include:: ../sphinx-roles.txt
 
@@ -12,9 +12,9 @@
 
 .. _release_notes_v1_1:
 
-=======================
-Version 1.1.0 - Current
-=======================
+=============
+Version 1.1.0
+=============
 
 Alyvix Server is a software tool for scaling up the management of instances of the Alyvix
 visual monitoring system.

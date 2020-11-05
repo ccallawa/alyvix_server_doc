@@ -1,10 +1,10 @@
 :author: Charles Callaway
 :date: 22-09-2020
-:modified: 02-11-2020
+:modified: 05-11-2020
 :tags: index
 :lang: en-US
 :translation: false
-:status: draft
+:status: final
 
 .. include:: sphinx-roles.txt
 
@@ -64,13 +64,13 @@ were entered).
 .. table::
    :class: tablecell-endpoint
 
-   +--------------------------------------------------------------------------------+
-   | Flow / Test Case Assignment Endpoint                                           |
-   +-----------+--------------------------------------------------------------------+
-   | Endpoint: | :bolditalic:`http://<IP address>/flow?username=<domain\\username>` |
-   +-----------+--------------------------------------------------------------------+
-   | Example:  | :bolditalic:`http://localhost/flows?username=MS\\johnsmith`        |
-   +-----------+--------------------------------------------------------------------+
+   +----------------------------------------------------------------------------------------+
+   | Flow / Test Case Assignment Endpoint                                                   |
+   +-----------+----------------------------------------------------------------------------+
+   | Endpoint: | :bolditalic:`https://<alyvix_server>/workflow?username=<domain\\username>` |
+   +-----------+----------------------------------------------------------------------------+
+   | Example:  | :bolditalic:`https://localhost/workflow?username=MS\\johnsmith`            |
+   +-----------+----------------------------------------------------------------------------+
 
 Alternatively, you can use the interface in the global flow management endpoint to access each
 session flow individually by following the appropriate links:
@@ -78,13 +78,13 @@ session flow individually by following the appropriate links:
 .. table::
    :class: tablecell-endpoint
 
-   +-----------------------------------------------------+
-   | Flow Management Endpoint                            |
-   +-----------+-----------------------------------------+
-   | Endpoint: | :bolditalic:`http://<IP Address>/flows` |
-   +-----------+-----------------------------------------+
-   | Example:  | :bolditalic:`http://localhost/flows`    |
-   +-----------+-----------------------------------------+
+   +-------------------------------------------------------------+
+   | Flow Management Endpoint                                    |
+   +-----------+-------------------------------------------------+
+   | Endpoint: | :bolditalic:`https://<alyvix_server>/workflows` |
+   +-----------+-------------------------------------------------+
+   | Example:  | :bolditalic:`https://localhost/workflows`       |
+   +-----------+-------------------------------------------------+
 
 The Flow interface is organized by session, with one session per row.  The main components are:
 
@@ -114,13 +114,13 @@ session state with the following actions:
   .. table::
      :class: tablecell-endpoint
 
-     +------------------------------------------------------------------------------------------+
-     | Manual Scheduling Endpoint                                                               |
-     +-----------+------------------------------------------------------------------------------+
-     | Endpoint: | :bolditalic:`http://<IP address>/v0/flows/run?username=<domain>\\<username>` |
-     +-----------+------------------------------------------------------------------------------+
-     | Example:  | :bolditalic:`http://localhost/v0/flows/run?username=MS\\johnsmith`           |
-     +-----------+------------------------------------------------------------------------------+
+     +----------------------------------------------------------------------------------------------+
+     | Manual Scheduling Endpoint                                                                   |
+     +-----------+----------------------------------------------------------------------------------+
+     | Endpoint: | :bolditalic:`https://<alyvix_server>/v0/flows/run?username=<domain>\\<username>` |
+     +-----------+----------------------------------------------------------------------------------+
+     | Example:  | :bolditalic:`https://localhost/v0/flows/run?username=MS\\johnsmith`              |
+     +-----------+----------------------------------------------------------------------------------+
 
 |
 

@@ -1,10 +1,10 @@
 :author: Charles Callaway
 :date: 22-09-2020
-:modified: 22-09-2020
+:modified: 05-11-2020
 :tags: release notes
 :lang: en-US
 :translation: false
-:status: updating
+:status: continuous
 
 .. include:: sphinx-roles.txt
 
@@ -30,7 +30,8 @@ Alyvix release follows the :iconlink:`ext|Semantic Versioning|https://semver.org
 
 Alyvix Server releases:
 
-* :ref:`Version 1.1.x <release_notes_v1_1_0>` -- Current
+* :ref:`Version 1.2.0 <release_notes_v1_2_0>` -- Current
+* :ref:`Version 1.1.0 <release_notes_v1_1_0>`
 
 
 
@@ -39,4 +40,5 @@ Alyvix Server releases:
    :name: toc_test
    :hidden:
 
+   release_notes/release_notes_12.rst
    release_notes/release_notes_11.rst
