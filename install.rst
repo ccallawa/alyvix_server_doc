@@ -1,6 +1,6 @@
 :author: Charles Callaway
 :date: 05-11-2020
-:modified: 05-11-2020
+:modified: 06-11-2020
 :tags: install, python, pip
 :lang: en-US
 :translation: false
@@ -28,10 +28,13 @@ Before installing Alyvix, first check that your setup meets the system requireme
    .. note::
 
       Alyvix assumes that you have one virtual or physical machine exclusively dedicated to running
-      Alyvix test cases.  You should check that your designated machine meets the following
-      requirements before you install Alyvix:
+      Alyvix test cases.
 
-.. warning::  Requirements
+You should check that your designated machine meets the following requirements before you install
+Alyvix:
+
+.. admonition::  Requirements
+   :class: warning
 
    * Screen color depth: 24-bit RGB or 32-bit RGBA
    * OS: **Windows 64-bit** 10, Server 2012, 2016 or 2019
@@ -60,11 +63,11 @@ Before installing Alyvix, first check that your setup meets the system requireme
 #. Install PostgreSQL 12.4
 
    Download and run
-   `the PostgreSQL installer: <https://www.enterprisedb.com/postgresql-tutorial-resources-training?cid=48>`_
+   `the PostgreSQL installer <https://www.enterprisedb.com/postgresql-tutorial-resources-training?cid=48>`_
 
 #. Install Alyvix Server
 
-   * `Download the software package <https://www.alyvix.com/service>`_
+   * `Get the software package <https://www.alyvix.com/service#plans>`_
    * Run the :file:`setup.exe` installer
    * Set the database password as follows:
 
