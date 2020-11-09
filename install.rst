@@ -78,7 +78,7 @@ Alyvix:
 
    Save your files as follows:
 
-   * Go to the folder :file:`C:\\Program Files\\Alyvix\Alyvix Server\\cert\\`
+   * Go to the folder :file:`C:\\Program Files\\Alyvix\\Alyvix Server\\cert\\`
    * Save :file:`cert.crt` as an HTTPS certificate recognized by your CA
    * Save :file:`cert.key` as its (unprotected) password
 

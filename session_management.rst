@@ -39,13 +39,13 @@ to the following endpoint in a browser on your private network:
 .. table::
    :class: tablecell-endpoint
 
-   +----------------------------------------------------------+
-   | Session Management Endpoint                              |
-   +-----------+----------------------------------------------+
-   | Endpoint: | :bolditalic:`https://<alyvix_server>/server` |
-   +-----------+----------------------------------------------+
-   | Example:  | :bolditalic:`https://localhost/server`       |
-   +-----------+----------------------------------------------+
+   +----------------------------------------------------+
+   | Session Management Endpoint                        |
+   +-----------+----------------------------------------+
+   | Endpoint: | :bolditalic:`https://<alyvix_server>/` |
+   +-----------+----------------------------------------+
+   | Example:  | :bolditalic:`https://localhost/`       |
+   +-----------+----------------------------------------+
 
 These global test case settings are:
 
