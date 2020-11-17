@@ -64,10 +64,17 @@ These global test case settings are:
 * **Retention Period Failure [d]:**  The number of days that failed test case runs will be
   stored.
 
+The *Settings* interface allows you to modify global settings as well as settings for individual
+sessions:
+
+.. image:: images/settings03.png
+   :class: image-boxshadow-95
+   :alt: The settings interface.
+
 .. _session_management_session_description:
 
-To update the values for these settings, go to the endpoint above, enter the new value in the
-appropriate field, and press the :guilabel:`Set` button.
+To set the values for any of these settings, go to the endpoint above, enter the new value in the
+appropriate field, and press the :guilabel:`Save` icon to the right of the change you made.
 
 The endpoint above also contains the settings for individual sessions:
 
@@ -78,9 +85,9 @@ The endpoint above also contains the settings for individual sessions:
   1280*800@100Hz) of the RDC window that will host the session.  All test cases in the session's
   flow should contain test case objects that include the resolution and factor set here.
 
-To update the values for these settings, go to the endpoint above, enter the new value in the
-appropriate field, and press the :guilabel:`Update` button.  :guilabel:`Remove` will remove an
-existing session, while :guilabel:`Add` will insert a new one.
+To update these values, go to the endpoint above, enter the new value in the appropriate field,
+and press the :guilabel:`Save` icon.  The :guilabel:`Trash can` icon will remove an existing
+session (the entire row), while the :guilabel:`Plus` icon will insert a row for a new session.
 
 
 
@@ -117,7 +124,11 @@ configuration:
   you choose (unique with respect to other test case aliases), combining the test case name and
   an argument, or just the test case name alone, can aid understanding of dashboards and reports.
 
-The *screenshot settings* allow you to configure
+.. image:: images/testcases02.png
+   :class: image-boxshadow-95
+   :alt: The test case interface.
+
+The two *screenshot settings* on the right side allow you to configure:
 
   * **Screen Recording:**
 
@@ -130,9 +141,9 @@ The *screenshot settings* allow you to configure
     * **Lossless:**  Keep the original screenshot without compressing it.
     * **Compressed:**  Compress all screenshots for this schedulable test case configuration.
 
-
-To remove a test case from the table, go to the endpoint above and press the :guilabel:`Remove`
-button.  :guilabel:`Add` will insert a new row at the bottom of the table (you should insert
-the values before pressing the :guilabel:`Add` button).
+The :guilabel:`Trash can` icon will remove an existing test case configuration (the entire row),
+while the :guilabel:`Plus` icon will insert a row for a new session.  In the current version of
+Alyvix Server, you cannot modify an existing configuration; you will need to remove the row in
+question and re-add it.
 
 |

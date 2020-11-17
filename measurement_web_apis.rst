@@ -41,6 +41,10 @@ Measurement API Endpoints
 The following table lists the available measurement endpoints, along with their return values,
 whether as measurement data encoded in JSON objects, or as viewable reports in HTML.
 
+If you frequently need to view the JSON structures that Alyvix Server produces, we recommend the
+use of the free **JSON Viewer Pro**
+`Chrome browser extension <https://chrome.google.com/webstore/search/json%20viewer%20pro>`_.
+
 .. table::
    :class: endpoint-table
 
@@ -60,7 +64,7 @@ whether as measurement data encoded in JSON objects, or as viewable reports in H
    |         | |tab| Returns the most recent *measures* substructures                                           |
    |         | (:ref:`full example below <measurement_web_apis_measures_example>`) from the session where the   |
    |         | test case alias is enabled, along with the *repolling_period*, which is automatically calculated |
-   |         | whenever you change the scheduling period as :math:`SchedulingPeriod / 2`.                       |
+   |         | whenever you change the scheduling period as |smalltab| :bolditalic:`SchedulingPeriod / 2`.      |
    +---------+--------------------------------------------------------------------------------------------------+
    | JSON    | :ep-head:`<alyvix_server>/v0/testcases/<testcasealias>?screenshots=[true, false]`                |
    |         |                                                                                                  |
@@ -149,3 +153,5 @@ whether as measurement data encoded in JSON objects, or as viewable reports in H
       ],
       "repolling_period": 5
    }
+
+|

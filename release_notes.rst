@@ -42,3 +42,5 @@ Alyvix Server releases:
 
    release_notes/release_notes_12.rst
    release_notes/release_notes_11.rst
+
+|

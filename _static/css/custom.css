@@ -219,12 +219,13 @@ inline-image { /* Images inline with the text are a bit too low.  */
     background-color: white;
     display: table;
 }
-.image-boxshadow-80 { /* A gradient box shadow around an image */
-    margin-left: 8px;
+.image-boxshadow-95 { /* A gradient box shadow around an image */
+    margin-left: auto;
+    margin-right: auto;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     background-color: white;
     display: table;
-    width: 90%;
+    width: 95%;
 }
 
 

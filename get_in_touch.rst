@@ -46,3 +46,5 @@ Please, don't be shy: just ask if you need any help.  **We love questions and fe
 Alyvix Slack channel.  Send a request to info@alyvix.com to get your **Alyvix Slack credentials**.
 
     https://alyvix.slack.com/
+
+|

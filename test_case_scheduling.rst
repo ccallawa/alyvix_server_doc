@@ -22,8 +22,9 @@ them at regular intervals on the sessions you assigned them to.
 There are three main concepts to understand:
 
 * **Session Workflows:**  A *flow* is a set of Alyvix test case aliases that are assigned to a
-  session, drawn from the available test case aliases, which in turn are drawn from the test cases
-  in the global configured :ref:`Test Case Path <session_management_settings>`.
+  session, drawn from the available test case aliases, which in turn are drawn from the Alyvix
+  test cases whose files can be found in the global configured
+  :ref:`Test Case Path <session_management_settings>`.
 * **Scheduling Period:**  The length of time in seconds until Alyvix Server will try to run the
   next test case alias of the *flow* assigned to a particular session.  Once all of the test cases
   in the flow have completed, the scheduler will restart that flow from the beginning.
@@ -49,31 +50,46 @@ There are three main concepts to understand:
 
 
 
+.. _test_case_flow_assignment:
+
+*************************
+Test Case Flow Assignment
+*************************
+
+After you have defined the session and test case configurations, you can begin to assign individual
+Alyvix test case aliases to a particular session.  Once defined, you can then initiate the execution
+of test cases as described in the Test Case Flow Management section below.
+
+.. table::
+   :class: tablecell-endpoint
+
+   +------------------------------------------------------------------------------------------+
+   | Flow / Test Case Assignment Endpoint                                                     |
+   +-----------+------------------------------------------------------------------------------+
+   | Endpoint: | :bolditalic:`https://<alyvix_server>/workflow?username=<domain>\\<username>` |
+   +-----------+------------------------------------------------------------------------------+
+   | Example:  | :bolditalic:`https://localhost/workflow?username=MS\\johnsmith`              |
+   +-----------+------------------------------------------------------------------------------+
+
+In addition to using the endpoint above directly, you can use the flow management interface to
+arrive at the workflow assignment interface here, which allows you to determine which aliases
+will be included by simply ticking the checkbox for each alias (within a flow, test case aliases
+are displayed and run in the order they were entered).
+
+.. image:: images/workflow02.png
+   :class: image-boxshadow
+   :alt: The workflow interface.
+
+
+
 .. _test_case_flow_management:
 
 *************************
 Test Case Flow Management
 *************************
 
-After you have defined the session and test case configurations, you can begin to assign individual
-Alyvix test case aliases to a particular session, and then initiate the execution of test cases.
-You can directly determine which aliases will be included via the following endpoint by simply
-ticking the checkbox for each alias (within a flow, test case aliases are run in the order they
-were entered).
-
-.. table::
-   :class: tablecell-endpoint
-
-   +----------------------------------------------------------------------------------------+
-   | Flow / Test Case Assignment Endpoint                                                   |
-   +-----------+----------------------------------------------------------------------------+
-   | Endpoint: | :bolditalic:`https://<alyvix_server>/workflow?username=<domain\\username>` |
-   +-----------+----------------------------------------------------------------------------+
-   | Example:  | :bolditalic:`https://localhost/workflow?username=MS\\johnsmith`            |
-   +-----------+----------------------------------------------------------------------------+
-
-Alternatively, you can use the interface in the global flow management endpoint to access each
-session flow individually by following the appropriate links:
+The Management interface allows you to change the state of workflows, and can be accessed from
+the following endpoint:
 
 .. table::
    :class: tablecell-endpoint
@@ -86,20 +102,17 @@ session flow individually by following the appropriate links:
    | Example:  | :bolditalic:`https://localhost/workflows`       |
    +-----------+-------------------------------------------------+
 
-The Flow interface is organized by session, with one session per row.  The main components are:
+The Flow interface shown here displays the global controls for all available sessions on the
+current server on the first line, followed by a separate row for each individual session.  Once a
+flow has at least one assigned test case alias, it is available for scheduling.
 
-* **Username:**  The name of the session, as defined on the
-  :ref:`session management page <session_management_session_description>`
-* **Flow:**  The sequence of Alyvix test case aliases that the scheduler runs on a given
-  session.  You can change which test case aliases are included in a given flow by clicking on the
-  "Open Flow" action.
-* **Flow state:**  How that flow is currently executing (running or not running)
-* **Session state:**  How the session is set to progress, as managed by a user action below
+.. image:: images/workflows02.png
+   :class: image-boxshadow
+   :alt: The workflows interface.
+
+The main controls shown at the left allow you to manage the session state:
 
 .. _test_case_flow_management_actions:
-
-Once a flow has at least one assigned test case alias, it can be scheduled.  You can manage the
-session state with the following actions:
 
 * **Run:**  Start the session using the scheduler, which will automatically execute the session's
   assigned flow
@@ -121,6 +134,15 @@ session state with the following actions:
      +-----------+----------------------------------------------------------------------------------+
      | Example:  | :bolditalic:`https://localhost/v0/flows/run?username=MS\\johnsmith`              |
      +-----------+----------------------------------------------------------------------------------+
+
+The other elements in each row are:
+
+* **Domain and Username:**  The name of the session, as defined on the
+  :ref:`session management page <session_management_session_description>`.  Clicking on this
+  element takes you to the flow assignment page, allowing you to define the sequence of Alyvix
+  test case aliases that the scheduler will run for this session (see the preceding section).
+* **Flow state:**  How that flow is currently executing (running or not running)
+* **Session state:**  How the session is set to progress, as managed by a user action below
 
 |
 
