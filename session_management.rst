@@ -82,7 +82,7 @@ The endpoint above also contains the settings for individual sessions:
   alive a session on the server.
 * **Password:**  The corresponding password.
 * **Resolution\@scaling factor:**  The screen resolution and scaling/zoom factor (e.g.,
-  1280*800@100Hz) of the RDC window that will host the session.  All test cases in the session's
+  1280*800\@100Hz) of the RDC window that will host the session.  All test cases in the session's
   flow should contain test case objects that include the resolution and factor set here.
 
 To update these values, go to the endpoint above, enter the new value in the appropriate field,

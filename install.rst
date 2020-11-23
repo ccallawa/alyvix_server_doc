@@ -1,6 +1,6 @@
 :author: Charles Callaway
 :date: 05-11-2020
-:modified: 06-11-2020
+:modified: 23-11-2020
 :tags: install, python, pip
 :lang: en-US
 :translation: false
@@ -11,9 +11,9 @@
 
 .. _install_top:
 
-************
+============
 Installation
-************
+============
 
 Before installing Alyvix, first check that your setup meets the system requirements.
 
@@ -83,3 +83,44 @@ Alyvix:
    * Save :file:`cert.key` as its (unprotected) password
 
 #. Run **Alyvix Service** within Windows Services
+
+|
+
+
+
+.. _install_upgrade:
+
+*********
+Upgrading
+*********
+
+The following steps will upgrade Alyvix Server to the latest version on your machine:
+
+.. rst-class:: bignums
+
+#. Uninstall Alyvix Server
+
+   * Back up your Alyvix Server configuration file:  :file:`C:\\Program Files\\Alyvix\\Alyvix Server\\config.json`
+   * Back up your Alyvix Server HTTPS certificate:  :file:`C:\\Program Files\\Alyvix\\Alyvix Server\\cert\\`
+   * Stop Alyvix Server:  **Windows Services > Alyvix Service > Stop**
+   * Close all Alyvix client windows (where appropriate)
+   * Uninstall Alyvix Server:  **Windows Control Panel > Programs and Features > Alyvix Server > Uninstall**
+   * Remove residual Alyvix Server files (where appropriate):  :file:`C:\\Program Files\\Alyvix\\Alyvix Server\\`
+   * Remove old Alyvix Client scheduled tasks:  **Windows Task Scheduler > alyvix_client<..> > delete**
+
+#. Upgrade Alyvix
+
+   Follow `the instructions here <https://alyvix.com/learn/getting_started/install.html#upgrading-alyvix>`_
+
+#. Install the new Alyvix Server
+
+   * Run the Alyvix Server Installer (:file:`setup.exe`) found in the Alyvix Server package
+   * Set a database password (or restore the backup file):
+     :file:`C:\\Program Files\\Alyvix\\Alyvix Server\\config.json` **> "password": "<your_password>"**
+   * Install your HTTPS certificate (or restore the backup files):  Save the :file:`cert.crt` and
+     :file:`cert.key` files in :file:`C:\\Program Files\\Alyvix\\Alyvix Server\\cert\\`
+
+#. Run Alyvix Server
+
+   * Start the Alyvix Service:  **Windows Services > Alyvix Service > start**
+   * Sign out of the current session
