@@ -1,6 +1,6 @@
 :author: Charles Callaway
 :date: 05-11-2020
-:modified: 23-11-2020
+:modified: 24-11-2020
 :tags: install, python, pip
 :lang: en-US
 :translation: false
@@ -39,6 +39,10 @@ Alyvix:
    * Screen color depth: 24-bit RGB or 32-bit RGBA
    * OS: **Windows 64-bit** 10, Server 2012, 2016 or 2019
      (32-bit versions of Windows are :warn:`not` compatible with Alyvix)
+   * Hardware (for instance to run 4 sessions, a minimum of 6 CPU and 12GB RAM):
+
+     * Processor:  2 Base CPU + 1 CPU per session
+     * Memory:  4GB Base + 2GB per session
 
 
 
