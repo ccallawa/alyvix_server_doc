@@ -30,6 +30,7 @@ Alyvix release follows the :iconlink:`ext|Semantic Versioning|https://semver.org
 
 Alyvix Server releases:
 
+* :ref:`Version 1.3.0 <release_notes_v1_3_0>`
 * :ref:`Version 1.2.0 <release_notes_v1_2_0>` --  :ref:`Version 1.2.1 <release_notes_v1_2_1>`
 * :ref:`Version 1.1.0 <release_notes_v1_1_0>`
 
@@ -40,6 +41,7 @@ Alyvix Server releases:
    :name: toc_test
    :hidden:
 
+   release_notes/release_notes_13.rst
    release_notes/release_notes_12.rst
    release_notes/release_notes_11.rst
 

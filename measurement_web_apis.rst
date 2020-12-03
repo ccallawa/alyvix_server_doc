@@ -26,7 +26,7 @@ the results of test case runs.  There are two principal ways to retrieve measure
 
 .. warning::
 
-   All API level 0 endpoints (marked "/v0/" in Alyvix Server v1.2.1) are insecure.  They should
+   All API level 0 endpoints (marked "/v0/" in Alyvix Server v1.3.0) are insecure.  They should
    only be used when both caller and server are contained entirely within the same private
    network.
 
