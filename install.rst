@@ -39,10 +39,10 @@ Alyvix:
    * Screen color depth: 24-bit RGB or 32-bit RGBA
    * OS: **Windows 64-bit** 10, Server 2012, 2016 or 2019
      (32-bit versions of Windows are :warn:`not` compatible with Alyvix)
-   * Hardware (for instance to run 4 sessions, a minimum of 6 CPU and 12GB RAM):
+   * Hardware (for instance to run 4 sessions, a minimum of 10 CPU and 20GB RAM):
 
-     * Processor:  2 Base CPU + 1 CPU per session
-     * Memory:  4GB Base + 2GB per session
+     * Processor:  2 CPUs Base + 2 CPUs per session
+     * Memory:  4GB RAM Base + 4GB RAM per session
 
 
 

@@ -49,7 +49,7 @@ to the following endpoint in a browser on your private network:
 
 These global test case settings are:
 
-* **Test Case Path:** A Windows-format absolute or relative path
+* **Test Case Path:**  A Windows-format absolute or relative path
   (e.g., :file:`C:\\Alyvix\\Testcases\\`) that points to a directory containing all of the
   Alyvix 3 test cases that can be run by this instance of Alyvix Server.  If you add or update
   any test cases, or change this path, Alyvix Server will automatically and immediately pick up
@@ -145,5 +145,52 @@ The :guilabel:`Trash can` icon will remove an existing test case configuration (
 while the :guilabel:`Plus` icon will insert a row for a new session.  In the current version of
 Alyvix Server, you cannot modify an existing configuration; you will need to remove the row in
 question and re-add it.
+
+
+
+.. _session_management_nats:
+
+**************************
+NATS and InfluxDB Settings
+**************************
+
+Besides configuring the session settings of a particular server via its IP address, you can
+also set them to forward the data to a NATS server and a particular InfluxDB data table, allowing
+you to view the data in Grafana.  Forwarding data to NATS is complementary -- Alyvix Server will
+still continue to receive data, and it will still be visible via the measurement API.
+
+For this feature, you will need to configure communication parameters via the NATS/InfluxDB endpoint:
+
+.. table::
+   :class: tablecell-endpoint
+
+   +-----------------------------------------------------------------+
+   | NATS/InfluxDB Management Endpoint                               |
+   +-----------+-----------------------------------------------------+
+   | Endpoint: | :bolditalic:`https://<alyvix_server>/nats-influxdb` |
+   +-----------+-----------------------------------------------------+
+   | Example:  | :bolditalic:`https://localhost/nats-influxdb`       |
+   +-----------+-----------------------------------------------------+
+
+For each NATS instance you want to connect, you will need to fill in the following fields:
+
+* **Profile Name:**  A unique name for a new NATS connection instance that you will then be able
+  to assign to a given session at the bottom of the page.
+* **Certificates Path:**  If you use TLS encryption, this will point to the directory containing
+  your :file:`*.ca.crt` certificate authority file, :file:`*.crt` public key file, and
+  :file:`*.key` (not encrypted) private key file.  If you leave this field blank, encryption via
+  TLS will be disabled, and data will be sent in cleartext.
+* **IP/Port:**  The address of the NATS server.
+* **Subject Name:**  The InfluxDB database name to use.
+* **Measurement Name:**  The name of the measurements table within your InfluxDB subject where the
+  data should be stored when it arrives.
+
+.. image:: images/settings-nats01.png
+   :class: image-boxshadow-95
+   :alt: The NATS/InfluxDB settings interface.
+
+Once you add a NATS configurations at the top, you can assign it to one or more existing sessions.
+Each session can stream to at most one NATS-InfluxDB channel, although multiple sessions can send
+data to a single NATS-InfluxDB channel.
 
 |
