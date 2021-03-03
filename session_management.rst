@@ -33,19 +33,22 @@ Assuming you've already created test cases with Alyvix Editor, when you first us
 you'll need to configure some basic settings.
 
 The session management settings are global parameters governing all Alyvix test case sessions run
-on a specific Alyvix Server (that is, a single IP address).  You can view or edit them by going
-to the following endpoint in a browser on your private network:
+on a specific Alyvix Server (that is, a single IP address).  You can view or edit them by clicking
+on the gear icon |gear-icon| at the top right, or going to the following endpoint in a browser on
+your **private network**:
+
+
 
 .. table::
    :class: tablecell-endpoint
 
-   +----------------------------------------------------+
-   | Session Management Endpoint                        |
-   +-----------+----------------------------------------+
-   | Endpoint: | :bolditalic:`https://<alyvix_server>/` |
-   +-----------+----------------------------------------+
-   | Example:  | :bolditalic:`https://localhost/`       |
-   +-----------+----------------------------------------+
+   +------------------------------------------------------------+
+   | Session Management Endpoint                                |
+   +-----------+------------------------------------------------+
+   | Endpoint: | :bolditalic:`https://<alyvix_server>/settings` |
+   +-----------+------------------------------------------------+
+   | Example:  | :bolditalic:`https://localhost/settings`       |
+   +-----------+------------------------------------------------+
 
 These global test case settings are:
 
@@ -74,7 +77,7 @@ sessions:
 .. _session_management_session_description:
 
 To set the values for any of these settings, go to the endpoint above, enter the new value in the
-appropriate field, and press the :guilabel:`Save` icon to the right of the change you made.
+appropriate field, and press the save icon |save-icon| to the right of the change you made.
 
 The endpoint above also contains the settings for individual sessions:
 
@@ -86,8 +89,8 @@ The endpoint above also contains the settings for individual sessions:
   flow should contain test case objects that include the resolution and factor set here.
 
 To update these values, go to the endpoint above, enter the new value in the appropriate field,
-and press the :guilabel:`Save` icon.  The :guilabel:`Trash can` icon will remove an existing
-session (the entire row), while the :guilabel:`Plus` icon will insert a row for a new session.
+and press the |save-icon| save icon.  The trash can icon |trash-icon| will remove the corresponding
+session (the entire row), while the plus icon |plus-icon| will insert a row for a new session.
 
 
 
@@ -117,7 +120,7 @@ Each test case can also appear multiple times in the test case table, including 
 arguments to pass to Alyvix Robot.  The first three settings create the schedulable test case
 configuration:
 
-* **Name:**  The file name of a test case, which is located in the test case directory.
+* **Test Case Name:**  The file name of a test case, which is located in the test case directory.
 * **Arguments:**  Arguments that can be passed to Alyvix Robot when executing a test case, such
   as via the CLI, with values separated by commas.
 * **Alias:**  The name of the schedulable test case configuration.  While this can be any string
@@ -127,6 +130,7 @@ configuration:
 .. image:: images/testcases02.png
    :class: image-boxshadow-95
    :alt: The test case interface.
+   :target: ../_static/targets/testcases02.png
 
 The two *screenshot settings* on the right side allow you to configure:
 
@@ -141,10 +145,13 @@ The two *screenshot settings* on the right side allow you to configure:
     * **Lossless:**  Keep the original screenshot without compressing it.
     * **Compressed:**  Compress all screenshots for this schedulable test case configuration.
 
-The :guilabel:`Trash can` icon will remove an existing test case configuration (the entire row),
-while the :guilabel:`Plus` icon will insert a row for a new session.  In the current version of
-Alyvix Server, you cannot modify an existing configuration; you will need to remove the row in
-question and re-add it.
+The up and down icons |sort-down-icon| |sort-up-icon| allow you to change the order that the
+test cases will run in (echoed in the :ref:`workflow table <test_case_flow_assignment>`).  The
+trash can icon |trash-icon| will remove an existing test case configuration (the entire row),
+while the plus icon |plus-icon| will insert a row for a new session.  In the current version of
+Alyvix Server, you cannot modify an existing configuration; you will need to remove the row
+in question and re-add it.
+
 
 
 

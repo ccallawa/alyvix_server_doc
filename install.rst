@@ -61,8 +61,7 @@ Alyvix:
 
 #. Install Alyvix
 
-   Follow `the same instructions <https://www.alyvix.com/learn/getting_started/install.html#installing-alyvix>`_
-   as for Alyvix
+   Follow the `Alyvix installation instructions <https://www.alyvix.com/learn/getting_started/install.html#installing-alyvix>`_
 
 #. Install PostgreSQL 12.4
 

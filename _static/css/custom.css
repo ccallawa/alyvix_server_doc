@@ -516,6 +516,10 @@ div.highlight pre::-webkit-scrollbar-track {
 a:visited .fa::before {
     color: #9B59B6;
 }
+.fa-big::before {
+    font-size: 25px;
+    padding-right: 7px;
+}
 .fa-med::before {
     font-size: 22px;
     padding-right: 6px;
@@ -550,7 +554,25 @@ a:visited .fa::before {
 .fa-white::before {
     color: white;    /* Override the blue color when necessary */
 }
-p.fa {
+.fa-invblue::before {   /* The same blue as the RTD theme */
+    color: white;
+    background-color: #2980B9;
+    padding: 4px;
+    border-radius: 50%;
+}
+.fa-invblue2::before {   /* The same blue as the RTD theme */
+    color: white;
+    background-color: #2980B9;
+    padding: 1px 5px;
+    border-radius: 50%;
+}
+.fa-invblue3::before {   /* The same blue as the RTD theme */
+    color: white;
+    background-color: #2980B9;
+    padding: 4px 4px 4px 6px;
+    border-radius: 50%;
+}
+p.fa
     line-height: 24px; /* Should inherit from 'p' */
 }
 
