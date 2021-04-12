@@ -12,11 +12,48 @@
 .. _release_notes_v1_4:
 
 =======================================
-Version 1.4.1 - Version 1.4.2 (Current)
+Version 1.4.1 - Version 1.4.3 (Current)
 =======================================
 
 Alyvix Server is a software tool for scaling up the management of instances of the Alyvix
 visual monitoring system.
+
+.. _release_notes_v1_4_3:
+
+.. topic:: Alyvix Server Version 1.4.3
+
+   **Release date:**  March 25th, 2021
+
+**Bug Fixes**
+
+* Alyvix Server properly handshakes empty workflows without leaving them inactive
+
+**Frontend Control Panels**
+
+The following endpoint URLs remain:
+
+* :file:`<alyvix_server>/`
+* :file:`<alyvix_server>/testcases`
+* :file:`<alyvix_server>/settings`
+* :file:`<alyvix_server>/nats-influxdb`
+
+**Measurement Web APIs (v0)**
+
+The following endpoint URLs remain:
+
+* :file:`<alyvix_server>/v0/testcases`
+
+  * :file:`<alyvix_server>/v0/testcases/<testcasealias>`
+
+    * :file:`<alyvix_server>/v0/testcases/<testcasealias>?screenshots=[true, false]`
+
+  * :file:`<alyvix_server>/v0/testcases/<testcasealias>/reports`
+
+    * :file:`<alyvix_server>/v0/testcases/<testcasealias>/reports?runcode=<runcode>`
+
+* :file:`<alyvix_server>/v0/flows/run?username=<domain\username>`
+
+
 
 .. _release_notes_v1_4_2:
 

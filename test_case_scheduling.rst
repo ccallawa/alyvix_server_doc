@@ -119,15 +119,16 @@ The non-interactive elements in the middle of each row are:
 * **Domain and Username:**  The name of the session, as defined on the
   :ref:`session management page <session_management_session_description>`.
 * **Flow state:**  This traffic light icon depicts how that flow is currently executing, red
-  when the corresponding Alyvix bot is operating in a session, and green during a Waiting
-  Period (see below)
+  when the corresponding Alyvix bot is operating in a session, green during a Waiting
+  Period (see below), and gray when Alyvix Server is attempting to connect to the session
 * **Session state:**  The icon here depicts how the session is set to progress, as managed
   by the actions at the left of the screen
 
 The controls on the right side let you assign test cases to a workflow, and manage the idle
 waiting time between both individual test cases in a single workflow and between subsequent
-runs of a full workflow.  The waiting periods work together with the scheduling period (see
-above) to determine when the next test case actually runs.
+runs of a full workflow.  The waiting periods work together with the
+:ref:`scheduling period <test_case_scheduling_top>` to determine when the next test case
+actually runs.
 
 To assign test cases to a workflow, simply tick the checkbox for each configured test case
 alias.  The order will proceed from left to right, but you can change the relative ordering

@@ -37,8 +37,11 @@ Alyvix:
    :class: warning
 
    * Screen color depth: 24-bit RGB or 32-bit RGBA
-   * OS: **Windows 64-bit** 10, Server 2012, 2016 or 2019
+   * OS: **Windows 64-bit** 10 Pro, Server 2012, 2016 or 2019
      (32-bit versions of Windows are :warn:`not` compatible with Alyvix)
+
+     * Windows 10 Professional hosts must be reachable from an external browser
+
    * Hardware (for instance to run 4 sessions, a minimum of 10 CPU and 20GB RAM):
 
      * Processor:  2 CPUs Base + 2 CPUs per session
@@ -84,6 +87,8 @@ Alyvix:
    * Go to the folder :file:`C:\\Program Files\\Alyvix\\Alyvix Server\\cert\\`
    * Save :file:`cert.crt` as an HTTPS certificate recognized by your CA
    * Save :file:`cert.key` as its (unprotected) password
+
+   Note that the private key is all you need, you should not be asked for an additional password.
 
 #. Run **Alyvix Service** within Windows Services
 
