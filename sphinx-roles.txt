@@ -1,6 +1,6 @@
-.. |python-download-link| replace:: :download:`64-bit Windows installer for Python version 3.7.6 <https://www.python.org/ftp/python/3.7.6/python-3.7.6-amd64.exe>`
+.. |python-download-link| replace:: :download:`64-bit Windows installer for Python version 3.7.9 <https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe>`
 
-.. |python-remove-name| replace:: :file:`Python 3.7.6 (64-bit)`
+.. |python-remove-name| replace:: :file:`Python 3.7.9 (64-bit)`
 
 .. |source-youtube| raw:: html
 
