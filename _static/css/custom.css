@@ -227,6 +227,32 @@ inline-image { /* Images inline with the text are a bit too low.  */
     display: table;
     width: 95%;
 }
+.zoomable-image {
+    position: relative;
+    margin-bottom: 25px;
+    right: 8px;
+    transform: scale(1);
+    transition: transform 0.5s;
+    transition-delay: 0.8s;
+}
+.zoomable-image:hover {
+    position: relative;
+    transform: scale(1.18);
+    Z-index: 99;
+}
+.zoomable-image-inset {
+    position: relative;
+    margin-bottom: 25px;
+    right: 8px;
+    transform: scale(1);
+    transition: transform 0.5s;
+    transition-delay: 0.8s;
+}
+.zoomable-image-inset:hover {
+    position: relative;
+    transform: scale(1.28);
+    Z-index: 99;
+}
 
 
 /* Make guilabel (eventually) fit with the site style */

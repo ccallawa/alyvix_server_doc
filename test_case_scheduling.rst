@@ -78,7 +78,7 @@ In addition to using the endpoint above directly, you can click on the :guilabel
 button at the top right of the interface to see the workflow screen shown here.
 
 .. image:: images/workflow01.png
-   :class: image-boxshadow
+   :class: image-boxshadow zoomable-image
    :alt: The workflow interface.
    :target: ../_static/targets/workflow01.png
 
@@ -143,4 +143,3 @@ by editing the text field or using the arrow controls.  They are defined as foll
   workflow again from the beginning after its last test case has exited.
 
 |
-

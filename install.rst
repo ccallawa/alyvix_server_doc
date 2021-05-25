@@ -132,3 +132,5 @@ The following steps will upgrade Alyvix Server to the latest version on your mac
 
    * Start the Alyvix Service:  **Windows Services > Alyvix Service > start**
    * Sign out of the current session
+
+|

@@ -40,8 +40,9 @@ chronological order, with the following information for each run:
 * **Username:**  The domain and username under which the session was opened
 
 .. image:: images/reports02.png
-   :class: image-boxshadow
+   :class: image-boxshadow zoomable-image
    :alt: The reporting interface.
+   :target: ../_static/targets/reports02.png
 
 The reports listing contains a fixed number of rows per page, and can be advanced by using the
 controls at the bottom.  All reports are available until they have exceeded
@@ -74,8 +75,9 @@ The resulting detailed report:
   that either a match occurred or failed.
 
 .. image:: images/runcode02.png
-   :class: image-boxshadow
+   :class: image-boxshadow zoomable-image
    :alt: The runcode-determined individual report.
+   :target: ../_static/targets/runcode02.png
 
 The screenshots especially serve as a quick visual verification of whether or not the application
 or website was in fact working properly when the test case was run.  In the event that a test case

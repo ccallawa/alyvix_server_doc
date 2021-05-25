@@ -19,6 +19,7 @@
    test_case_scheduling.rst
    measurement_web_apis.rst
    transaction_reporting.rst
+   monitoring_integrations.rst
    release_notes.rst
    Alyvix User Manual <https://alyvix.com/learn/>
    get_in_touch.rst

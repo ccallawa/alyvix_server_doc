@@ -71,8 +71,9 @@ The *Settings* interface allows you to modify global settings as well as setting
 sessions:
 
 .. image:: images/settings03.png
-   :class: image-boxshadow-95
+   :class: image-boxshadow zoomable-image
    :alt: The settings interface.
+   :target: ../_static/targets/settings03.png
 
 .. _session_management_session_description:
 
@@ -128,7 +129,7 @@ configuration:
   an argument, or just the test case name alone, can aid understanding of dashboards and reports.
 
 .. image:: images/testcases02.png
-   :class: image-boxshadow-95
+   :class: image-boxshadow-95 zoomable-image
    :alt: The test case interface.
    :target: ../_static/targets/testcases02.png
 
@@ -193,8 +194,9 @@ For each NATS instance you want to connect, you will need to fill in the followi
   data should be stored when it arrives.
 
 .. image:: images/settings-nats01.png
-   :class: image-boxshadow-95
+   :class: image-boxshadow-95 zoomable-image
    :alt: The NATS/InfluxDB settings interface.
+   :target: ../_static/targets/settings-nats01.png
 
 Once you add a NATS configurations at the top, you can assign it to one or more existing sessions.
 Each session can stream to at most one NATS-InfluxDB channel, although multiple sessions can send

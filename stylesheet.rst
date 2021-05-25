@@ -653,7 +653,7 @@ as follows (note that figures and images have different options):
    :class: short-code-block
 
    .. image:: pictures/alyvix_logo_399x333.png
-      :class: image-with-boxshadow
+      :class: image-boxshadow
 
 You can also make a more structured figure.  It assumes you want an image at the top with the
 basic options above.  A paragraph at the same indentation level as the options will be treated as
