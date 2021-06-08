@@ -411,13 +411,19 @@ h3, h4 {
 
 
 /* Change table style */
+table.taller-rows tbody tr.row-odd td {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+table.all-white-rows tbody tr.row-odd td {
+    background-color: #fff !important;
+}
 table.docutils tbody tr:first-child td {
     background-color: #2980B9 !important;
 }
 table.docutils tbody tr:first-child td p {
     color: white;
 }
-
 table.no-header-row tbody tr td {
     background-color: white !important;
     padding: 0px 10px 0px 10px !important;

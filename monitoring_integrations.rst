@@ -21,27 +21,32 @@ installations to request the results of Alyvix runs at regular intervals, thus i
 Alyvix test cases into your monitoring system.  Over time the data collected can indicate
 trends that can help you discover when the user experience is below expectations and
 locate hardware bottlenecks.
-
-The monitoring systems below have been tested for compatibility with Alyvix.  To see a
-configuration tutorial, click on the monitoring system link in the first column, or in the
-index at the left.  Integration tutorials for additional monitoring systems will be added
-as they become available.
+The monitoring systems below have been tested for compatibility with Alyvix.  To see the
+configuration tutorial for a particular system, click on the monitoring system link in the
+first column, or in the index at the left.  Integration tutorials for additional monitoring
+systems will be added as they become available.
 
 |
+
 
 .. |ne-logo| image:: monitoring_integrations/images/neteye-logo.png
    :scale: 40%
 
+.. |chk-logo| image:: monitoring_integrations/images/chkmk-logo.png
+   :scale: 40%
+
 .. table::
-   :class: taller-rows
-   :widths: 50 25 25
+   :class: taller-rows all-white-rows
+   :widths: 40 25 35
    :width: 100%
 
-   +--------------------------------------------------------------------------+----------------+----------------------------------------------------------------------------------------------------------------------+
-   | Monitoring System Integration Instructions                               | Date Checked   | Developer                                                                                                            |
-   +--------------------------------------------------------------------------+----------------+----------------------------------------------------------------------------------------------------------------------+
-   | |ne-logo| |smalltab| :ref:`NetEye 4.17 <monitoring_integrations_neteye>` | May 20th, 2021 |  :iconlink:`ext|Wuerth Phoenix|https://www.wuerth-phoenix.com/en/solutions/it-system-management/unified-monitoring/` |
-   +--------------------------------------------------------------------------+----------------+----------------------------------------------------------------------------------------------------------------------+
+   +------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+   | Monitoring System Integration Instructions                                                     | Developer                                                                                                            |
+   +------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+   | |chk-logo| |trade| |smalltab| :ref:`Checkmk  2 instructions <monitoring_integrations_checkmk>` | :iconlink:`ext|tribe29|https://checkmk.com/`                                                                         |
+   +------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+   | |ne-logo| |trade| |smalltab| :ref:`NetEye 4 instructions <monitoring_integrations_neteye>`     | :iconlink:`ext|Wuerth Phoenix|https://www.wuerth-phoenix.com/en/solutions/it-system-management/unified-monitoring/`  |
+   +------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
 
 |
 
@@ -52,4 +57,5 @@ as they become available.
    :name: toc_monitoring_integrations
    :hidden:
 
+   monitoring_integrations/checkmk_integration.rst
    monitoring_integrations/neteye_integration.rst

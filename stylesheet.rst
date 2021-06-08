@@ -274,6 +274,9 @@ When code blocks are used for syntax highlighting, simply put the Pygment code f
 language to the right of the directive.  Note that Pygment will first check that the syntax is
 valid before adding highlighting!  Bad syntax means the code block appears without highlighting.
 The console output will then show something like ``WARNING: Could not lex literal_block as "json".``
+
+You can see `a complete list of languages <https://pygments.org/docs/lexers/>`_ recognized by Pygment.
+
 Here's an example for JSON:
 
 .. code-block:: json

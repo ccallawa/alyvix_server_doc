@@ -12,18 +12,14 @@
 
 .. _monitoring_integrations_neteye:
 
-#######################
-NetEye 4.17 Integration
-#######################
+####################
+NetEye 4 Integration
+####################
 
-The procedure below will show you how to integrate Alyvix test cases into the NetEye monitoring
-system.  When the configuration is completed, the NetEye installation will request the results
-of Alyvix runs at regular intervals via Alyvix Server's Measurements API, and the data can then
-be visualized within NetEye.
-
-.. note::
-
-   The steps in this integration tutorial were correct as of May 2021 using version NetEye 4.17.
+The procedure below will show you how to integrate Alyvix test cases into the NetEye |trademark|
+monitoring system.  When the configuration is completed, the NetEye installation will request the
+results of Alyvix runs at regular intervals via Alyvix Server's Measurements API, and the data can
+then be visualized within NetEye.
 
 The configuration steps below assume you have created an Alyvix test case readable by Alyvix Robot
 called :file:`myalyvixcheck.alyvix`, and you want to monitor it from Alyvix Server located on
@@ -42,7 +38,7 @@ The general outline of the configuration steps to complete on the NetEye side is
 After these tasks are completed, your NetEye hierarchy will look like the following:
 
 .. image:: images/neteye417-integration.png
-   :alt: Fill in this description!
+   :alt: Diagram showing how generic NetEye hosts and services should relate to specific ones.
    :target: ../_static/targets/neteye417-integration.png
 
 Although you can carry out these steps by hand, it's much easier to use NetEye's
@@ -100,7 +96,7 @@ guide provides the necessary steps in detail.
 
    .. image:: images/neteye417-add-host.png
       :class: image-boxshadow zoomable-image-inset
-      :alt: Fill in this description!
+      :alt: Screenshot showing how to add a host via a web form in NetEye.
       :target: ../_static/targets/neteye417-add-host.png
 
 #. Next, manually create a new service for each test case.  Go to
@@ -125,7 +121,7 @@ guide provides the necessary steps in detail.
 
    .. image:: images/neteye417-add-service.png
       :class: image-boxshadow zoomable-image-inset
-      :alt: Fill in this description!
+      :alt: Screenshot showing how to add a service via a web form in NetEye.
       :target: ../_static/targets/neteye417-add-service.png
 
 #. To check that the configuration was successful, type your server name (**server.alyvix.com**)
@@ -145,7 +141,7 @@ guide provides the necessary steps in detail.
 
    .. image:: images/neteye417-confirm-success.png
       :class: image-boxshadow zoomable-image
-      :alt: Fill in this description!
+      :alt: Screenshot in NetEye showing the analytics graph for a host and service monitored via Alyvix Server.
       :target: ../_static/targets/neteye417-confirm-success.png
 
 That's it.  Congratulations on successfully setting up Alyvix, Alyvix Server and NetEye to
