@@ -20,9 +20,9 @@ Checkmk 2 Integration
 #####################
 
 The procedure below will show you how to integrate Alyvix test cases into the Checkmk |trademark|
-monitoring system.  When the configuration is completed, the Checkmk installation will request
-the results of Alyvix runs at regular intervals via Alyvix Server's Measurements API, and the
-data can then be visualized within a Checkmk Service View.
+monitoring system.  When the configuration is completed, the :iconlink:`ext|Checkmk|https://checkmk.com/`
+installation will request the results of Alyvix runs at regular intervals via Alyvix Server's
+Measurements API, and the data can then be visualized within a Checkmk Service View.
 
 The configuration steps below assume you have (1) created Alyvix test cases readable by Alyvix
 Robot that you want to monitor from your Alyvix Server located at :file:`server.alyvix.com,` and
@@ -31,7 +31,7 @@ Robot that you want to monitor from your Alyvix Server located at :file:`server.
 Then the general outline of the configuration steps to complete is:
 
 * Prepare the Checkmk
-  `special agent <https://docs.checkmk.com/latest/en/datasource_programs.html#heading_specialagents>`_
+  :iconlink:`ext|special agent|https://docs.checkmk.com/latest/en/datasource_programs.html#heading_specialagents`
   by installing the Python package that conducts the check locally on Alyvix Server
 * Search for the Alyvix services and register them in Checkmk
 * Verify that each Alyvix service was configured successfully
@@ -41,6 +41,8 @@ new Service entry for each Alyvix test case configured on Alyvix Server:
 
 .. image:: images/checkmk200-final-result.png
    :class: image-boxshadow zoomable-image-inset
+   :width: 90%
+   :align: center
    :alt: A screenshot that shows the result after configuration is complete.
    :target: ../_static/targets/checkmk200-final-result.png
 
@@ -70,7 +72,7 @@ The following step-by-step guide illustrates the above steps in detail.
       0 "Alyvix visititalia" duration=6985;;;;|vi_home_ready=3411;;;; ...
       0 "Alyvix visittrentino" duration=8574;;;;|win_move=;;;;|vt_home_ready=1373;...
 
-   If the output is similar to the above, then you have successfully completed steps #1 and #2.
+   If the output is similar to the above, then you have successfully completed step #1.
 
 #. Configure all Alyvix services automatically found by Checkmk so that the results of individual
    test cases can be visualized.
@@ -95,7 +97,7 @@ The following step-by-step guide illustrates the above steps in detail.
 
 #. Check that the configuration was successful.
 
-   From your Alyvix Server's *Services View*, you should see results of the first few checks:
+   From Checkmk's *Services View*, you should see results of the first few checks:
 
    .. image:: images/chkmk-result-boxes.png
       :scale: 50%

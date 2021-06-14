@@ -29,10 +29,15 @@ systems will be added as they become available.
 |
 
 
+.. logos should be around 58x53 and png
+
 .. |ne-logo| image:: monitoring_integrations/images/neteye-logo.png
    :scale: 40%
 
 .. |chk-logo| image:: monitoring_integrations/images/chkmk-logo.png
+   :scale: 40%
+
+.. |prtg-logo| image:: monitoring_integrations/images/prtg-logo.png
    :scale: 40%
 
 .. table::
@@ -40,13 +45,15 @@ systems will be added as they become available.
    :widths: 40 25 35
    :width: 100%
 
-   +------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-   | Monitoring System Integration Instructions                                                     | Developer                                                                                                            |
-   +------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-   | |chk-logo| |trade| |smalltab| :ref:`Checkmk  2 instructions <monitoring_integrations_checkmk>` | :iconlink:`ext|tribe29|https://checkmk.com/`                                                                         |
-   +------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-   | |ne-logo| |trade| |smalltab| :ref:`NetEye 4 instructions <monitoring_integrations_neteye>`     | :iconlink:`ext|Wuerth Phoenix|https://www.wuerth-phoenix.com/en/solutions/it-system-management/unified-monitoring/`  |
-   +------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+   +---------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+   | Monitoring System Integration Instructions                                                                    | Developer                                                                                                            |
+   +---------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+   | |chk-logo| |trade| |smalltab| :ref:`Checkmk  2 instructions <monitoring_integrations_checkmk>`                | :iconlink:`ext|tribe29|https://checkmk.com/`                                                                         |
+   +---------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+   | |ne-logo| |trade| |smalltab| :ref:`NetEye 4 instructions <monitoring_integrations_neteye>`                    | :iconlink:`ext|Wuerth Phoenix|https://www.wuerth-phoenix.com/en/solutions/it-system-management/unified-monitoring/`  |
+   +---------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+   | |prtg-logo| |trade| |smalltab| :ref:`PRTG Network Monitor 21 instructions <monitoring_integrations_prtg>`     | :iconlink:`ext|Paessler|https://www.paessler.com/prtg/`                                                              |
+   +---------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
 
 |
 
@@ -59,3 +66,4 @@ systems will be added as they become available.
 
    monitoring_integrations/checkmk_integration.rst
    monitoring_integrations/neteye_integration.rst
+   PRTG Network Monitor 21 <monitoring_integrations/prtg_integration.rst>

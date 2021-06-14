@@ -19,7 +19,8 @@ NetEye 4 Integration
 The procedure below will show you how to integrate Alyvix test cases into the NetEye |trademark|
 monitoring system.  When the configuration is completed, the NetEye installation will request the
 results of Alyvix runs at regular intervals via Alyvix Server's Measurements API, and the data can
-then be visualized within NetEye.
+then be visualized within
+:iconlink:`ext|NetEye|https://www.wuerth-phoenix.com/en/solutions/it-system-management/unified-monitoring/`.
 
 The configuration steps below assume you have created an Alyvix test case readable by Alyvix Robot
 called :file:`myalyvixcheck.alyvix`, and you want to monitor it from Alyvix Server located on
