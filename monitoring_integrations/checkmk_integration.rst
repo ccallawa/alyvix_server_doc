@@ -8,10 +8,10 @@
 
 .. include:: ../sphinx-roles.txt
 
-
-
 .. |chkmk-green-plus| image:: images/chkmk-green-plus.png
    :scale: 45%
+
+
 
 .. _monitoring_integrations_checkmk:
 

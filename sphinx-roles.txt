@@ -72,10 +72,6 @@
    :alt: The logo for Pivotal Tracker.
    :target: https://www.pivotaltracker.com/n/projects/1533621
 
-.. |PRTG| replace:: PRTG
-
-.. |PRTGnet| replace:: PRTG Network Monitor 21
-
 .. |smalltab| raw:: html
 
    &nbsp;

@@ -8,6 +8,10 @@
 
 .. include:: ../sphinx-roles.txt
 
+.. |PRTG| replace:: PRTG
+
+.. |PRTGnet| replace:: PRTG Network Monitor 21
+
 
 
 .. _monitoring_integrations_prtg:

@@ -11,9 +11,9 @@
 
 .. _release_notes_v1_4:
 
-=======================================
-Version 1.4.1 - Version 1.4.3 (Current)
-=======================================
+=============================
+Version 1.4.1 - Version 1.4.3
+=============================
 
 Alyvix Server is a software tool for scaling up the management of instances of the Alyvix
 visual monitoring system.
