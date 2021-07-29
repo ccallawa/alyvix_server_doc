@@ -21,9 +21,9 @@ visual monitoring system.
 
 .. _release_notes_v1_3_1:
 
-.. topic:: Alyvix Server Version 1.3.1
+.. rubric:: Alyvix Server Version 1.3.1
 
-   **Release date:**  December 14th, 2020
+**Release date:**  December 14th, 2020
 
 **Bug fixes**
 
@@ -61,9 +61,9 @@ The following endpoint URLs remain:
 
 .. _release_notes_v1_3_0:
 
-.. topic:: Alyvix Server Version 1.3.0
+.. rubric:: Alyvix Server Version 1.3.0
 
-   **Release date:**  December 3rd, 2020
+**Release date:**  December 3rd, 2020
 
 **New Features**
 

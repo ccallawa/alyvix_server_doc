@@ -86,7 +86,7 @@ guide provides the necessary steps in detail.
    deploy the new configuration at **Director > Activity log > Deploy pending changes**.
 
    .. rst-class:: bignums
-      :class: backmedbeige
+      :class: lightbackground
 
    #. **Main properties**
 
@@ -96,7 +96,7 @@ guide provides the necessary steps in detail.
       * Host address = :file:`<IPAddr>`
 
    .. image:: images/neteye417-add-host.png
-      :class: image-boxshadow zoomable-image-inset
+      :class: image-boxshadow zoomable-image image-very-large
       :alt: Screenshot showing how to add a host via a web form in NetEye.
       :target: ../_static/targets/neteye417-add-host.png
 
@@ -109,7 +109,7 @@ guide provides the necessary steps in detail.
    the configuration.
 
    .. rst-class:: bignums
-      :class: backmedbeige
+      :class: lightbackground
 
    #. **Main properties**
 
@@ -121,7 +121,7 @@ guide provides the necessary steps in detail.
       * alyvix3_testcase_name = :file:`myalyvixcheck`
 
    .. image:: images/neteye417-add-service.png
-      :class: image-boxshadow zoomable-image-inset
+      :class: image-boxshadow zoomable-image image-very-large
       :alt: Screenshot showing how to add a service via a web form in NetEye.
       :target: ../_static/targets/neteye417-add-service.png
 
@@ -141,7 +141,7 @@ guide provides the necessary steps in detail.
    loads the interactive graphs of each measure with their historical values.
 
    .. image:: images/neteye417-confirm-success.png
-      :class: image-boxshadow zoomable-image
+      :class: image-boxshadow zoomable-image image-very-large
       :alt: Screenshot in NetEye showing the analytics graph for a host and service monitored via Alyvix Server.
       :target: ../_static/targets/neteye417-confirm-success.png
 

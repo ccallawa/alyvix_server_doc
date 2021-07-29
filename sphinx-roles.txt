@@ -1,3 +1,45 @@
+.. |chevron| image:: /icons/chevron.ico
+   :width: 12
+.. |reload| image:: /icons/reload.ico
+   :width: 12
+.. |edit| image:: /icons/edit.ico
+   :width: 12
+.. |trashbin| image:: /icons/trash-bin.ico
+   :width: 12
+.. |uparrow| image:: /icons/up-arrow.ico
+   :width: 8
+.. |downarrow| image:: /icons/down-arrow.ico
+   :width: 8
+.. |gear| image:: /icons/gear.ico
+   :width: 8
+.. |font-img| image:: ../_static/img/font.png
+   :width: 60
+.. |image-img| image:: ../_static/img/image.png
+   :width: 60
+.. |rect-img| image:: ../_static/img/rect.png
+   :width: 60
+
+.. |times-icon| image:: _static/icons/custom/times-solid.png
+   :width: 24
+   :class: no-scaled-link
+.. |stop-icon| image:: _static/icons/custom/stop-solid.png
+   :width: 24
+   :class: no-scaled-link
+.. |hand-icon| image:: _static/icons/custom/hand-solid.png
+   :width: 24
+   :class: no-scaled-link
+.. |play-icon| image:: _static/icons/custom/play-solid.png
+   :width: 24
+   :class: no-scaled-link
+
+.. |email-small-img| image:: _static/img/email_40.png
+   :width: 40
+   :class: no-scaled-link
+.. |slack-small-img| image:: pictures/slack_logo.png
+   :width: 38
+   :class: no-scaled-link
+
+
 .. |python-download-link| replace:: :download:`64-bit Windows installer for Python version 3.7.9 <https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe>`
 
 .. |python-remove-name| replace:: :file:`Python 3.7.9 (64-bit)`
@@ -30,10 +72,6 @@
 
    <i class="fa fa-med fa-white fa-caret-right" style="vertical-align: top;"></i>
 
-.. |play-icon| raw:: html
-
-   <i class="fa fa-smaller fa-invblue3 fa-play"></i>
-
 .. |4arrows-icon| raw:: html
 
    <i class="fa fa-smaller fa-arrows"></i>
@@ -44,7 +82,7 @@
 
 .. |gear-icon| raw:: html
 
-   <i class="fa fa-small fa-invblue fa-gear"></i>
+   <i class="fas fa-small fa-invblue fa-cog"></i>
 
 .. |save-icon| raw:: html
 
@@ -57,14 +95,6 @@
 .. |plus-icon| raw:: html
 
    <i class="fa fa-small fa-invblue fa-plus"></i>
-
-.. |times-icon| raw:: html
-
-   <i class="fa fa-small fa-invblue fa-times"></i>
-
-.. |stop-icon| raw:: html
-
-   <i class="fa fa-big fa-blue fa-stop-circle"></i>
 
 .. |pivotal| image:: pictures/pt_logo.png
    :height: 38px
@@ -129,6 +159,21 @@
 
 .. role:: warn
    :class: redbold
+
+.. role:: ep-red
+   :class: endpoint-red
+
+.. role:: ep-black
+   :class: endpoint-black
+
+.. role:: ep-red-med
+   :class: endpoint-red-med
+
+.. role:: ep-black-med
+   :class: endpoint-black-med
+
+.. role:: lfs
+   :class: large-font-size
 
 .. role:: hint
    :class: lightgrey

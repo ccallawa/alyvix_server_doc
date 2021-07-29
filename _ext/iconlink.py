@@ -11,7 +11,7 @@ Sphinx/docutils extension to create inline links with FontAwesome icons.
         type -- Selects the Font Awesome icon and HTML/CSS attributes to use, and browser behavior
                 "ext" will select the external icon and open a new tab in the browser
                 "gloss" will use the (?) icon and not switch tabs
-                "video" will sue the (>) icon and not switch tabs
+                "video" will use the (>) icon and not switch tabs
                 "pivotal" will insert the Pivotal logo and open a new browser tab
         link text -- The string to display on the web page wrapped in <a href="">...</a>
                      If the link is blank, only the icon will appear
@@ -19,6 +19,7 @@ Sphinx/docutils extension to create inline links with FontAwesome icons.
 
     More information:  https://docutils.readthedocs.io/en/sphinx-docs/howto/rst-roles.html
     Potentially modified:  ..\site-packages\docutils\writers\_html_base.py
+                           ..\site-packages\docutils\nodes.py
 
 '''
 
@@ -44,7 +45,7 @@ def make_param_link(name, rawtext, text, lineno, inliner, options={}, content=[]
             # node.attributes.__setitem__('icon', 'external')  # should pass through to HTML5.py, but not working
             node.attributes.__setitem__('target', '_blank')  # passes through to output
             node2 = nodes.emphasis('', '')
-            node2.attributes.__setitem__('class', 'fa fa-small fa-external-link')
+            node2.attributes.__setitem__('class', 'fas fa-small fa-external-link-alt')
             node.append(node2)
         elif type == 'gloss':
             # Example in test_case_building.rst
@@ -69,11 +70,13 @@ def make_param_link(name, rawtext, text, lineno, inliner, options={}, content=[]
             # Not an icon, but a small image to be used inline
             base_uri = 'https://www.pivotaltracker.com/n/projects/1533621/stories/'
             node = nodes.reference(rawtext, ' ', refuri=base_uri+ref, **options)
-            node.attributes.__setitem__('target', '_blank')
-            node2 = nodes.image(uri='../pictures/pt_logo_small.png', alt=linktext)
+            node.attributes.__setitem__('target', '_blank2')
+            # This should make it relative to the _build/ directory
+            node2 = nodes.image(uri='/pictures/pt_logo_small.png', alt=linktext)
+            node2.attributes.__setitem__('classes', ['pivotal-icon-width'])    # in custom.css
             node.append(node2)
         else:
-            print("\033[93mError:  no type found for :iconlink:\033[0m")
+            print("\033[93mError:  no type found for :iconlink: {}\033[0m", type)
     else:
         node = nodes.reference(rawtext, linktext, refuri=ref, **options)
 

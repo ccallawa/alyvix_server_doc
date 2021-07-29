@@ -41,7 +41,6 @@ Alyvix Server releases:
 .. toctree::
    :maxdepth: 2
    :name: toc_test
-   :hidden:
 
    release_notes/release_notes_15.rst
    release_notes/release_notes_14.rst

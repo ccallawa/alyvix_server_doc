@@ -1,0 +1,156 @@
+{% extends "layout.html" %}
+{% set css_files = css_files + ['_static/neteye-home.css'] %}
+{% set title = _('Alyvix Server') %}
+
+{% block extrahead %}
+{{ super() }}
+{% endblock %}
+
+{%- block sidebar1 %}
+<div id="menu" class="col-xl-auto">
+    {{ sidebar() }}
+</div>
+
+<div id="content" class="col">
+    <div class="row" id="index-banner">
+        <!-- <div class="banner-gradient"> -->
+            <div class="col hide-in-small-screen"></div>
+            <div class="col main-content">
+                <div class="row justify-content-between">
+                    <div class="col-auto left-column">
+                        <h1 class="banner-title">{{ title|striptags|e }}</h1>
+                        <div class="slogan-container mobile">
+                            Learn how to manage your Alyvix sessions.
+                        </div>
+                    </div>
+                    <div class="col right-column">
+                        <div class="row no-gutters">
+                            <div class="col"></div>
+                            <div class="col">
+                                <div class="slogan-container">
+                                    Learn how to manage your Alyvix sessions.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col hide-in-small-screen"></div>
+        <!-- </div> -->
+    </div>
+
+    <div class="row home-page" id="document">
+        <div class="col hide-in-small-screen"></div>
+        <div class="col main-content">
+            <div class="row no-gutters">
+                <div class="col">
+                    <div class="row userguide-section">
+                        <div class="col-3 description">
+                            <a href="introduction.html"><div class="description-title">Introduction</div></a>
+                            <div class="description-content">
+                                Welcome to Alyvix.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row userguide-section">
+                        <div class="col-3 description">
+                            <a href="getting_started.html"><div class="description-title">Getting Started</div></a>
+                            <div class="description-content">
+                                Get Alyvix Server up and running and configure it to run your
+                                Alyvix test cases according to your preferences.
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row boxes no-gutters">
+                                <div class="col">
+                                    <a href="install.html"><div class="bx--tile">
+                                        Installation and Upgrade<div class="tile-title"></div><br />
+                                        <div class="image download"></div></a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <a href="install.html"><div class="bx--tile">
+                                        Video Tutorials<div class="tile-title"></div><br />
+                                        <div class="image data-player"></div></a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <a href="session_management.html"><div class="bx--tile">
+                                        Session Management<div class="tile-title"></div><br />
+                                        <div class="image tree-view-alt"></div></a>
+                                    </div>
+                                </div>
+                                 <div class="col">
+                                    <a href="monitoring_integrations.html"><div class="bx--tile">
+                                        Monitoring Integrations<div class="tile-title"></div><br />
+                                        <div class="image shape-intersect"></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row userguide-section">
+                        <div class="col-3 description">
+                            <div class="description-title">Daily Operations</div>
+                            <div class="description-content">
+                                Discover how to operate your sessions.
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row boxes no-gutters">
+                                <div class="col">
+                                    <a href="test_case_scheduling.html"><div class="bx--tile">
+                                        <div class="tile-title">Test Case Scheduling</div><br />
+                                        <div class="image time-plot"></div></a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <a href="measurement_web_apis.html"><div class="bx--tile">
+                                        <div class="tile-title">Measurement Web APIs</div><br />
+                                        <div class="image app-connectivity"></div></a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <a href="transaction_reporting.html"><div class="bx--tile">
+                                        <div class="tile-title">Transaction Reporting</div><br />
+                                        <div class="image report-data"></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row userguide-section">
+                        <div class="col-3 description">
+                            <div class="description-title">Other Alyvix Server</div>
+                            <div class="description-content">
+                                Our past and upcoming releases, using Alyvix to build your test cases, and how to contact us.
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="row boxes no-gutters">
+                                <div class="col">
+                                    <a href="release_notes.html"><div class="bx--tile">
+                                        Release Notes<div class="tile-title"></div><br />
+                                        <div class="image report"></div></a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <a href="https://alyvix.com/learn/"><div class="bx--tile">
+                                        Alyvix User Guide<div class="tile-title"></div><br />
+                                        <div class="image document"></div></a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <a href="get_in_touch.html"><div class="bx--tile">
+                                        Get in Touch<div class="tile-title"></div><br />
+                                        <div class="image group"></div></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+{% endblock %}
+
+{% block body %}{% endblock %}
+
+{% block rxColumn %}{% endblock %}

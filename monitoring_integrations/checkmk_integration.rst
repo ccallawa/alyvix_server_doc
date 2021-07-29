@@ -40,9 +40,7 @@ After these tasks are completed, your Checkmk dashboard will look like the follo
 new Service entry for each Alyvix test case configured on Alyvix Server:
 
 .. image:: images/checkmk200-final-result.png
-   :class: image-boxshadow zoomable-image-inset
-   :width: 90%
-   :align: center
+   :class: image-boxshadow zoomable-image image-very-large
    :alt: A screenshot that shows the result after configuration is complete.
    :target: ../_static/targets/checkmk200-final-result.png
 
@@ -111,7 +109,7 @@ The following step-by-step guide illustrates the above steps in detail.
 
    * Hover over the graph icon to see a popup summary graph
    * Click on the graph icon to go to the dedicated, interactive results page
-   * Click on the "blue globe" icon to see :ref:`the most recent report <transaction_reporting_top>`
+   * Click on the "blue globe" icon to see `the most recent report <../transaction_reporting.html>`_
      for that test case on Alyvix Server
 
 That's it.  Congratulations on successfully setting up Alyvix Server and Checkmk to

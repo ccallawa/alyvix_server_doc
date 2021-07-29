@@ -21,9 +21,9 @@ visual monitoring system.
 
 .. _release_notes_v1_5_0:
 
-.. topic:: Alyvix Server Version 1.5.0
+.. rubric:: Alyvix Server Version 1.5.0
 
-   **Release date:**  June 14th, 2021
+**Release date:**  June 14th, 2021
 
 **New Features**
 

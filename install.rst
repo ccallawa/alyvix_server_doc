@@ -11,24 +11,23 @@
 
 .. _install_top:
 
-============
-Installation
-============
+========================
+Installation and Upgrade
+========================
 
 Before installing Alyvix, first check that your setup meets the system requirements.
 
 |
 
 
-
 .. _system_requirements_top:
 
-.. topic::   System Requirements
+.. rubric::   System Requirements
 
-   .. note::
+.. note::
 
-      Alyvix assumes that you have one virtual or physical machine exclusively dedicated to running
-      Alyvix test cases.
+   Alyvix assumes that you have one virtual or physical machine exclusively dedicated to running
+   Alyvix test cases.
 
 You should check that your designated machine meets the following requirements before you install
 Alyvix:
@@ -47,13 +46,14 @@ Alyvix:
      * Processor:  2 CPUs Base + 2 CPUs per session
      * Memory:  4GB RAM Base + 4GB RAM per session
 
+|
 
 
 .. _installation_steps:
 
-.. topic::   Installation Steps
+.. rubric::   Installation Steps
 
-   The following steps will install Alyvix Server on your machine:
+The following steps will install Alyvix Server on your machine:
 
 .. rst-class:: bignums
 
@@ -78,7 +78,8 @@ Alyvix:
    * Set the database password as follows:
 
       * Open the file :file:`C:\\Program Files\\Alyvix\\Alyvix Server\\config.json`
-      * Set your own password in this line: ``"database":{.. "password": "<your_password>", ..}``
+      * Set your own password in this line: |br|
+        ``"database":{.. "password": "<your_password>", ..}``
 
 #. Install your HTTPS certificate
 

@@ -24,9 +24,9 @@ to schedule and run test cases, and retrieve data and reports from those runs.
 
 .. _release_notes_v1_1_0:
 
-.. topic:: Alyvix Server Version 1.1.0
+.. rubric:: Alyvix Server Version 1.1.0
 
-   **Release date:**  October 6th, 2020
+**Release date:**  October 6th, 2020
 
 **New Features**
 

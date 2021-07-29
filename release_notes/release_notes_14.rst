@@ -20,9 +20,9 @@ visual monitoring system.
 
 .. _release_notes_v1_4_3:
 
-.. topic:: Alyvix Server Version 1.4.3
+.. rubric:: Alyvix Server Version 1.4.3
 
-   **Release date:**  March 25th, 2021
+**Release date:**  March 25th, 2021
 
 **Bug Fixes**
 
@@ -57,9 +57,9 @@ The following endpoint URLs remain:
 
 .. _release_notes_v1_4_2:
 
-.. topic:: Alyvix Server Version 1.4.2
+.. rubric:: Alyvix Server Version 1.4.2
 
-   **Release date:**  March 9th, 2021
+**Release date:**  March 9th, 2021
 
 **Bug Fixes**
 
@@ -94,9 +94,9 @@ The following endpoint URLs remain:
 
 .. _release_notes_v1_4_1:
 
-.. topic:: Alyvix Server Version 1.4.1
+.. rubric:: Alyvix Server Version 1.4.1
 
-   **Release date:**  March 2nd, 2021
+**Release date:**  March 2nd, 2021
 
 **New Features**
 

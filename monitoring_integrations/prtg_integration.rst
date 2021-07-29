@@ -41,9 +41,7 @@ After these tasks are completed, you can explore your Alyvix test case results s
 the |PRTG| dashboard and host views:
 
 .. image:: images/prtg21-integration.png
-   :class: image-boxshadow zoomable-image-inset
-   :width: 90%
-   :align: center
+   :class: image-boxshadow zoomable-image image-very-large
    :alt: A screenshot that shows the result after configuration is complete.
    :target: ../_static/targets/prtg21-integration.png
 
@@ -92,9 +90,7 @@ The following step-by-step guide illustrates the above steps in detail.
    case you plan to include in your services view).  Click on the blue **Create** action when done.
 
    .. image:: images/prtg21-add-python-sensor.png
-      :class: image-boxshadow zoomable-image-inset
-      :width: 90%
-      :align: center
+      :class: image-boxshadow zoomable-image image-very-large
       :alt: A screenshot that lets you create settings for a custom Python sensor.
       :target: ../_static/targets/prtg21-add-python-sensor.png
 
@@ -107,9 +103,7 @@ The following step-by-step guide illustrates the above steps in detail.
    least one time):
 
    .. image:: images/prtg21-final-result.png
-      :class: image-boxshadow zoomable-image-inset
-      :width: 90%
-      :align: center
+      :class: image-boxshadow zoomable-image image-very-large
       :alt: A screenshot that shows the result after configuration is complete.
       :target: ../_static/targets/prtg21-integration.png
 
@@ -119,12 +113,10 @@ The following step-by-step guide illustrates the above steps in detail.
 
    * Click on the graph icon to go to the dedicated, interactive results page (graph and sortable table)
    * Copy and paste the URL (located at the top of the page) for
-     :ref:`the most recent report <transaction_reporting_top>` for that test case on Alyvix Server
+     `the most recent report <../transaction_reporting.html>`_ for that test case on Alyvix Server
 
    .. image:: images/prtg21-view-graph.png
-      :class: image-boxshadow zoomable-image-inset
-      :width: 90%
-      :align: center
+      :class: image-boxshadow zoomable-image image-very-large
       :alt: A screenshot that shows the result after configuration is complete.
       :target: ../_static/targets/prtg21-view-graph.png
 

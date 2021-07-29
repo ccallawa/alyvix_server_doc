@@ -64,21 +64,27 @@ then initiate the execution of test cases as described below.
 
 
 .. table::
-   :class: tablecell-endpoint
+   :class: tablecell-endpoint large-font-size
+   :widths: 5 95
 
-   +----------------------------------------------------+
-   | Flow Management Endpoint                           |
-   +-----------+----------------------------------------+
-   | Endpoint: | :bolditalic:`https://<alyvix_server>/` |
-   +-----------+----------------------------------------+
-   | Example:  | :bolditalic:`https://localhost/`       |
-   +-----------+----------------------------------------+
+   +--------------------+----------------------------------------+
+   | :lfs:`Flow Management Endpoint`                             |
+   +--------------------+----------------------------------------+
+   | :lfs:`Endpoint:`                                            |
+   +--------------------+----------------------------------------+
+   |                    | :ep-red:`https://<alyvix_server>/`     |
+   +--------------------+----------------------------------------+
+   | :lfs:`Example:`                                             |
+   +--------------------+----------------------------------------+
+   |                    | :ep-black:`https://localhost/`         |
+   +--------------------+----------------------------------------+
+
 
 In addition to using the endpoint above directly, you can click on the :guilabel:`Workflows`
 button at the top right of the interface to see the workflow screen shown here.
 
 .. image:: images/workflow01.png
-   :class: image-boxshadow zoomable-image
+   :class: image-boxshadow zoomable-image image-very-large
    :alt: The workflow interface.
    :target: ../_static/targets/workflow01.png
 
@@ -99,20 +105,25 @@ The main controls shown at the left allow you to manage the session state:
   without
   running either its fail or exit sections, then halt the scheduler until further action is
   taken, completely flushing and cleaning all pending execution sequences
-* **Manual:**  Stop the scheduler at the end of the current flow execution, then
+* |hand-icon| **Manual:**  Stop the scheduler at the end of the current flow execution, then
   permit manual scheduling by inserting an endpoint URL specifying the flow name into the
   browser's address bar (automated scheduling can be restarted with the *Run* action):
 
   .. table::
-     :class: tablecell-endpoint
+     :class: tablecell-endpoint large-font-size
+     :widths: 2 98
 
-     +----------------------------------------------------------------------------------------------+
-     | Manual Scheduling Endpoint                                                                   |
-     +-----------+----------------------------------------------------------------------------------+
-     | Endpoint: | :bolditalic:`https://<alyvix_server>/v0/flows/run?username=<domain>\\<username>` |
-     +-----------+----------------------------------------------------------------------------------+
-     | Example:  | :bolditalic:`https://localhost/v0/flows/run?username=MS\\johnsmith`              |
-     +-----------+----------------------------------------------------------------------------------+
+     +---------------------------------------------------------------------------------------+
+     | :lfs:`Manual Scheduling Endpoint`                                                     |
+     +----+----------------------------------------------------------------------------------+
+     | :lfs:`Endpoint:`                                                                      |
+     +----+----------------------------------------------------------------------------------+
+     |    | :ep-red-med:`https://<alyvix_server>/v0/flows/run?username=<domain>\\<username>` |
+     +----+----------------------------------------------------------------------------------+
+     | :lfs:`Example:`                                                                       |
+     +----+----------------------------------------------------------------------------------+
+     |    | :ep-black-med:`https://localhost/v0/flows/run?username=MS\\johnsmith`            |
+     +----+----------------------------------------------------------------------------------+
 
 The non-interactive elements in the middle of each row are:
 
@@ -127,7 +138,7 @@ The non-interactive elements in the middle of each row are:
 The controls on the right side let you assign test cases to a workflow, and manage the idle
 waiting time between both individual test cases in a single workflow and between subsequent
 runs of a full workflow.  The waiting periods work together with the
-:ref:`scheduling period <test_case_scheduling_top>` to determine when the next test case
+`scheduling period <test_case_scheduling.html>`_ to determine when the next test case
 actually runs.
 
 To assign test cases to a workflow, simply tick the checkbox for each configured test case

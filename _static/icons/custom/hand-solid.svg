@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   aria-hidden="true"
+   focusable="false"
+   data-prefix="fas"
+   data-icon="times"
+   class="svg-inline--fa fa-times fa-w-11"
+   role="img"
+   viewBox="0 0 279.733 274.66995"
+   version="1.1"
+   id="svg19"
+   sodipodi:docname="hand-solid.svg"
+   width="279.733"
+   height="274.66995"
+   inkscape:export-filename="C:\projects\alyvix_server_doc_bootstrap\_static\icons\custom\hand-solid.png"
+   inkscape:export-xdpi="13.980415"
+   inkscape:export-ydpi="13.980415"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs23" />
+  <sodipodi:namedview
+     id="namedview21"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     showgrid="false"
+     inkscape:zoom="1.5800781"
+     inkscape:cx="131.00618"
+     inkscape:cy="154.42275"
+     inkscape:window-width="1271"
+     inkscape:window-height="1040"
+     inkscape:window-x="26"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg19" />
+  <ellipse
+     style="fill:#0078e8;fill-opacity:1"
+     id="path1393"
+     cx="139.8665"
+     cy="137.33498"
+     rx="139.8665"
+     ry="137.33498" />
+  <path
+     fill="currentColor"
+     d="m 91.632066,87.023577 c 6.775381,-0.156961 12.321374,6.715074 12.321374,14.921853 v 31.90875 h 2.41708 V 69.381744 c 0,-8.206776 5.546,-15.078811 12.32138,-14.921845 6.56569,0.152205 11.84943,6.645187 11.84943,14.632801 v 64.76148 h 2.41709 V 55.112268 c 0,-8.206776 5.54599,-15.07881 12.32137,-14.92185 6.5657,0.15221 11.84944,6.645186 11.84944,14.632801 v 79.030961 h 2.41709 V 69.747632 c 0,-8.206782 5.54598,-15.078817 12.32137,-14.92185 6.5657,0.15221 11.84943,6.645186 11.84943,14.632801 v 86.345707 l 9.56198,-15.92291 c 3.92564,-6.53688 11.48385,-7.98249 16.88241,-3.22819 5.39763,4.75429 6.59107,13.90725 2.66543,20.4445 l -37.94848,63.19001 a 14.502488,17.562435 0 0 1 -11.72858,7.2328 h -59.69889 c -6.729755,0 -12.575469,-5.60681 -14.116964,-13.53991 l -8.008996,-41.2205 a 58.013276,70.253766 0 0 1 -1.542099,-16.08975 v -55.01396 c -3.07e-4,-7.987618 5.283443,-14.480594 11.849135,-14.632803 z"
+     id="path3277"
+     style="fill:#ffffff;stroke-width:0.332485" />
+</svg>

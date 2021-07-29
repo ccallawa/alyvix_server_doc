@@ -21,6 +21,7 @@ installations to request the results of Alyvix runs at regular intervals, thus i
 Alyvix test cases into your monitoring system.  Over time the data collected can indicate
 trends that can help you discover when the user experience is below expectations and
 locate hardware bottlenecks.
+
 The monitoring systems below have been tested for compatibility with Alyvix.  To see the
 configuration tutorial for a particular system, click on the monitoring system link in the
 first column, or in the index at the left.  Integration tutorials for additional monitoring
@@ -42,18 +43,17 @@ systems will be added as they become available.
 
 .. table::
    :class: taller-rows all-white-rows
-   :widths: 40 25 35
-   :width: 100%
+   :widths: 70 30
 
-   +---------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-   | Monitoring System Integration Instructions                                                                    | Developer                                                                                                            |
-   +---------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-   | |chk-logo| |trade| |smalltab| :ref:`Checkmk  2 instructions <monitoring_integrations_checkmk>`                | :iconlink:`ext|tribe29|https://checkmk.com/`                                                                         |
-   +---------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-   | |ne-logo| |trade| |smalltab| :ref:`NetEye 4 instructions <monitoring_integrations_neteye>`                    | :iconlink:`ext|Wuerth Phoenix|https://www.wuerth-phoenix.com/en/solutions/it-system-management/unified-monitoring/`  |
-   +---------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
-   | |prtg-logo| |trade| |smalltab| :ref:`PRTG Network Monitor 21 instructions <monitoring_integrations_prtg>`     | :iconlink:`ext|Paessler|https://www.paessler.com/prtg/`                                                              |
-   +---------------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------------------------+
+   +--------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+   | Monitoring System Integration Instructions                                                                               | Developer                                                                                                                 |
+   +--------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+   | |smalltab| |chk-logo| |trade| |smalltab| :ref:`Checkmk  2 instructions <monitoring_integrations_checkmk>`                | :iconlink:`ext|tribe29|https://checkmk.com/`                                                                              |
+   +--------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+   | |smalltab| |ne-logo| |trade| |smalltab| :ref:`NetEye 4 instructions <monitoring_integrations_neteye>`                    | :iconlink:`ext|Wuerth Phoenix|https://www.wuerth-phoenix.com/en/solutions/it-system-management/unified-monitoring/` |tab| |
+   +--------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+   | |smalltab| |prtg-logo| |trade| |smalltab| :ref:`PRTG Network Monitor 21 instructions <monitoring_integrations_prtg>`     | :iconlink:`ext|Paessler|https://www.paessler.com/prtg/`                                                                   |
+   +--------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
 
 |
 

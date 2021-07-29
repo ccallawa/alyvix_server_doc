@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   aria-hidden="true"
+   focusable="false"
+   data-prefix="fas"
+   data-icon="times"
+   class="svg-inline--fa fa-times fa-w-11"
+   role="img"
+   viewBox="0 0 279.733 274.66995"
+   version="1.1"
+   id="svg19"
+   sodipodi:docname="stop-solid.svg"
+   width="279.733"
+   height="274.66995"
+   inkscape:export-filename="C:\projects\alyvix_server_doc_bootstrap\_static\icons\custom\stop-solid.png"
+   inkscape:export-xdpi="13.980415"
+   inkscape:export-ydpi="13.980415"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs23" />
+  <sodipodi:namedview
+     id="namedview21"
+     pagecolor="#ffffff"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     showgrid="false"
+     inkscape:zoom="1.5800781"
+     inkscape:cx="66.768851"
+     inkscape:cy="154.10631"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg19" />
+  <ellipse
+     style="fill:#0078e8;fill-opacity:1"
+     id="path1393"
+     cx="139.8665"
+     cy="137.33498"
+     rx="139.8665"
+     ry="137.33498" />
+  <path
+     fill="currentColor"
+     d="M 184.0201,86.230289 H 95.712895 c -6.648124,0 -12.041889,5.026627 -12.041889,11.22224 v 82.296421 c 0,6.19561 5.393765,11.22224 12.041889,11.22224 H 184.0201 c 6.64812,0 12.04189,-5.02663 12.04189,-11.22224 V 97.452529 c 0,-6.195613 -5.39377,-11.22224 -12.04189,-11.22224 z"
+     id="path1847"
+     style="fill:#ffffff;stroke-width:0.242185" />
+</svg>

@@ -40,15 +40,21 @@ your **private network**:
 
 
 .. table::
-   :class: tablecell-endpoint
+   :class: tablecell-endpoint large-font-size
+   :widths: 5 95
 
-   +------------------------------------------------------------+
-   | Session Management Endpoint                                |
-   +-----------+------------------------------------------------+
-   | Endpoint: | :bolditalic:`https://<alyvix_server>/settings` |
-   +-----------+------------------------------------------------+
-   | Example:  | :bolditalic:`https://localhost/settings`       |
-   +-----------+------------------------------------------------+
+
+   +------------------------------------------------------+
+   | :lfs:`Session Management Endpoint`                   |
+   +-----+------------------------------------------------+
+   | :lfs:`Endpoint:`                                     |
+   +-----+------------------------------------------------+
+   |     | :ep-red:`https://<alyvix_server>/settings`     |
+   +-----+------------------------------------------------+
+   | :lfs:`Example:`                                      |
+   +-----+------------------------------------------------+
+   |     | :ep-black:`https://localhost/settings`         |
+   +-----+------------------------------------------------+
 
 These global test case settings are:
 
@@ -63,7 +69,7 @@ These global test case settings are:
   *flow* assigned to a particular session.  The scheduling period is the same across all sessions
   on a given Alyvix Server.
 * **Retention Period Success [d]:**  The number of days that successful test case runs will be
-  stored and :ref:`available for immediate inspection <transaction_reporting_top>`.
+  stored and `available for immediate inspection <transaction_reporting.html>`_.
 * **Retention Period Failure [d]:**  The number of days that failed test case runs will be
   stored.
 
@@ -71,7 +77,7 @@ The *Settings* interface allows you to modify global settings as well as setting
 sessions:
 
 .. image:: images/settings03.png
-   :class: image-boxshadow zoomable-image
+   :class: image-boxshadow zoomable-image image-very-large
    :alt: The settings interface.
    :target: ../_static/targets/settings03.png
 
@@ -107,15 +113,20 @@ in that directory doesn't mean that it will be scheduled.  It must first be adde
 table by configuring it via the following endpoint:
 
 .. table::
-   :class: tablecell-endpoint
+   :class: tablecell-endpoint large-font-size
+   :widths: 5 95
 
    +-------------------------------------------------------------+
-   | Session Test Case Endpoint                                  |
-   +-----------+-------------------------------------------------+
-   | Endpoint: | :bolditalic:`https://<alyvix_server>/testcases` |
-   +-----------+-------------------------------------------------+
-   | Example:  | :bolditalic:`https://localhost/testcases`       |
-   +-----------+-------------------------------------------------+
+   | :lfs:`Session Test Case Endpoint`                           |
+   +-----+-------------------------------------------------------+
+   | :lfs:`Endpoint:`                                            |
+   +-----+-------------------------------------------------------+
+   |     |:ep-red:`https://<alyvix_server>/testcases`            |
+   +-----+-------------------------------------------------------+
+   | :lfs:`Example:`                                             |
+   +-----+-------------------------------------------------------+
+   |     | :ep-black:`https://localhost/testcases`               |
+   +-----+-------------------------------------------------------+
 
 Each test case can also appear multiple times in the test case table, including with different
 arguments to pass to Alyvix Robot.  The first three settings create the schedulable test case
@@ -129,7 +140,7 @@ configuration:
   an argument, or just the test case name alone, can aid understanding of dashboards and reports.
 
 .. image:: images/testcases02.png
-   :class: image-boxshadow-95 zoomable-image
+   :class: image-boxshadow zoomable-image image-very-large
    :alt: The test case interface.
    :target: ../_static/targets/testcases02.png
 
@@ -170,15 +181,20 @@ still continue to receive data, and it will still be visible via the measurement
 For this feature, you will need to configure communication parameters via the NATS/InfluxDB endpoint:
 
 .. table::
-   :class: tablecell-endpoint
+   :class: tablecell-endpoint large-font-size
+   :widths: 5 95
 
-   +-----------------------------------------------------------------+
-   | NATS/InfluxDB Management Endpoint                               |
-   +-----------+-----------------------------------------------------+
-   | Endpoint: | :bolditalic:`https://<alyvix_server>/nats-influxdb` |
-   +-----------+-----------------------------------------------------+
-   | Example:  | :bolditalic:`https://localhost/nats-influxdb`       |
-   +-----------+-----------------------------------------------------+
+   +--------------------------------------------------------+
+   | :lfs:`NATS/InfluxDB Management Endpoint`               |
+   +----+---------------------------------------------------+
+   | :lfs:`Endpoint:`                                       |
+   +----+---------------------------------------------------+
+   |    | :ep-red:`https://<alyvix_server>/nats-influxdb`   |
+   +----+---------------------------------------------------+
+   | :lfs:`Example:`                                        |
+   +----+---------------------------------------------------+
+   |    | :ep-black:`https://localhost/nats-influxdb`       |
+   +----+---------------------------------------------------+
 
 For each NATS instance you want to connect, you will need to fill in the following fields:
 
@@ -194,7 +210,7 @@ For each NATS instance you want to connect, you will need to fill in the followi
   data should be stored when it arrives.
 
 .. image:: images/settings-nats01.png
-   :class: image-boxshadow-95 zoomable-image
+   :class: image-boxshadow zoomable-image image-very-large
    :alt: The NATS/InfluxDB settings interface.
    :target: ../_static/targets/settings-nats01.png
 

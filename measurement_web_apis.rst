@@ -21,7 +21,7 @@ the results of test case runs.  There are two principal ways to retrieve measure
 
 * Directly as data in JSON format (see below) from the measurement database with a RESTful Web
   API request
-* As a :ref:`human readable report <transaction_reporting_top>` in HTML format from a transaction
+* As a `human readable report <transaction_reporting.html>`_ in HTML format from a transaction
   reporting  RESTful Web API request
 
 .. warning::
@@ -88,15 +88,16 @@ use of the free **JSON Viewer Pro**
    |         | specific, defined workflow a single time by calling this endpoint URL                            |
    +---------+--------------------------------------------------------------------------------------------------+
 
+|
+
 
 .. _measurement_web_apis_testcase_example:
 
-.. topic::  Testcases
+.. rubric::  Testcases
 
-   An example *testcases* JSON structure:
+An example *testcases* JSON structure:
 
 .. code-block:: json
-   :linenos:
 
    {
       "testcases": [
@@ -110,15 +111,16 @@ use of the free **JSON Viewer Pro**
       ]
    }
 
+|
+
 
 .. _measurement_web_apis_measures_example:
 
-.. topic:: **Measures** JSON structure
+.. rubric:: **Measures** JSON structure
 
-   The detailed *measures* JSON structure:
+The detailed *measures* JSON structure:
 
 .. code-block:: json
-   :linenos:
 
    {
       "measures": [

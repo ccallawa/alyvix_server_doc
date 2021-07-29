@@ -21,15 +21,20 @@ results that you will want to view or send to a monitoring system.  The human re
 in HTML are available from the Report Listing endpoint:
 
 .. table::
-   :class: tablecell-endpoint
+   :class: tablecell-endpoint large-font-size
+   :widths: 2 98
 
-   +-----------------------------------------------------------------------------------+
-   | Report Listing Endpoint                                                           |
-   +-----------+-----------------------------------------------------------------------+
-   | Endpoint: | :bolditalic:`https://<alyvix_server>/<API>/testcases/<alias>/reports` |
-   +-----------+-----------------------------------------------------------------------+
-   | Example:  | :bolditalic:`https://localhost/v0/testcases/shipping_w1/reports`      |
-   +-----------+-----------------------------------------------------------------------+
+   +----------------------------------------------------------------------------+
+   | :lfs:`Report Listing Endpoint`                                             |
+   +----+-----------------------------------------------------------------------+
+   | :lfs:`Endpoint:`                                                           |
+   +----+-----------------------------------------------------------------------+
+   |    | :ep-red-med:`https://<alyvix_server>/<API>/testcases/<alias>/reports` |
+   +----+-----------------------------------------------------------------------+
+   | :lfs:`Example:`                                                            |
+   +----+-----------------------------------------------------------------------+
+   |    | :ep-black-med:`https://localhost/v0/testcases/shipping_w1/reports`    |
+   +----+-----------------------------------------------------------------------+
 
 The resulting interface displays a list of all recent runs of a given test case alias in reverse
 chronological order, with the following information for each run:
@@ -40,7 +45,7 @@ chronological order, with the following information for each run:
 * **Username:**  The domain and username under which the session was opened
 
 .. image:: images/reports02.png
-   :class: image-boxshadow zoomable-image
+   :class: image-boxshadow zoomable-image  image-very-large
    :alt: The reporting interface.
    :target: ../_static/targets/reports02.png
 
@@ -56,16 +61,20 @@ specific run, you can either click on the link, or use the Report Details endpoi
 inserting that same *runcode* into the following endpoint URL:
 
 .. table::
-   :class: tablecell-endpoint
-   :widths: 5 95
+   :class: tablecell-endpoint large-font-size
+   :widths: 2 98
 
-   +-----------------------------------------------------------------------------------------------------------------+
-   | Report Details Endpoint                                                                                         |
-   +-----------+-----------------------------------------------------------------------------------------------------+
-   | Endpoint: | :bolditalic:`https://<alyvix_server>/<API>/testcases/<alias>/reports/?runcode=<runcode>`            |
-   +-----------+-----------------------------------------------------------------------------------------------------+
-   | Example:  | :bolditalic:`https://localhost/v0/testcases/shipping_w1/reports/?runcode=pb01Al01vino1601287294`    |
-   +-----------+-----------------------------------------------------------------------------------------------------+
+   +----------------------------------------------------------------------------------------------------------+
+   | :lfs:`Report Details Endpoint`                                                                           |
+   +----+-----------------------------------------------------------------------------------------------------+
+   | :lfs:`Endpoint:`                                                                                         |
+   +----+-----------------------------------------------------------------------------------------------------+
+   |    | :ep-red-med:`https://<alyvix_server>/<API>/testcases/<alias>/reports/?runcode=<runcode>`            |
+   +----+-----------------------------------------------------------------------------------------------------+
+   | :lfs:`Example:`                                                                                          |
+   +----+-----------------------------------------------------------------------------------------------------+
+   |    | :ep-black-med:`https://localhost/v0/testcases/shipping_w1/reports/?runcode=pb01Al01vino1601287294`  |
+   +----+-----------------------------------------------------------------------------------------------------+
 
 The resulting detailed report:
 
@@ -75,7 +84,7 @@ The resulting detailed report:
   that either a match occurred or failed.
 
 .. image:: images/runcode02.png
-   :class: image-boxshadow zoomable-image
+   :class: image-boxshadow zoomable-image  image-very-large
    :alt: The runcode-determined individual report.
    :target: ../_static/targets/runcode02.png
 
