@@ -434,7 +434,7 @@ dl, ol, ul {
 }
 
 #document .body .toctree-wrapper ul li a {
-    color: #f00 !important;
+    color: #393939 !important;
     line-height: 163%;
 }
 
@@ -489,6 +489,7 @@ div.highlight pre::-webkit-scrollbar-track {
 }
 
 #content .document .reference .xref {
+    /* text-decoration: underline; */
     font-style: italic;
     color: #393939;
 }

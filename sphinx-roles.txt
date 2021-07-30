@@ -18,20 +18,12 @@
    :width: 60
 .. |rect-img| image:: ../_static/img/rect.png
    :width: 60
-
-.. |times-icon| image:: _static/icons/custom/times-solid.png
-   :width: 24
-   :class: no-scaled-link
 .. |stop-icon| image:: _static/icons/custom/stop-solid.png
    :width: 24
    :class: no-scaled-link
 .. |hand-icon| image:: _static/icons/custom/hand-solid.png
    :width: 24
    :class: no-scaled-link
-.. |play-icon| image:: _static/icons/custom/play-solid.png
-   :width: 24
-   :class: no-scaled-link
-
 .. |email-small-img| image:: _static/img/email_40.png
    :width: 40
    :class: no-scaled-link
@@ -39,6 +31,13 @@
    :width: 38
    :class: no-scaled-link
 
+.. |play-icon| image:: _static/icons/custom/play-solid.png
+   :width: 24
+   :class: no-scaled-link
+
+.. |times-icon| image:: _static/icons/custom/times-solid.png
+   :width: 24
+   :class: no-scaled-link
 
 .. |python-download-link| replace:: :download:`64-bit Windows installer for Python version 3.7.9 <https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe>`
 
@@ -46,15 +45,19 @@
 
 .. |source-youtube| raw:: html
 
-   <div style="text-align: right; padding: 0; margin: 0;">Source:  Alyvix@YouTube &nbsp; <i class="fa fa-small fa-external-link"></i></div>
+   <div style="text-align: right; padding: 0; margin: 0;">Source:  Alyvix@YouTube &nbsp; <i class="fas fa-small fa-external-link-alt"></i></div>
 
 .. |source-youtube-left| raw:: html
 
-   <div style="text-align: left; padding: 0; margin: 0;">Source:  Alyvix@YouTube &nbsp; <i class="fa fa-small fa-external-link"></i></div>
+   <div style="text-align: left; padding: 0; margin: 0;">Source:  Alyvix@YouTube &nbsp; <i class="fas fa-small fa-external-link-alt"></i></div>
 
 .. |bar-icon| raw:: html
 
    &nbsp;<i class="fa fa-small fa-black fa-bars"></i>
+
+.. |plus-icon| raw:: html
+
+   <i class="fa fa-small fa-invblue fa-plus"></i>
 
 .. |ban-icon| raw:: html
 
@@ -62,15 +65,19 @@
 
 .. |sort-up-icon| raw:: html
 
-   <i class="fa fa-med fa-invblue2 fa-caret-up" style="vertical-align: top;"></i>
+   <i class="fa fa-med fa-invblue2 fa-caret-up" style="vertical-align: bottom;"></i>
 
 .. |sort-down-icon| raw:: html
 
-   <i class="fa fa-med fa-invblue2 fa-caret-down" style="vertical-align: bottom;"></i>
+   <i class="fa fa-med fa-invblue2 fa-caret-down" style="vertical-align: top;"></i>
 
 .. |right-icon-white| raw:: html
 
    <i class="fa fa-med fa-white fa-caret-right" style="vertical-align: top;"></i>
+
+.. |example-icon| raw:: html
+
+   <i class="bi-check2-square"></i>
 
 .. |4arrows-icon| raw:: html
 
@@ -91,10 +98,6 @@
 .. |trash-icon| raw:: html
 
    <i class="fa fa-small fa-invblue fa-trash"></i>
-
-.. |plus-icon| raw:: html
-
-   <i class="fa fa-small fa-invblue fa-plus"></i>
 
 .. |pivotal| image:: pictures/pt_logo.png
    :height: 38px
@@ -160,6 +163,9 @@
 .. role:: warn
    :class: redbold
 
+.. role:: ep-head
+   :class: ep-head
+
 .. role:: ep-red
    :class: endpoint-red
 
@@ -211,9 +217,6 @@
 .. role:: bolditalic
    :class: bolditalic
 
-.. role:: ep-head
-   :class: ep-head
-
 .. role:: tablecell-name
    :class: tablecell-name
 
@@ -224,3 +227,7 @@
 .. |if-true| replace:: :greyblock:`IF TRUE`
 .. |if-false| replace:: :greyblock:`IF FALSE`
 .. |for| replace:: :greyblock:`FOR`
+
+.. |tmo| replace:: :greyblock:`TIMEOUT`
+.. |brk| replace:: :greyblock:`BREAK`
+.. |mea| replace:: :greyblock:`MEASURE`

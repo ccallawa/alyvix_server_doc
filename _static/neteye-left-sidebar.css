@@ -214,7 +214,7 @@
     margin-right: 0;
     top: 7px;
     /* transition: transform 0.5s cubic-bezier(0.2, 0, 0.38, 0.9); */
-    transform: rotate(0deg);
+    /* transform: rotate(0deg); */
 }
 
 #menu .sidebartoctree li.toctree-l2.has-3rd-level > a::after {

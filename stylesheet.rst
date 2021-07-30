@@ -263,7 +263,7 @@ will end.  If you want more options, you can use the ``code-block`` directive:
    :name: _style_code_block_example
 
    .. code-block:: <language>
-      :caption: How to create a code block
+      :caption: How to create a code block with options
       :class: short-code-block
       :name: _style_code_block_example
 
@@ -414,7 +414,7 @@ Link and anchor names must use Python variable syntax.  For automatic link gener
 punctuation characters will be converted to hyphens in the resulting link index.
 
 You can create a link to an existing anchor, for instance:
-:ref:`Test Case Scheduling <test_case_scheduling_top>`.
+:ref:`Getting Started <getting_started_top>`.
 Remember to remove the initial underscore from the anchor when you create a link reference.
 Also note that if the target of a link doesn't exist, Sphinx will not add that link, but it
 will still put the (unlinked) link text there.
@@ -423,10 +423,15 @@ will still put the (unlinked) link text there.
 
    :ref:`Getting Started <getting_started_top>`
 
-For external links, add an icon to it as in this example:  :iconlink:`ext|Base64|https://en.wikipedia.org/wiki/Base64`
+For one-off external links, add an icon to it as in this example:
+:iconlink:`ext|Base64|https://en.wikipedia.org/wiki/Base64`
 
-All external links are currently defined a single time using ``:rawhtml:`` in the file
-:file:`sphinx-roles.txt` in the root directory, e.g.:
+.. code-block:: rst
+
+   :iconlink:`ext|Base64|https://en.wikipedia.org/wiki/Base64`
+
+If instead the link will be reused, try to define it as an *alias* just once using ``:rawhtml:``
+in the file :file:`sphinx-roles.txt` in the root directory, e.g.:
 
 .. code-block:: rst
 
@@ -434,6 +439,9 @@ All external links are currently defined a single time using ``:rawhtml:`` in th
 
       <a href="https://en.wikipedia.org/wiki/Base64" target="_blank">
       Base64 <i class="fa fa-small fa-external-link"></i></a>
+
+
+.. rubric:: Aliases
 
 You can create aliases where you want, and use them repeatedly using the ``|<alias>|`` syntax.
 It does not matter where on the page you define it; it can even be placed at the bottom of the
@@ -476,7 +484,7 @@ Name         Syntax                      Format
 Italics      \*                          *Italics*
 Bold         \**                         **Bold**
 Mono         \``                         ``Monospace``
-Subscript    a\\ :subscript:\`sub\`      a\ :subscript:`super`
+Subscript    a\\ :subscript:\`sub\`      a\ :subscript:`sub`
 Superscript  b\\ :superscript:\`super\`  b\ :superscript:`super`
 Mixed        \\                          *Ita*\ **Bol**\ ``Lit``\s
 Math         \:math:                     :math:`\\\sum_{k=0}^{N-1} s_k`
@@ -615,6 +623,20 @@ Here's an example of columns via a table having a *class* that removes borders
       | Item A3 | Item B3 | Item C3 |
       +---------+---------+---------+
 
+And the same table with the *table-body-no-borders* class applied:
+
+.. table::
+   :widths: 33 33 33
+   :class: table-body-no-borders
+
+   +---------+---------+---------+
+   | Item A1 | Item B1 | Item C1 |
+   +---------+---------+---------+
+   | Item A2 | Item B2 | Item C2 |
+   +---------+---------+---------+
+   | Item A3 | Item B3 | Item C3 |
+   +---------+---------+---------+
+
 |
 
 
@@ -706,19 +728,23 @@ the numbering starts over again within each subsection, and these aren't numbere
 (Automatic section numbering is also possible with an extension to Sphinx:
 http://docutils.sourceforge.net/docs/ref/rst/directives.html#automatic-section-numbering)
 
-For general Font Awesome icons, use the ``fa`` directive:
+For general `Font Awesome <https://fontawesome.com/icons?d=gallery>`_ icons, use the ``fa`` directive:
 
 .. rst-class:: fa fa-check
 
    With text, or use the ``|`` by itself for just the icon
 
-Just append ``fa-`` to the name of the Font Awesome icon you want.
+Just append ``fa-`` to the name of the Font Awesome icon you want (or use the notation in the
+*sphinx-panels* extension at the bottom of this page):
 
 .. code-block:: rst
 
    .. rst-class:: fa fa-check
 
       With text, or use the ``|`` by itself for just the icon (it's always placed as ``::before``)
+
+Note that only **free** icons are available, and that there is a difference between FA version
+4 and FA version 5.
 
 A single inline icon is also possible by adding ``fa-small`` as long as it's at the start of a
 sentence/bullet:
@@ -729,11 +755,11 @@ sentence/bullet:
 
 Some Font Awesome icons have predefined roles:
 
-+----------+----------------------+------------------+
-| Icon     | Usage                | Appearance       |
-+----------+----------------------+------------------+
-| Download | \:download\:\`file\` | :download:`file` |
-+----------+----------------------+------------------+
++----------+--------------------------+----------------------+
+| Icon     | Usage                    | Appearance           |
++----------+--------------------------+----------------------+
+| Download | \:download\:\`file.txt\` | :download:`file.txt` |
++----------+--------------------------+----------------------+
 
 .. note::
 
@@ -805,10 +831,10 @@ The *right-short-admonition* class does the same but aligns the shortened box to
       A right-aligned, short **Hint** box
 
 
-.. topic:: Epigraphs and Pull Quotes
+.. rubric:: Epigraphs and Pull Quotes
 
-   Additional styles like ``epigraph`` and ``pull-quote`` can be tied to specific CSS classes
-   with those names.
+Additional styles like ``epigraph`` and ``pull-quote`` can be tied to specific CSS classes
+with those names.
 
 .. epigraph::
 
@@ -829,20 +855,22 @@ theme, it just creates this HTML structure, which is mapped to the CSS class *to
 ``<div class="topic"><p class="topic-title first">Title</p><p>Box content</p></div>``
 
 
-.. topic:: Topic Titles
+.. rubric:: Rubric Titles
 
-   Here is the content of the topic box.  It's normal text, but has to be indented
-   in the source.  Note also the restyled horizontal scrollbar.
+Here is the content of the rubric (topic box), for when you need a section with title that
+shouldn't be included in the index (e.g., it's too small).  Note the restyled horizontal scrollbar
+coded in CSS.
 
 .. code-block:: rst
    :class: short-code-block
    :caption: How you can create a topic box
    :name: _style_topic_example
 
-   .. topic:: Topic Titles
+   .. rubric:: Rubric Titles
 
-      Here is the content of the topic box.  It's normal text, but has to be indented
-      in the source.  Note also the restyled horizontal scrollbar.
+   Here is the content of the rubric (topic box), for when you need a section with title that
+   shouldn't be included in the index (e.g., it's too small).  Note the restyled horizontal
+   scrollbar coded in CSS.
 
 .. rubric:: Rubric Titles
 
@@ -955,11 +983,87 @@ Like pressing the |enterkey| key many times:  |enterkey| |enterkey| |enterkey|
 .. _style_sphinx_extensions:
 
 *************************************
-Additional Optional Sphinx Extensions
+Sphinx and Optional Sphinx Extensions
 *************************************
 
-The following extensions can be installed as desired.  Only the copy/accordion button extension
-is installed by default in this distribution.
+The required Python modules (we recommend you install them via *pip*) for building the
+documentation are:
+
+* ``sphinx``
+* ``sphinx_rtd_theme``
+* ``sphinx-copybutton``
+
+We typically build the user guide with the following command.  You will need to change the
+executable and source/build directory names according to your environment.
+
+.. code-block::
+   :class: nocopy
+
+   > C:\Python37\python.exe -m sphinx.__main__ -E -a -b html C:\projects\alyvix_doc C:\projects\alyvix_doc\_build
+
+The extensions below can be installed as desired.  Only the copy/accordion button extension
+is included by default in this repository.
+
+
+
+.. _style_sphinx_iconlink:
+
+=============================
+The Custom IconLink Extension
+=============================
+
+The IconLink extension (included by default) standardizes a single format for
+:ref:`links <style_links+refs>` that are external, that should have the link be placed on an icon
+rather than a text string, or both.  Here's a prototype and two examples:
+
+.. code-block::
+   :class: nocopy
+
+   :iconlink:`type|link text|URL`
+
+   :iconlink:`ext|The OpenCV project|https://opencv.org/`
+   :iconlink:`video||http://youtu.be/KnQT7U8Fxoo`
+
+Each instance consists of three arguments separated by vertical bars " | ":
+
+* :bolditalic:`type` -- Selects the (free) `Font Awesome <https://fontawesome.com/icons?d=gallery>`_
+  icon to use and various HTML/CSS attributes, along with the browser tab behavior:
+
+  .. table::
+     :widths: 15 30 20 35
+
+     +----------+-------------------------------------------------+---------+-----------------------------------------------------+
+     | Type     | Example with Icon                               | New Tab | RST encoding                                        |
+     +----------+-------------------------------------------------+---------+-----------------------------------------------------+
+     | External | :iconlink:`ext|external link|stylesheet.html`   | Yes     | ``:iconlink:`ext|external link|stylesheet.html```   |
+     +----------+-------------------------------------------------+---------+-----------------------------------------------------+
+     | Glossary | :iconlink:`gloss|glossary link|stylesheet.html` | No      | ``:iconlink:`gloss|glossary link|stylesheet.html``` |
+     +----------+-------------------------------------------------+---------+-----------------------------------------------------+
+     | Video    | :iconlink:`video|video link|stylesheet.html`    | No      | ``:iconlink:`video|video link|stylesheet.html```    |
+     +----------+-------------------------------------------------+---------+-----------------------------------------------------+
+     | Pivotal  | :iconlink:`pivotal||174064572`                  | Yes     | ``:iconlink:`ext||174064572```                      |
+     +----------+-------------------------------------------------+---------+-----------------------------------------------------+
+
+* :bolditalic:`link text` -- The string to display on the web page wrapped in the ``href`` HTML
+  tag.  If the link text is empty, only the icon will appear.
+
+* :bolditalic:`URL` -- The URL to use as the link in the HTML ``href`` attribute
+
+The extension itself is stored in the repository as the single file
+:file:`alyvix_doc\\_ext\\iconlink.py`.  The icon used can be changed in this python file, while
+the appearance can be changed in :file:`allyvix_doc\\_static\\css\\custom.css`.
+
+While this extension is included by default, it does require one change in the DocUtils file
+:file:`Python\\Lib\\site-packages\\docutils\\writers\\_html_base.py` to ensure the icon CSS
+and class parameters are appropriately inserted.  Simple replace the following function in that
+file with this version:
+
+.. code-block::
+
+   def visit_emphasis(self, node):
+       icon = node.attributes.get('class')
+       if icon is None: icon = ''
+       self.body.append(self.starttag(node, 'em', CLASS=icon))
 
 
 
@@ -980,9 +1084,10 @@ to allow disabling the copy button for a code block by adding ``:class: nocopy``
 directive, and to filter out command prompts when copying from code blocks.  In that file you'll
 need to modify these parts as shown below:
 
-* The English messages at the top
-* The ``addCopyButtonToCodeCells`` function
-* The ``copyTargetText`` function
+* Change the English messages at the top
+* Replace the ``addCopyButtonToCodeCells`` function
+* Replace the ``copyTargetText`` function
+* Add and call the ``addButtonToAccordionCells`` function
 
 .. code-block:: js
 
@@ -1075,6 +1180,303 @@ Also add the accordion CSS class to the file
        margin-top: 10px;
    }
 
+|
+
+
+.. _style_sphinx_panels:
+
+=============
+Sphinx Panels
+=============
+
+The `Sphinx Panels extension <https://sphinx-panels.readthedocs.io/>`_ adds the following features:
+
+* Card panels
+* Tabbed panels
+* Button style links that can also serve as links for a whole panel
+* Dropdown boxes that can hide content like FAQ answers
+* Github `Octicons <https://primer.style/octicons/>`_ and improved
+  `FontAwesome <https://fontawesome.com/icons?d=gallery>`_ support
+
+------
+Badges
+------
+
+Let's start with the simplest first, **badges**, a kind of text version of the GitHub repo
+status badge:
+
+.. tabbed:: Appearance
+
+   :badge:`primary,badge-alyvix-primary`  :badge:`secondary,badge-secondary badge-pill`
+
+.. tabbed:: RST code
+
+   .. code-block:: rst
+
+      :badge:`primary,badge-alyvix-primary`
+      :badge:`secondary,badge-secondary badge-pill`
+
+-----------
+Card Panels
+-----------
+
+**Card panels** are containers that use Bootstrap to size and position themselves appropriately (see
+the linked page above for additional formatting options):
+
+.. tabbed:: Appearance
+
+   .. panels::
+
+      Panel #1
+      ^^^^^^^^
+
+      :badge:`badge1,badge-alyvix-primary`
+      :badge:`New!,badge-warning`
+
+      ---
+
+      Panel #2
+
+      A link to :link-badge:`https://www.alyvix.com/,"Alyvix",tooltip=A Tooltip` with tooltip
+
+      ---
+      :body: text-center
+
+      Panel #3
+
+      ++++++++++
+      * List #3A
+      * List #3B
+
+      ---
+
+      Panel #4
+      ^^^^^^^^
+
+      .. dropdown:: :fa:`arrow-circle-right` Panel #4 Button
+
+         Hidden content
+
+      There's hidden content above me
+
+      ---
+      :img-top: pictures/alyvix_logo_399x333.png
+
+      Panel #5 with Image at Top
+
+      .. dropdown:: Panel #5 Button
+
+         The content below is a *link-button*:
+
+         .. link-button::  https://www.alyvix.com
+            :text: www.alyvix.com
+            :classes: bluebutton
+
+.. tabbed:: RST code
+
+   .. code-block:: rst
+
+      .. panels::
+
+         Panel #1
+         ^^^^^^^^
+
+         :badge:`badge1,badge-alyvix-primary`
+         :badge:`New!,badge-warning`
+
+         ---
+
+         Panel #2
+
+         A link to :link-badge:`https://www.alyvix.com/,"Alyvix",tooltip=A Tooltip` with tooltip
+
+         ---
+         :body: text-center
+
+         Panel #3
+
+         ++++++++++
+         * List #3A
+         * List #3B
+
+         ---
+
+         Panel #4
+         ^^^^^^^^
+
+         .. dropdown:: :fa:`arrow-circle-right` Panel #4 Button
+
+            Hidden content
+
+         There's hidden content above me
+
+         ---
+
+         Panel #5 with Image at Top
+
+         .. dropdown:: Panel #5 Button
+
+            The content below is a *link-button*:
+
+            .. link-button::  https://www.alyvix.com
+               :text: www.alyvix.com
+               :classes: bluebutton
+
+-------------
+Tabbed Panels
+-------------
+
+**Tabbed panels** (used to show the RST code above) let you overlay multiple content elements
+in the same space, allowing the user to choose which one to see.  You can use the ``:new-group:``
+parameter after a new tab to start a new set of tabbed panels, ``:selected:`` to select a default
+tab, and ``:class-label:`` and ``:class-content:`` among other formatting options.
+
+We've changed the default blue color in tab panels to match our Alyvix blue, which
+is done by setting the appropriate variable in ``panels_css_variables`` in
+:file:`conf.py`.
+
+.. tabbed:: Tab #1 (Appearance)
+   :class-label: smallcaps
+   :class-content: redbold
+
+   Text in tab panel #1
+
+.. tabbed:: Tab #2 (RST code)
+
+   .. code-block:: rst
+
+      .. tabbed:: Tab #1 (Appearance)
+         :class-label: smallcaps
+         :class-content: redbold
+
+         Text in tab panel #1
+
+------------
+Link Buttons
+------------
+
+**Link buttons** let you easily create a button linking to a URL, including making an entire panel
+part of the link.  (Watch out if adding the *stretched-link* CSS element which can make your entire
+page a link.)  Some examples:
+
+.. link-button:: style_sphinx_panels
+   :type: ref
+   :text: Link to the Sphinx Panels section
+   :classes: btn-success
+
+.. code-block:: rst
+
+   .. link-button:: sphinx/panels
+      :type: ref
+      :text: Link to the Sphinx Panels section
+      :classes: btn-success
+
+
+.. tabbed:: Simple Button with Tooltip
+
+   .. link-button:: https://www.alyvix.com/
+      :classes: btn-success
+      :type: url
+      :text: Link to Alyvix
+      :tooltip: I go to Alyvix
+
+   .. code-block:: rst
+
+      .. link-button:: https://www.alyvix.com/
+         :classes: btn-success
+         :type: url
+         :text: Link to Alyvix
+         :tooltip: I go to Alyvix
+
+.. tabbed:: Default Tab
+   :selected:
+
+   .. link-button:: https://www.alyvix.com/
+      :type: url
+      :text: Another link to Alyvix
+      :tooltip: I also go to Alyvix
+      :classes: btn-alyvix-outline-primary btn-block
+
+   .. code-block:: rst
+
+      .. link-button:: https://www.alyvix.com/
+         :type: url
+         :text: Another link to Alyvix
+         :tooltip: I also go to Alyvix
+         :classes: btn-alyvix-outline-primary btn-block
+
+--------
+Dropdown
+--------
+
+A **dropdown** creates a hidden box of content which is initially invisible.  When the user clicks
+on the button, space is added below the button and filled with that content.  Clicking a second
+time makes it disappear again.  You can use the ``:animate:`` keyword and the ``fade-in`` or
+``fade-in-slide-down`` values on the content in the box.
+
+.. tabbed:: Appearance
+
+   .. dropdown:: :fa:`eye` Bottom-left panel
+      :animate: fade-in-slide-down
+      :container: + shadow
+      :title: bg-alyvix-primary text-white font-weight-bold
+
+      Hidden content
+
+      Hidden content
+
+      Hidden content
+
+
+.. tabbed:: RST code
+
+   .. code-block:: rst
+
+      .. dropdown:: :fa:`eye` Bottom-left panel
+         :animate: fade-in-slide-down
+         :container: + shadow
+         :title: bg-alyvix-primary text-white font-weight-bold
+
+         Hidden content
+
+         Hidden content
+
+         Hidden content
+
+----------
+Font Icons
+----------
+
+**Font icons**, whether Github's *Octicons* or the more traditional Font Awesome icons, are now
+supported with *RST directives*, although you will probably need to add CSS to the
+:file:`css/custom.css` file:
+
+.. tabbed:: Appearance
+
+   Octicon (screen-full): |halftab| :opticon:`screen-full,,size=16` |tab|
+   FA (bars): |halftab| :fa:`bars,fa-small` |tab|
+   Octicon (x-circle): |halftab| :opticon:`x-circle,text-white bg-danger,size=24`
+
+.. tabbed:: RST code
+
+   .. code-block:: rst
+
+      Octicon (screen-full): |halftab| :opticon:`screen-full,,size=16` |tab|
+      FA (bars): |halftab| :fa:`bars,fa-small` |tab|
+      Octicon (x-circle): |halftab| :opticon:`x-circle,text-white bg-danger,size=24`
+
+**Note** that although they are called *Octicons*, the sphinx-panel RST role calls them *Opticons*.
+
+|
+
+
+
+.. _style_sphinx_potential:
+
+***************************************
+Optional Sphinx Extensions and HTML/CSS
+***************************************
+
 
 
 .. _style_sphinx_graphviz:
@@ -1116,6 +1518,8 @@ if it's not in the specification.
    .graphviz {
        padding: 5px;
    }
+
+|
 
 
 
@@ -1159,6 +1563,8 @@ Note that we currently modify the default files to change the CSS and use the pr
 
        self.body.append(tag)
 
+|
+
 
 
 .. _style_sphinx_pdf:
@@ -1178,3 +1584,118 @@ The result will be a file called :file:`Python.pdf` in the :file:`_build` direct
 quality isn't that great, but it's complete (including the todo's even when they are turned off).
 
 Note that as of February 2020, Rinoh (``pip install rinohtype``) is not working in Python 3.7.
+
+
+
+.. _style_sphinx_htmlcss:
+
+===================================
+Potential HTML and CSS Integrations
+===================================
+
+
+
+--------------------
+Scroll-to-Top Button
+--------------------
+
+.. raw:: html
+
+   <button onclick="topFunction()" id="topButton" title="Go to top">Top</button>
+
+.. code-block:: rst
+
+   .. raw:: html
+
+      <button onclick="topFunction()" id="topButton" title="Go to top">Top</button>
+
+
+
+---------------------------
+Text Superimposed on Images
+---------------------------
+
+Let's create a background image, and then overlay some text on top of it:
+
+.. raw:: html
+
+   <div class="demo-image">
+     <img src="_images/alyvix_logo_399x333.png" style="width:50%; height:50%;"/>
+     <div class="demo-text" height="100%">
+       <br />
+       <h1>Here is some Text</h1><br />
+       <p><b>Some more text</b></p><br />
+       <p><b>Icons! <i class="fa fa-inbox"></i></b></p><br />
+     </div>
+   </div>
+
+
+.. code-block:: rst
+   :class: short-code-block
+
+   .. raw:: html
+
+      <div class="demo-image">
+        <img src="_images/alyvix_logo_399x333.png" style="width:50%; height:50%;"/>
+        <div class="demo-text" height="100%">
+          <br />
+          <h1>Here is some Text</h1><br />
+          <p><b>Some more text</b></p><br />
+          <p><b>Icons! <i class="fa fa-inbox"></i></b></p><br />
+        </div>
+      </div>
+
+
+
+------------------------------
+Overlay on Darkened Background
+------------------------------
+
+Button
+
+.. raw:: html
+
+   <div id="overlay" onClick="overlayOff()" style="display: none;">Some Overlay Text<br>
+   <button onclick="overlayOn()" style="display: inline-block;">Button</button></div>
+
+.. code-block:: rst
+   :class: short-code-block
+
+   .. raw:: html
+
+      <div id="overlay">Some Text</div>
+
+
+
+-------------
+Image "Cards"
+-------------
+
+.. raw:: html
+
+   <div class="card-row">
+   <div class="card-col" style="width:49%;float:left;">
+      <div class="card">
+         <img src="_images/alyvix_logo_100x83.png" alt="card1" style="width:100%;opacity:0.85;border-radius:5px;" />
+         <div class="card-container">
+            <h4><b>Alyvix #1</b></h4>
+            <p>Software Architect</p>
+         </div>
+      </div>
+      <div class="card">
+         <img src="_images/alyvix_logo_100x83.png" alt="card2" style="width:100%;opacity:0.85;border-radius:5px;" />
+         <div class="card-container">
+            <h4><b>Alyvix #2</b></h4>
+            <p>Video Producer</p>
+         </div>
+      </div>
+   </div></div>
+
+.. code-block:: rst
+   :class: short-code-block
+
+   .. raw:: html
+
+      <div id="overlay">Some Text</div>
+
+
