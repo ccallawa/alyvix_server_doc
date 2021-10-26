@@ -21,7 +21,7 @@ sys.path.append(os.path.abspath("./_ext"))
 # -- Project information -----------------------------------------------------
 
 project = 'Alyvix Server User Guide'
-copyright = 'Documentation &copy; 2020-%s, Wuerth Phoenix, s.r.l.' %(current_year)
+copyright = '&copy;2020-%s, Wuerth Phoenix S.r.l.' %(current_year)
 author = 'Charles Callaway'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -78,7 +78,8 @@ language = None
 exclude_patterns = ['_build', '_ext', 'pictures']
 
 # The name of the Pygments (syntax highlighting) style to use.
-# pygments_style = 'trac'
+pygments_style = 'sphinx'
+highlight_language = 'default'
 
 # If true, `todo` and `todoList` produce output, else they produce nothing.
 todo_include_todos = False

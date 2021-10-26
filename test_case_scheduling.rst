@@ -86,7 +86,7 @@ button at the top right of the interface to see the workflow screen shown here.
 .. image:: images/workflow01.png
    :class: image-boxshadow zoomable-image image-very-large
    :alt: The workflow interface.
-   :target: ../_static/targets/workflow01.png
+   :target: ../server/_static/targets/workflow01.png
 
 The Flow interface shows the global controls for all available sessions on the
 current server on the first line, followed by a separate row for each individual session.

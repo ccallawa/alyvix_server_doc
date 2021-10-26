@@ -1,3 +1,22 @@
+.highlight .nt {
+    color: green;
+}
+.highlight .s2 {
+    color: #bb8844;
+}
+.highlight .p {
+    color: #60add5;
+}
+.highlight .gp {
+    color: #408090;
+    font-weight: bold;
+}
+.highlight .go {
+    color: #c65d09;
+}
+.highlight .mi {
+    color: blue;
+}
 :target::before {
     content: '';
     display: block;
@@ -411,16 +430,19 @@ p.rubric {
     font-size: 18px !important;
 }
 
+
 /* Change table style */
 table.docutils {
     border: 1px solid #e1e4e5 !important;
     margin-left: 0px !important;
     margin-bottom: 0px !important;
+    display: block;
     padding: 0px !important;
     width: 100% !important;
     box-sizing: border-box;
     empty-cells: show !important;
     color: #404040 !important;
+    background-color: white;
     font-weight: 400 !important;
     border-collapse: collapse;
 }
@@ -513,108 +535,6 @@ table.table-empty-no-borders tbody tr:first-child td p {
 }
 
 
-/* Change table style
-table.docutils {
-    border: 1px solid #e1e4e5 !important;
-    margin-left: 0px !important;
-    margin-bottom: 0px !important;
-    display: block;
-    padding: 0px !important;
-    box-sizing: border-box;
-    empty-cells: show !important;
-    color: #404040 !important;
-    background-color: white;
-    font-weight: 400 !important;
-    border-collapse: collapse;
-}
-table.docutils tbody tr td {
-    vertical-align: middle !important;
-    border: 1px solid #e1e4e5 !important;
-    background-color: transparent;
-    padding: 10px !important;
-    white-space: normal !important;
-    background-clip: padding-box;
-}
-table.docutils tbody tr:nth-child(2n-1) td {
-    border: 1px solid #e1e4e5 !important;
-    background-color: #f3f6f6;
-}
-table.docutils tbody tr:first-child td {
-    background-color: #2980B9 !important;
-    border: 1px solid #e1e4e5 !important;
-}
-table.docutils tbody tr:first-child td p {
-    color: white !important;
-}
-
-table.table-body-no-borders {
-    border: none !important;
-}
-table.table-body-no-borders tbody tr td {
-    vertical-align: top !important;
-    padding: 20px 20px 20px 20px !important;
-    border: none !important;
-}
-table.table-body-no-borders tbody tr td p {
-    line-height: 24px !important;
-    font-size: 16px !important;
-}
-
-table.no-header-row {
-    width: 100% !important;
-}
-table.no-header-row tbody {
-    width: 100% !important;
-}
-table.no-header-row tbody tr td {
-    background-color: white !important;
-    padding: 0px 10px 0px 10px !important;
-}
-table.no-header-row tbody tr:first-child td {
-    background-color: white !important;
-}
-table.no-header-row tbody tr td p {
-    color: #444 !important;
-    transition: none;
-}
-table.taller-rows tbody tr:nth-child(n+2) td {
-    padding-top: 20px !important;
-    padding-bottom: 20px !important;
-}
-
-
-In case we eventually need a column-based style
-table.table-empty-no-borders {
-    border: none !important;
-    padding: 20px !important;
-}
-table.table-empty-no-borders tbody tr {
-    padding: 40px !important;
-    margin: 40px !important;
-}
-table.table-empty-no-borders tbody tr td {
-    background-color: white !important;
-    border: none !important;
-    padding: 40px !important;
-    text-align: center !important;
-}
-table.table-empty-no-borders tbody tr:first-child td {
-    text-align: center !important;
-    background-color: white !important;
-}
-table.table-empty-no-borders tbody tr:first-child td p {
-    color: black !important;
-}
-.tablecell-name {
-   style: bold;
-   color: #222;
-   font-size: 16pt;
-}
-.tablecell-type {
-   color: #666;
-   font-size: 12pt;
-}
-*/
 table.tablecell-endpoint {
     border: none !important;
 }

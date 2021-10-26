@@ -79,7 +79,7 @@ sessions:
 .. image:: images/settings03.png
    :class: image-boxshadow zoomable-image image-very-large
    :alt: The settings interface.
-   :target: ../_static/targets/settings03.png
+   :target: ../server/_static/targets/settings03.png
 
 .. _session_management_session_description:
 
@@ -142,7 +142,7 @@ configuration:
 .. image:: images/testcases02.png
    :class: image-boxshadow zoomable-image image-very-large
    :alt: The test case interface.
-   :target: ../_static/targets/testcases02.png
+   :target: ../server/_static/targets/testcases02.png
 
 The two *screenshot settings* on the right side allow you to configure:
 
@@ -212,7 +212,7 @@ For each NATS instance you want to connect, you will need to fill in the followi
 .. image:: images/settings-nats01.png
    :class: image-boxshadow zoomable-image image-very-large
    :alt: The NATS/InfluxDB settings interface.
-   :target: ../_static/targets/settings-nats01.png
+   :target: ../server/_static/targets/settings-nats01.png
 
 Once you add a NATS configurations at the top, you can assign it to one or more existing sessions.
 Each session can stream to at most one NATS-InfluxDB channel, although multiple sessions can send

@@ -120,7 +120,9 @@ This is defined as follows:
    #. Creates white numbers in black circles
    #. Can be used together with interface screenshots
 
-Similarly, you can replace ``bignums`` with ``bignums-xxl`` to get a larger enumerated list:
+The Alyvix :file:`custom.css` files also supports the ``bignums``, ``bignums-xl`` (with
+``onelinelist`` CSS class option) and ``bignums-xxl`` enumerated list styles:
+
 
 .. rst-class:: bignums-xxl
 
