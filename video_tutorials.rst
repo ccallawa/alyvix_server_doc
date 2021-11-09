@@ -12,18 +12,19 @@
 
 .. _video_tutorials_top:
 
-###############
-Video Tutorials
-###############
+##########################
+Videos and Video Tutorials
+##########################
 
-The Alyvix Server video tutorials below can provide a more active introduction to
-.
+The Alyvix Server video tutorials below can provide a complementary learning style to the
+written user guide.  You will also find here videos describing the business case for Alyvix
+Server in your organization as well as implemented use cases for specific scenarios.
 
 
 
 .. _server_tutorial_intro_120:
 
-.. rubric:: Alyvix Server Introduction
+.. rubric:: Alyvix Server Guide
 
 See a brief, high level overview that shows you how to configure and run Alyvix Server.
 
@@ -31,6 +32,43 @@ See a brief, high level overview that shows you how to configure and run Alyvix 
    :class: image-boxshadow image-very-large
    :alt: Alyvix Server Introduction, version 1.2.0
    :target: https://youtu.be/L-Y_z7ifj80
+
+|source-youtube|
+
+|
+
+
+.. _server_tutorial_outlook_web:
+
+.. rubric:: Use Case:  Outlook over the Web
+
+Here we lay out the reasons why you should use Visual Monitoring to keep tabs on the performance
+of your Outlook clients.  The video describes the IT benefits of using Alyvix in an implemented
+use case at an IT company that extensively uses Microsoft's email, calendar and contacts
+application to keep its employees and customers communicating smoothly.
+
+.. image:: pictures/outlook-web-150.png
+   :class: image-boxshadow image-very-large
+   :alt: Logistics Use Case, version 1.5.0
+   :target: https://youtu.be/AoieebOwAI8
+
+|source-youtube|
+
+|
+
+
+.. _server_tutorial_dynamicsax_rdweb:
+
+.. rubric:: Use Case:  Logistics Application in Dynamics AX via RDWeb
+
+This video presents the business case for using Visual Monitoring in your organization,
+describing the IT benefits in an implemented logistics application that uses Microsoft's
+Dynamics AX platform via RDWeb.
+
+.. image:: pictures/dynamicsax-rdweb-150.png
+   :class: image-boxshadow image-very-large
+   :alt: Logistics Use Case, version 1.5.0
+   :target: https://youtu.be/6bBhRZISaiw
 
 |source-youtube|
 
