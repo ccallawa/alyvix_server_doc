@@ -71,8 +71,8 @@ dl, ol, ul {
 }
 
 /* Hide first h1 tag */
-#content .body > .section:first-child > h1:first-of-type {
-    margin-bottom: -48px;
+#content div.body section h1 {
+    margin-bottom: -25px;
     visibility: hidden;
     height: 0;
 }

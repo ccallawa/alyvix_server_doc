@@ -1,47 +1,39 @@
-.. |chevron| image:: /icons/chevron.ico
-   :width: 12
-.. |reload| image:: /icons/reload.ico
-   :width: 12
-.. |edit| image:: /icons/edit.ico
-   :width: 12
-.. |trashbin| image:: /icons/trash-bin.ico
-   :width: 12
-.. |uparrow| image:: /icons/up-arrow.ico
-   :width: 8
-.. |downarrow| image:: /icons/down-arrow.ico
-   :width: 8
-.. |gear| image:: /icons/gear.ico
-   :width: 8
-.. |font-img| image:: ../_static/img/font.png
+.. |font-img| image:: /_static/img/font.png
    :width: 60
-.. |image-img| image:: ../_static/img/image.png
+.. |image-img| image:: /_static/img/image.png
    :width: 60
-.. |rect-img| image:: ../_static/img/rect.png
+.. |rect-img| image:: /_static/img/rect.png
    :width: 60
-.. |stop-icon| image:: _static/icons/custom/stop-solid.png
+.. |stop-icon| image:: /_static/icons/custom/stop-solid.png
    :width: 24
    :class: no-scaled-link
-.. |hand-icon| image:: _static/icons/custom/hand-solid.png
+.. |hand-icon| image:: /_static/icons/custom/hand-solid.png
    :width: 24
    :class: no-scaled-link
-.. |email-small-img| image:: _static/img/email_40.png
+.. |email-small-img| image:: /_static/img/email_40.png
    :width: 40
    :class: no-scaled-link
-.. |slack-small-img| image:: pictures/slack_logo.png
+.. |slack-small-img| image:: /pictures/slack_logo.png
    :width: 38
    :class: no-scaled-link
 
-.. |play-icon| image:: _static/icons/custom/play-solid.png
+.. |play-icon| image:: /_static/icons/custom/play-solid.png
    :width: 24
    :class: no-scaled-link
 
-.. |times-icon| image:: _static/icons/custom/times-solid.png
+.. |times-icon| image:: /_static/icons/custom/times-solid.png
    :width: 24
    :class: no-scaled-link
 
 .. |python-download-link| replace:: :download:`64-bit Windows installer for Python version 3.7.9 <https://www.python.org/ftp/python/3.7.9/python-3.7.9-amd64.exe>`
 
 .. |python-remove-name| replace:: :file:`Python 3.7.9 (64-bit)`
+
+.. |link-postgresql-install-12.x| replace:: :iconlink:`ext|12.x|https://content-www.enterprisedb.com/postgresql-tutorial-resources-training?cid=48`
+
+.. |link-to-alyvix-install1| replace:: :iconlink:`ext|Alyvix 3.2.3|https://alyvix.com/learn/getting_started/install.html`
+
+.. |link-to-alyvix-install2| replace:: :iconlink:`ext|Alyvix 3.2.0|https://alyvix.com/learn/getting_started/install.html#versions`
 
 .. |source-youtube| raw:: html
 
@@ -99,7 +91,7 @@
 
    <i class="fa fa-small fa-invblue fa-trash"></i>
 
-.. |pivotal| image:: pictures/pt_logo.png
+.. |pivotal| image:: /pictures/pt_logo.png
    :height: 38px
    :width: 38px
    :alt: The logo for Pivotal Tracker.

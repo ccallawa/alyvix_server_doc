@@ -11,9 +11,9 @@
 
 .. _install_top:
 
-========================
+************************
 Installation and Upgrade
-========================
+************************
 
 Before installing Alyvix, first check that your setup meets the system requirements.
 
@@ -22,15 +22,17 @@ Before installing Alyvix, first check that your setup meets the system requireme
 
 .. _system_requirements_top:
 
-.. rubric::   System Requirements
+===================
+System Requirements
+===================
 
 .. note::
 
    Alyvix assumes that you have one virtual or physical machine exclusively dedicated to running
    Alyvix test cases.
 
-You should check that your designated machine meets the following requirements before you install
-Alyvix:
+You should check that your designated machine and the account on that machine meet the following
+requirements before you install Alyvix:
 
 .. admonition::  Requirements
    :class: warning
@@ -46,12 +48,33 @@ Alyvix:
      * Processor:  2 CPUs Base + 2 CPUs per session
      * Memory:  4GB RAM Base + 4GB RAM per session
 
+   * Account with system administrator privileges
+
+|
+
+
+.. _installation_versions:
+
+========
+Versions
+========
+
++-----------------------------------+----------------------------------+---------------------------------+
+| Alyvix Server Version             | Required Alyvix Version          | PostgreSQL Version              |
++-----------------------------------+----------------------------------+---------------------------------+
+| Alyvix Server 1.6.0               | |link-to-alyvix-install1|        | |link-postgresql-install-12.x|  |
++-----------------------------------+----------------------------------+---------------------------------+
+| Alyvix Server 1.5.0               | |link-to-alyvix-install2|        | |link-postgresql-install-12.x|  |
++-----------------------------------+----------------------------------+---------------------------------+
+
 |
 
 
 .. _installation_steps:
 
-.. rubric::   Installation Steps
+==================
+Installation Steps
+==================
 
 The following steps will install Alyvix Server on your machine:
 
@@ -66,10 +89,10 @@ The following steps will install Alyvix Server on your machine:
 
    Follow the `Alyvix installation instructions <https://www.alyvix.com/learn/getting_started/install.html#installing-alyvix>`_
 
-#. Install PostgreSQL 12.4
+#. Install PostgreSQL 12.x
 
    Download and run
-   `the PostgreSQL installer <https://www.enterprisedb.com/postgresql-tutorial-resources-training?cid=48>`_
+   `the PostgreSQL installer <https://content-www.enterprisedb.com/postgresql-tutorial-resources-training?cid=48>`_
 
 #. Install Alyvix Server
 
@@ -96,12 +119,11 @@ The following steps will install Alyvix Server on your machine:
 |
 
 
-
 .. _install_upgrade:
 
-*********
+=========
 Upgrading
-*********
+=========
 
 The following steps will upgrade Alyvix Server to the latest version on your machine:
 

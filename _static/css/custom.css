@@ -436,7 +436,7 @@ table.docutils {
     border: 1px solid #e1e4e5 !important;
     margin-left: 0px !important;
     margin-bottom: 0px !important;
-    display: block;
+    /* display: block; */
     padding: 0px !important;
     width: 100% !important;
     box-sizing: border-box;

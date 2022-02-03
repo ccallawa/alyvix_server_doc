@@ -41,9 +41,17 @@ Measurement API Endpoints
 The following table lists the available measurement endpoints, along with their return values,
 whether as measurement data encoded in JSON objects, or as viewable reports in HTML.
 
-If you frequently need to view the JSON structures that Alyvix Server produces, we recommend the
-use of the free **JSON Viewer Pro**
-`Chrome browser extension <https://chrome.google.com/webstore/search/json%20viewer%20pro>`_.
+.. important::
+
+   If you manually type in an endpoint URL, any string you enter for `<testcasealias>`
+   must be an exact match, including **character case**.
+
+.. tip::
+
+   If you frequently need to view the JSON structures that Alyvix Server produces, we recommend
+   using the free **JSON Viewer Pro**
+   `Chrome browser extension <https://chrome.google.com/webstore/search/json%20viewer%20pro>`_
+   to improve readability.
 
 .. table::
    :class: endpoint-table

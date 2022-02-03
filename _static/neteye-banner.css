@@ -81,9 +81,20 @@
 }
 
 #breadcrumb-container .breadcrumb a,
-#breadcrumb-container .breadcrumb .active,
+#breadcrumb-container .breadcrumb .active {
+    color: #F4F4F4;
+}
 #breadcrumb-container .breadcrumb .breadcrumb-item::before {
     color: #F4F4F4;
+    content: ">";
+    position: relative;
+    top: -4px;
+}
+#breadcrumb-container .breadcrumb .breadcrumb-item:first-child::before {
+    content: none;
+}
+#breadcrumb-container .breadcrumb .breadcrumb-item:last-child {
+    visibility: hidden;
 }
 
 #search-banner .search-summary {
