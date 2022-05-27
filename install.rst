@@ -34,21 +34,33 @@ System Requirements
 You should check that your designated machine and the account on that machine meet the following
 requirements before you install Alyvix:
 
-.. admonition::  Requirements
-   :class: warning
-
-   * Screen color depth: 24-bit RGB or 32-bit RGBA
-   * OS: **Windows 64-bit** 10 Pro, Server 2012, 2016 or 2019
-     (32-bit versions of Windows are :warn:`not` compatible with Alyvix)
-
-     * Windows 10 Professional hosts must be reachable from an external browser
-
-   * Hardware (for instance to run 4 sessions, a minimum of 10 CPU and 20GB RAM):
-
-     * Processor:  2 CPUs Base + 2 CPUs per session
-     * Memory:  4GB RAM Base + 4GB RAM per session
-
-   * Account with system administrator privileges
++---------------------+--------------------------------+-----------------------------------------+
+|                     | Minimum                        | Recommended                             |
++---------------------+--------------------------------+-----------------------------------------+
+| :file:`Operating`   | **Windows 10 (64-bit)**        | **Windows Server 2016, 2019 or 2022**   |
+| :file:`System`      | **Pro or Enterprise**          | (English language)                      |
+|                     +--------------------------------+-----------------------------------------+
+|                     | (32-bit versions of Windows are :warn:`not` compatible with Alyvix)      |
++---------------------+--------------------------------+-----------------------------------------+
+| :file:`Processor`   | 2 CPUs                         | 2 CPUs base **+** 2 CPUs per session    |
++---------------------+--------------------------------+-----------------------------------------+
+| :file:`Memory`      | 4GB RAM                        | 4GB RAM base **+** 4GB RAM per session  |
++---------------------+--------------------------------+-----------------------------------------+
+| :file:`Graphics`    | 24-bit RGB or 32-bit RGBA screen color depth                             |
++---------------------+--------------------------------+-----------------------------------------+
+| :file:`Remote`      | Users defined on Alyvix Server must have RDP access (through RDC         |
+| :file:`Desktop`     | *mstsc.exe*) to the machine itself (e.g. the user must be a Remote       |
+|                     | Desktop User, and the firewall must not be set to block local RDC)       |
+|                     +--------------------------------+-----------------------------------------+
+|                     | **1 session only:** No Windows | **Multiple sessions in parallel:**      |
+|                     | Terminal Server available;     | Windows Terminal Server allows          |
+|                     | 1 test case executed at a time | multiple test cases to run at once      |
++---------------------+--------------------------------+-----------------------------------------+
+| :file:`Application` | Users defined on Alyvix Server must have the proper permissions          |
+| :file:`Permissions` | to run and interact with the application interface being monitored       |
++---------------------+--------------------------------+-----------------------------------------+
+| :file:`Networks`    | Alyvix Server must be reachable from an external browser                 |
++---------------------+--------------------------------+-----------------------------------------+
 
 |
 

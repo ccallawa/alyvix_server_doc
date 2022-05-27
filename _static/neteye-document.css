@@ -261,6 +261,7 @@ dl, ol, ul {
 
 #content .document .body table tbody tr td {
     box-sizing: border-box;
+    background-color: white;
     border: 0;
     margin: 0;
     padding: 1rem 1rem 1.5rem;
