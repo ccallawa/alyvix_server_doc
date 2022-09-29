@@ -31,9 +31,11 @@
 
 .. |link-postgresql-install-12.x| replace:: :iconlink:`ext|12.x|https://content-www.enterprisedb.com/postgresql-tutorial-resources-training?cid=48`
 
-.. |link-to-alyvix-install1| replace:: :iconlink:`ext|Alyvix 3.2.3|https://alyvix.com/learn/getting_started/install.html`
+.. |link-to-alyvix-install331| replace:: :iconlink:`ext|Alyvix 3.3.1|https://alyvix.com/learn/getting_started/install.html#versions`
 
-.. |link-to-alyvix-install2| replace:: :iconlink:`ext|Alyvix 3.2.0|https://alyvix.com/learn/getting_started/install.html#versions`
+.. |link-to-alyvix-install323| replace:: :iconlink:`ext|Alyvix 3.2.3|https://alyvix.com/learn/getting_started/install.html#versions`
+
+.. |link-to-alyvix-install320| replace:: :iconlink:`ext|Alyvix 3.2.0|https://alyvix.com/learn/getting_started/install.html#versions`
 
 .. |source-youtube| raw:: html
 

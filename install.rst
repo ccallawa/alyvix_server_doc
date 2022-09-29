@@ -74,9 +74,11 @@ Versions
 +-----------------------------------+----------------------------------+---------------------------------+
 | Alyvix Server Version             | Required Alyvix Version          | PostgreSQL Version              |
 +-----------------------------------+----------------------------------+---------------------------------+
-| Alyvix Server 1.6.0               | |link-to-alyvix-install1|        | |link-postgresql-install-12.x|  |
+| Alyvix Server 1.7.3               | |link-to-alyvix-install331|      | |link-postgresql-install-12.x|  |
 +-----------------------------------+----------------------------------+---------------------------------+
-| Alyvix Server 1.5.0               | |link-to-alyvix-install2|        | |link-postgresql-install-12.x|  |
+| Alyvix Server 1.6.0               | |link-to-alyvix-install323|      | |link-postgresql-install-12.x|  |
++-----------------------------------+----------------------------------+---------------------------------+
+| Alyvix Server 1.5.0               | |link-to-alyvix-install320|      | |link-postgresql-install-12.x|  |
 +-----------------------------------+----------------------------------+---------------------------------+
 
 |

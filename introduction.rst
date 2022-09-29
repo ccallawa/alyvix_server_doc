@@ -1,10 +1,10 @@
 :author: Charles Callaway
 :date: 22-09-2020
-:modified: 02-11-2020
+:modified: 29-09-2022
 :tags: index
 :lang: en-US
 :translation: false
-:status: final
+:status: updating
 
 .. include:: sphinx-roles.txt
 
@@ -16,7 +16,7 @@
 Alyvix Server Overview
 ######################
 
-Welcome to the user guide for **Alyvix Server 1.6**.
+Welcome to the user guide for **Alyvix Server 1.7**.
 
 `Alyvix <https://alyvix.com/>`_ lets you build end-user bots that visually interact with any
 Windows application like ERPs, or any web app in your favorite browser.

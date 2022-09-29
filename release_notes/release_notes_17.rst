@@ -1,38 +1,43 @@
 :author: Charles Callaway
-:date: 20-01-2022
-:modified: 20-01-2022
+:date: 29-09-2022
+:modified: 29-09-2022
 :tags: release notes
 :lang: en-US
 :translation: false
-:status: final
+:status: updating
 
 .. include:: ../sphinx-roles.txt
 
 
 
-.. _release_notes_v1_6:
+.. _release_notes_v1_7:
 
-=============
-Version 1.6.0
-=============
+=======================
+Version 1.7.3 (Current)
+=======================
 
 Alyvix Server is a software tool for scaling up the management of instances of the Alyvix
 visual monitoring system.
 
-.. _release_notes_v1_6_0:
+.. _release_notes_v1_7_0:
 
-.. rubric:: Alyvix Server Version 1.6.0
+.. _release_notes_v1_7_3:
 
-**Release date:**  January 20th, 2022
+.. rubric:: Alyvix Server Version 1.7.3
+
+**Release date:**  September 29th, 2022
 
 **New Features**
 
-* A TLS SMTP connection can be configured in order to receive an email notification about the
-  Alyvix Server license expiration date, 1 month in advance
+* New (deeper) database cleaning logic based on data (measures and images) retention periods
+  of successful and failed test cases
+* New image recording logic based on successful (no images by default) and failed test cases
+  (screenshot, annotation and definition images for each transaction)
+* New visual recording in reports, especially visual definition images for each transaction
 
 **Improvements**
 
-* Alyvix Server checks only the expiration date (and not the start date) to validate licenses
+* New report format
 
 **Frontend Control Panels**
 
