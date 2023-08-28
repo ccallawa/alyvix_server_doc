@@ -74,6 +74,8 @@ Versions
 +-----------------------------------+----------------------------------+---------------------------------+
 | Alyvix Server Version             | Required Alyvix Version          | PostgreSQL Version              |
 +-----------------------------------+----------------------------------+---------------------------------+
+| Alyvix Server 1.7.5               | |link-to-alyvix-install340|      | |link-postgresql-install-12.x|  |
++-----------------------------------+----------------------------------+---------------------------------+
 | Alyvix Server 1.7.3               | |link-to-alyvix-install331|      | |link-postgresql-install-12.x|  |
 +-----------------------------------+----------------------------------+---------------------------------+
 | Alyvix Server 1.6.0               | |link-to-alyvix-install323|      | |link-postgresql-install-12.x|  |
@@ -122,7 +124,7 @@ The following steps will install Alyvix Server on your machine:
 
    Save your files as follows:
 
-   * Go to the folder :file:`C:\\Program Files\\Alyvix\\Alyvix Server\\cert\\`
+   * Create the folder :file:`C:\\Program Files\\Alyvix\\Alyvix Server\\cert\\`
    * Save :file:`cert.crt` as an HTTPS certificate recognized by your CA
    * Save :file:`cert.key` as its (unprotected) password
 

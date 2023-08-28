@@ -1,6 +1,6 @@
 :author: Charles Callaway
 :date: 02-03-2021
-:modified: 02-03-2021
+:modified: 19-07-2023
 :tags: release notes
 :lang: en-US
 :translation: false
@@ -30,7 +30,7 @@ Alyvix release follows the :iconlink:`ext|Semantic Versioning|https://semver.org
 
 Alyvix Server releases:
 
-* :ref:`Version 1.7.3 <release_notes_v1_7_3>`
+* :ref:`Version 1.7.3 <release_notes_v1_7_3>` -- :ref:`Version 1.7.3 <release_notes_v1_7_5>`
 * :ref:`Version 1.6.0 <release_notes_v1_6_0>`
 * :ref:`Version 1.5.0 <release_notes_v1_5_0>`
 * :ref:`Version 1.4.1 <release_notes_v1_4_1>` -- :ref:`Version 1.4.3 <release_notes_v1_4_3>`

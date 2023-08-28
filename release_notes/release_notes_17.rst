@@ -1,6 +1,6 @@
 :author: Charles Callaway
 :date: 29-09-2022
-:modified: 29-09-2022
+:modified: 19-07-2023
 :tags: release notes
 :lang: en-US
 :translation: false
@@ -9,17 +9,57 @@
 .. include:: ../sphinx-roles.txt
 
 
-
 .. _release_notes_v1_7:
 
 =======================
-Version 1.7.3 (Current)
+Version 1.7.3 - Current
 =======================
 
 Alyvix Server is a software tool for scaling up the management of instances of the Alyvix
 visual monitoring system.
 
-.. _release_notes_v1_7_0:
+.. _release_notes_v1_7_5:
+
+.. rubric:: Alyvix Server Version 1.7.5 (Current)
+
+**Release date:**  July 19th, 2023
+
+**Bug Fixes:**
+
+* **Scheduling tasks:** Alyvix Server will now add Alyvix Client scheduled tasks after adding their
+  related new sessions
+* **False license expirations:** Alyvix Server will properly apply the correct expiration dates from
+  valid licenses
+
+**Frontend Control Panels:**
+
+The following endpoint URLs remain unchanged:
+
+* :file:`<alyvix_server>/`
+* :file:`<alyvix_server>/activation`
+* :file:`<alyvix_server>/settings`
+* :file:`<alyvix_server>/testcases`
+* :file:`<alyvix_server>/nats-influxdb`
+
+
+**Measurement Web APIs (v0)**
+
+The following endpoint URLs remain unchanged:
+
+* :file:`<alyvix_server>/v0/testcases`
+
+  * :file:`<alyvix_server>/v0/testcases/<testcasealias>`
+
+    * :file:`<alyvix_server>/v0/testcases/<testcasealias>?screenshots=[true, false]`
+
+  * :file:`<alyvix_server>/v0/testcases/<testcasealias>/reports`
+
+    * :file:`<alyvix_server>/v0/testcases/<testcasealias>/reports?runcode=<runcode>`
+
+* :file:`<alyvix_server>/v0/flows/run?username=<domain\username>`
+
+|
+
 
 .. _release_notes_v1_7_3:
 

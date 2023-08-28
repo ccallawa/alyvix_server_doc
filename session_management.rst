@@ -173,12 +173,22 @@ in question and re-add it.
 NATS and InfluxDB Settings
 **************************
 
-Besides configuring the session settings of a particular server via its IP address, you can
-also set them to forward the data to a NATS server and a particular InfluxDB data table, allowing
-you to view the data in Grafana.  Forwarding data to NATS is complementary -- Alyvix Server will
-still continue to receive data, and it will still be visible via the measurement API.
+In addition to configuring the session settings of a particular server via its IP address,
+you can also configure a session to forward the data to a
+:iconlink:`ext|NATS server|https://nats.io/` and a particular InfluxDB data table, allowing
+you to view the data in :iconlink:`ext|Grafana|https://grafana.com/`.  The resulting
+customizable graphs can interactively show the response times of individual steps reported
+by an Alyvix test case as in this example:
 
-For this feature, you will need to configure communication parameters via the NATS/InfluxDB endpoint:
+.. image:: images/settings-nats03.png
+   :class: image-boxshadow zoomable-image image-very-large
+   :alt: Example Grafana interactive graph.
+
+Forwarding data to NATS is complementary -- Alyvix Server will still continue to receive data,
+and it will still be visible via the measurement API.
+
+To enable forwarding via NATS, you will need to configure communication parameters via the
+NATS/InfluxDB endpoint:
 
 .. table::
    :class: tablecell-endpoint large-font-size
@@ -199,9 +209,9 @@ For this feature, you will need to configure communication parameters via the NA
 For each NATS instance you want to connect, you will need to fill in the following fields:
 
 * **Profile Name:**  A unique name for a new NATS connection instance that you will then be able
-  to assign to a given session at the bottom of the page.
+  to assign to a given session.
 * **Certificates Path:**  If you use TLS encryption, this will point to the directory containing
-  your :file:`*.ca.crt` certificate authority file, :file:`*.crt` public key file, and
+  your :file:`*.ca.pem` certificate authority file, :file:`*.pem` public key file, and
   :file:`*.key` (not encrypted) private key file.  If you leave this field blank, encryption via
   TLS will be disabled, and data will be sent in cleartext.
 * **IP/Port:**  The address of the NATS server.
@@ -209,12 +219,13 @@ For each NATS instance you want to connect, you will need to fill in the followi
 * **Measurement Name:**  The name of the measurements table within your InfluxDB subject where the
   data should be stored when it arrives.
 
-.. image:: images/settings-nats01.png
+.. image:: images/settings-nats02.png
    :class: image-boxshadow zoomable-image image-very-large
    :alt: The NATS/InfluxDB settings interface.
-   :target: ../server/_static/targets/settings-nats01.png
+   :target: ../server/_static/targets/settings-nats02.png
 
-Once you add a NATS configurations at the top, you can assign it to one or more existing sessions.
+Once you add a NATS configuration, you can assign it to one or more existing sessions using
+its profile name.
 Each session can stream to at most one NATS-InfluxDB channel, although multiple sessions can send
 data to a single NATS-InfluxDB channel.
 

@@ -190,6 +190,11 @@
     background-image: url('./icons/modules/document.svg');
 }
 
+#menu .sidebartoctree > ul > li > a[href$="/learn/service/"]::before,
+#menu .sidebartoctree > ul > li:hover > a[href$="/learn/service/"]::before {
+    background-image: url('./icons/modules/document.svg');
+}
+
 #menu .sidebartoctree > ul > li > a[href$="get_in_touch.html"]::before,
 #menu .sidebartoctree > ul > li:hover > a[href$="get_in_touch.html"]::before {
     background-image: url('./icons/modules/group.svg');

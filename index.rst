@@ -22,6 +22,7 @@
    monitoring_integrations.rst
    release_notes.rst
    Alyvix User Manual <https://alyvix.com/learn/>
+   Alyvix Service User Manual <https://alyvix.com/learn/service/>
    get_in_touch.rst
 
 |

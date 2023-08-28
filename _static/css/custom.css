@@ -303,6 +303,12 @@ code.kbd, tt.kbd, kbd {
     font-weight: bold;
     font-family: monospace !important;
 }
+.endpoint-black-small {  /* An inline warning rather than a box */
+    color: black;
+    font-size: 100%;
+    font-weight: bold;
+    font-family: monospace !important;
+}
 .endpoint-red-med {  /* An inline warning rather than a box */
     color: #2980B9;
     font-size: 105%;

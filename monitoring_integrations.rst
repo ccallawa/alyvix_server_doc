@@ -52,6 +52,8 @@ systems will be added as they become available.
    +--------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
    | |smalltab| |ne-logo| |trade| |smalltab| :ref:`NetEye 4 instructions <monitoring_integrations_neteye>`                    | :iconlink:`ext|Wuerth Phoenix|https://www.wuerth-phoenix.com/en/solutions/it-system-management/unified-monitoring/` |tab| |
    +--------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
+   | |smalltab| |ne-logo| |trade| |smalltab| :ref:`NetEye 4 instructions NEPS <monitoring_integrations_neteye_neps>`          | :iconlink:`ext|Wuerth Phoenix|https://www.wuerth-phoenix.com/en/solutions/it-system-management/unified-monitoring/` |tab| |
+   +--------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
    | |smalltab| |prtg-logo| |trade| |smalltab| :ref:`PRTG Network Monitor 21 instructions <monitoring_integrations_prtg>`     | :iconlink:`ext|Paessler|https://www.paessler.com/prtg/`                                                                   |
    +--------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------+
 
@@ -66,4 +68,5 @@ systems will be added as they become available.
 
    monitoring_integrations/checkmk_integration.rst
    monitoring_integrations/neteye_integration.rst
+   monitoring_integrations/neteye_integration_new.rst
    PRTG Network Monitor 21 <monitoring_integrations/prtg_integration.rst>
